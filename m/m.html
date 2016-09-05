@@ -6,13 +6,12 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, user-scalable=no, target-densitydpi=medium-dpi" />
 <title></title>
-<link rel="stylesheet"  type="text/css" href="css/common.css" />
-<link rel="stylesheet"  type="text/css" href="css/content.css" />
-<link rel="stylesheet"  type="text/css" href="css/content2.css" />
 <link rel="stylesheet"  type="text/css" href="css/item.css" />
-<link rel="stylesheet"  type="text/css" href="css/layout.css" />
-<link rel="stylesheet"  type="text/css" href="css/normalize.css" />
-<link rel="stylesheet"  type="text/css" href="css/style.css" />
+<link rel="stylesheet"  type="text/css" href="css/mobile_rn_base.css" />
+<link rel="stylesheet"  type="text/css" href="css/mobile_rn_common.css" />
+<link rel="stylesheet"  type="text/css" href="css/mobile_rn_incheon.css" />
+<link rel="stylesheet"  type="text/css" href="css/mobile_rn_main.css" />
+
 <script type="text/javascript" src="js/jquery-2.1.1.min.js"></script>
 <script type="text/javascript" src="js/jquery-migrate-1.2.1.min.js"></script>
 <script type="text/javascript" src="js/iscroll5.js"></script>
@@ -58,7 +57,18 @@ body{margin:0; padding:0;}
 #gdBromide .countAreaWrap .countArea span.count_tit_hidden{overflow:hidden;width:0;height:0;font-size:0;line-height:0}
 
 #gdBromide .memberPR{position:relative}
-#gdBromide .memberPR div.recomF{background:#4e4e4e;border-radius:5px;width:90%;margin:0 auto;position:absolute;top:53.7335%;left:0;right:0;overflow:hidden;padding:3% 0}
+#gdBromide .memberPR div.recomF{
+	background:#4e4e4e;
+	border-radius:5px;
+	width:90%;
+	margin:0 auto;
+	position:absolute;
+	top:53.7335%;
+	left:0;
+	right:0;
+	overflow:hidden;
+	padding:3% 0
+	}
 #gdBromide .memberPR div.recomF > span{color:#fff;float:left;width:30%;text-indent:10px;font-size:120%}
 #gdBromide .memberPR div.recomF p{float:left;width:70%}
 #gdBromide .memberPR div.recomF p span{margin-bottom:3%;display:block}
@@ -72,11 +82,12 @@ body{margin:0; padding:0;}
 #gdBromide .visitEx{position:relative}
 #gdBromide .visitEx ul{position:absolute;left:0;right:0;width:90%;margin:0 auto;display:table}
 #gdBromide .visitEx ul li{width:33.3%;display:table-cell}
-#gdBromide .visitEx ul li input[type="radio"]{display:none}
-#gdBromide .visitEx ul li input[type="radio"]:checked + label:before{content:"\2022";color:#e12021;font-size:5em;line-height:26px;text-align:center}
-#gdBromide .visitEx ul li label:before{border-radius:30px}
-#gdBromide .visitEx ul li label{display:inline-block;height:26px;position:relative;background:none;padding:0;margin:0;padding-left:40px;font-size:110%;font-weight:bold;letter-spacing:-1px}
-#gdBromide .visitEx ul li label:before{display:inline-block;content:'';width:26px;height:26px;position:absolute;left:0;bottom:1px;background:#fff;border:3px solid #959595}
+#gdBromide .visitEx ul li input.chk{-webkit-appearance:none;box-sizing:border-box;border:0;width:18px;height:18px;vertical-align:-5px}
+#gdBromide .visitEx ul li input[type="radio"]{border:2px solid #959595;border-radius:18px}
+#gdBromide .visitEx ul li input[type="radio"]:checked{background:#e12021}
+#gdBromide .visitEx ul li input[type='radio']:disabled {border:1px solid #a0a0a0;background:#e6e6e6;}
+#gdBromide .visitEx ul li label{margin:0 10px}
+
 #gdBromide .visitEx > p{width:50%;position:absolute;top:38.978%;left:0;right:0;margin:0 auto}
 
 #gdBromide .memberBuy{position:relative}
@@ -181,9 +192,9 @@ body{margin:0; padding:0;}
 	<img src="./images/img_con02_2.jpg" alt=""/>
 	<div class="visitEx">
 		<ul>
-			<li><input type="radio" name="date" id="day1" checked /><label for="day1">9/1 ~ 9/10</label></li>
-			<li><input type="radio" name="date" id="day2"/><label for="day2">9/11 ~ 9/20</label></li>
-			<li><input type="radio"name="date"  id="day3"/><label for="day3">9/21 ~ 9/30</label></li>
+			<li><label><input type="radio" name="date" class="chk" checked />9/1 ~ 9/10</label></li>
+			<li><label><input type="radio" name="date" class="chk" />9/11 ~ 9/20</label></li>
+			<li><label><input type="radio"name="date"  class="chk"  />9/21 ~ 9/30</label></li>
 		</ul>
 		<p><a href="#"><img src="./images/img_con02_btn2.jpg" alt="" /></a></p>
 		<img src="./images/img_con02_3.jpg" alt="" />
