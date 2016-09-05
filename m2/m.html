@@ -32,17 +32,19 @@
 	   링크된 css, script 는 따로 가져가실 필요 없으시고 상단 style, script 만 가져가시면 됩니다.
 -->
 <script type="text/javascript">
-	var num = 0;
-	$('.wishBtn').click(function (){
-		num++;
-		if(num > 5){
-			num = 0;
-		}
-		$('.moon_img').attr('src', 'images/moon_0' + num + '.png')
-		return false
-	});
+
 	$(function(){
-		$('img[usemap]').rwdImageMaps();		
+		var num = 0;
+		$('.wishBtn').click(function (){
+			num++;
+			if(num > 5){
+				num = 0;
+			}
+			$('.moon_img').attr('src', 'images/moon_0' + num + '.png')
+			return false
+		});
+
+		$('img[usemap]').rwdImageMaps();
 	});
 </script>
 <style>
