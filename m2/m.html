@@ -32,18 +32,17 @@
 	   링크된 css, script 는 따로 가져가실 필요 없으시고 상단 style, script 만 가져가시면 됩니다.
 -->
 <script type="text/javascript">
+	var num = 0;
+	$('.wishBtn').click(function (){
+		num++;
+		if(num > 5){
+			num = 0;
+		}
+		$('.moon_img').attr('src', 'images/moon_0' + num + '.png')
+		return false
+	});
 	$(function(){
 		$('img[usemap]').rwdImageMaps();		
-
-		var num = 0;
-		$('.wishBtn').click(function (){
-			num++;
-			if(num > 5){
-				num = 0;
-			}
-			$('.moon_img').attr('src', 'images/moon_0' + num + '.png')
-			return false
-		});
 	});
 </script>
 <style>
@@ -65,17 +64,22 @@ body{margin:0; padding:0;}
 	</div>
 	<!--//wishArea-->
 	<div>
-		<img src="./images/img_con2.jpg" alt="" usemap="#map0905">
-		<map name="map0905" id="map0905">
+		<img src="./images/img_con2.jpg" alt="" usemap="#map0905_1">
+		<map name="map0905_1" id="map0905_1">
 			<area shape="rect" coords="310,398,588,466" href="javascript:alert();" target="" alt="" />
 		</map>
 	</div>
-	<img src="./images/img_con3.jpg" alt="">
+	<div>
+		<img src="./images/img_con3.jpg" alt="" usemap="#map0905_2">
+		<map name="map0905_2" id="map0905_2">
+			<area shape="rect" coords="44,170,597,643" href="http://m.ssgdfs.com/shop/promotion/event?eventId=07849" target="" alt="모바일 전용혜택" />
+		</map>
+	</div>	
 	<div>
 		<img src="./images/img_notice.gif" alt="" usemap="#appStore">	
 		<map name="appStore" id="appStore">
-			<area shape="rect" coords="19,138,195,176" href="https://itunes.apple.com/kr/app/sinsegyemyeonsejeom/id728414536?mt=8" target="_blank" alt="" />
-			<area shape="rect" coords="202,138,374,176" href="https://play.google.com/store/apps/details?id=com.ssgdfs.android" target="_blank" alt="" />
+			<area shape="rect" coords="19,138,195,176" href="https://itunes.apple.com/kr/app/sinsegyemyeonsejeom/id728414536?mt=8" target="_blank" alt="ios 설치하기" />
+			<area shape="rect" coords="202,138,374,176" href="https://play.google.com/store/apps/details?id=com.ssgdfs.android" target="_blank" alt="안드로이드 설치하기" />
 		</map>
 	<div>
 </div>
