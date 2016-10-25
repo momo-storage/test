@@ -37,12 +37,17 @@ body{margin:0; padding:0;}
 .eventWrap img{width:100%;vertical-align:top;}
 .eventWrap a{display:block;width:100%;}
 .friendInvite{position:relative}
-.friendInvite .inviteId{position:absolute;top:0%;width:100%;height:100%}
+.friendInvite .inviteId{position:absolute;top:0;bottom:0;width:100%;height:100%}
 .friendInvite .inviteId div{width:100%;height:100%}
+/*
 .friendInvite .inviteId div:first-child{position:absolute;top:41.024%;left:10.9375%;}
 .friendInvite .inviteId div:nth-child(2){position:absolute;top:41.024%;left:55.9375%}
 .friendInvite .inviteId div:last-child{position:absolute;top:71.652%;left:35.581%}
-.friendInvite .inviteId div input{width:28%;height:6.5%;border:none;text-align:center;font-size:3vw;color:#2a2a2a}
+*/
+.friendInvite .inviteId div input{position:absolute;width:28%;height:6.5%;border:none;text-align:center;font-size:3vw;color:#2a2a2a}
+.friendInvite .inviteId div:first-child input{top:41%;left:10.9375%}
+.friendInvite .inviteId div:nth-child(2) input{top:41%;left:55.9375%}
+.friendInvite .inviteId div:last-child input{top:71.652%;left:35.581%}
 .friendInvite > p{position:absolute;bottom:7.365%;left:0;right:0;width:45%;margin:0 auto}
 
 .countWrap{position:relative}
