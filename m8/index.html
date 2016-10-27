@@ -1,0 +1,110 @@
+
+
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, user-scalable=no, target-densitydpi=medium-dpi" />
+<title></title>
+<link rel="stylesheet"  type="text/css" href="css/content.css" />
+<link rel="stylesheet"  type="text/css" href="css/item.css" />
+<link rel="stylesheet"  type="text/css" href="css/normalize.css" />
+<link rel="stylesheet"  type="text/css" href="css/style.css" />
+<link rel="stylesheet"  type="text/css" href="css/jquery.ui.datepicker.css" />
+<link rel="stylesheet"  type="text/css" href="css/jquery.ui.theme.css" />
+
+<script type="text/javascript" src="js/jquery-2.1.1.min.js"></script>
+<script type="text/javascript" src="js/jquery-migrate-1.2.1.min.js"></script>
+<script type="text/javascript" src="js/iscroll5.js"></script>
+<script type="text/javascript" src="js/jquery.form.js"></script>
+<script type="text/javascript" src="js/jquery-rnssg-mobile.js"></script>
+<script type="text/javascript" src="js/jQueryRotate.js"></script>
+<script type="text/javascript" src="js/sns.js"></script>
+<script type="text/javascript" src="js/swiper.js"></script>
+<script type="text/javascript" src="js/ui.js"></script>
+
+</head>
+<body>
+
+<!-- 개발전달사항
+	   링크된 css, script 는 따로 가져가실 필요 없으시고 상단 style, script 만 가져가시면 됩니다.
+-->
+
+<style>
+body{margin:0; padding:0;}
+.eventWrap{width:100%; text-align: left; font-family: Dotum,"돋움",Gulim,"굴림",Verdana,Helvetica,Tahoma,sans-serif;}
+.eventWrap img{width:100%;vertical-align:top;}
+.eventWrap a{display:block;width:100%;}
+.eventWrap .inputBox1, .eventWrap .inputBox2{position:relative}
+.eventWrap .inputBox1 > div input[type="text"]{
+	position:absolute;
+	top:85.687%;
+	left:10.455%;
+	width:58%;
+	height:7%;
+	border:0;
+	box-shadow:none;
+	background:transparent;
+	font-size:3vw;
+	text-indent:2.5%
+	}
+.eventWrap .inputBox2{position:absolute;top:-99999px}
+.eventWrap .inputBox2.inputOn{position:relative;top:0;bottom:0}
+.eventWrap .inputBox2.inputOn > div input[type="text"]{
+	position:absolute;
+	top:30.48%;
+	left:22.755%;
+	width:71%;
+	height:15.5%;
+	border:0;
+	box-shadow:none;
+	background:transparent;
+	font-size:3vw;
+	text-indent:2.5%
+	}
+</style>
+<script type="text/javascript" src="js/jquery.rwdImageMaps.js"></script>
+<script type="text/javascript">
+	$(document).ready(function(){
+		$('img[usemap]').rwdImageMaps();
+	});
+
+	function addrOpen(){
+		$('.inputBox2').addClass('inputOn');
+	}
+</script>
+<div class="eventWrap">
+	<img src="images/img01.jpg" alt="">
+	<div class="inputBox1">
+		<div><input type="text" name="" id=""></div>
+		<img src="images/img02.jpg" alt="" usemap="#map1">
+		<map name="map1" id="map1">
+			<area shape="rect" coords="455,710,586,769" href="javascript:;" target="" alt="" />
+		</map>
+	</div>
+	<!--//inputBox1-->
+
+	<div>
+		<img src="images/img03.jpg" alt="" usemap="#map2">
+		<map name="map2" id="map2">
+			<area shape="rect" coords="30,285,312,355" href="javascript:;" target="" alt="" />
+			<area shape="rect" coords="336,284,616,355" href="javascript:;" onclick="addrOpen();return false;" target="" alt="" />
+		</map>
+	</div>
+
+	<div class="inputBox2">
+		<div><input type="text" name="" id=""></div>
+		<img src="images/img03_1.jpg" alt="" usemap="#map3">
+		<map name="map3" id="map3">
+			<area shape="rect" coords="46,142,615,218" href="javascript:;" target="" alt="" />
+		</map>
+	</div>
+	<!--//inputBox2-->
+
+	<img src="images/img04.jpg" alt="">
+	<img src="images/img05.jpg" alt="">
+</div>
+
+
+</body>
+</html>
