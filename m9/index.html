@@ -1,0 +1,5112 @@
+<!DOCTYPE>
+<html lang="zh"><head>
+
+<base href="http://mcn.ssgdfm.com/">
+<meta http-equiv="X-UA-Compatible" content="IE=Edge">
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width,initial-scale=1.0,minimum-scale=1.0,maximum-scale=1.0">
+
+<title>新世界网上免税店-韩国旅游的购物圣地！</title>
+<!--  renewal -->
+
+<link rel="shortcut icon" type="image/x-icon" href="//image.ssgdfm.com/favor_m/android/app_launcher_512.png">
+<link rel="apple-touch-icon" href="//image.ssgdfm.com/favor_m/iOS/app_launcher_192.png">
+
+
+<link rel="stylesheet" href="/css_mobile/normalize.css" media="all">
+<link rel="stylesheet" href="/css_mobile/style.css" media="all">
+<script async="" src="//fs.bizspring.net/fs4/logger.v4.1.js"></script><script async="" src="//fs.bizspring.net/fs4/l4cts.v4.2.js"></script><script async="" src="//fs.bizspring.net/fs4/bstrk.1.js"></script><script async="" charset="utf-8" src="//static.recopick.com/dist/production.min.js"></script><script async="" charset="utf-8" src="//static.recopick.com/dist/production.min.js"></script><script src="/js_mobile/lib/jquery-1.11.3.min.js"></script>
+<script src="/js_mobile/lib/jquery.easing.1.3.js"></script>
+<script src="/js_mobile/lib/jquery.swiper.js"></script>
+<script src="/js_mobile/lib/iscroll.js"></script>
+<script src="/js_mobile/ui.js"></script>
+<script src="/js_mobile/ui.common.js"></script></head><body><div id="JESToolTip"></div>
+
+<script type="text/javascript" src="/script/mshop.js?random="></script>
+
+<!-- as-is 지울것-->
+<link rel="stylesheet" type="text/css" href="/css_mbl/content.css">
+<!--
+<link rel="stylesheet" href="/css_mbl/layout.css" media="all" />
+<link rel="stylesheet" type="text/css" href="/css_mbl/content2.css">
+-->
+
+<script type="text/javascript" src="/js_mbl/jquery-1.10.2.js"></script>
+<script type="text/javascript" src="/js_mbl/idangerous.swiper-2.1.min.js"></script>
+<script type="text/javascript" src="/js_mbl/jquery.bxslider.js"></script>
+<script type="text/javascript" src="/js_mbl/common.js"></script>
+<script type="text/javascript" src="/js_mbl/ui.js"></script>
+<script type="text/javascript" src="/js_mbl/jR3DCarousel.js"></script>
+<script type="text/javascript" src="/script/mshop.js?random="></script>
+<script type="text/javascript" src="/script/common.js"></script>
+
+<!-- 20160113 add -->
+<!-- <script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+  ga('create', 'UA-71498686-3', 'auto');
+  ga('send', 'pageview');
+</script> -->
+
+<!-- 20160812 add -->
+<!-- LOGGER(TM) TRACKING SCRIPT V.40 FOR logger.co.kr / 52485 : COMBINE TYPE / DO NOT ALTER THIS SCRIPT. -->
+<script type="text/javascript">var _TRK_LID="52485";var _L_TD="ssl.logger.co.kr";var _TRK_CDMN=".ssgdfm.com";</script>
+<script type="text/javascript">var _CDN_DOMAIN = location.protocol == "https:" ? "https://fs.bizspring.net" : "http://fs.bizspring.net";
+(function(b,s){var f=b.getElementsByTagName(s)[0],j=b.createElement(s);j.async=true;j.src='//fs.bizspring.net/fs4/bstrk.1.js';f.parentNode.insertBefore(j,f);})(document,'script');</script>
+<noscript><img alt="Logger Script" width="1" height="1" src="http://ssl.logger.co.kr/tracker.tsp?u=52485&amp;js=N" /></noscript>
+<!-- END OF LOGGER TRACKING SCRIPT -->
+
+
+<script type="text/javascript">
+
+/* 준회원 여부 (R)  */
+var glbMamberStatCode  = '';
+
+var tmpPayBackEventYn = 'N';
+
+var isWeb = true; //ture:웹, false:구앱
+var isCnApp = false; //ture:신규앱
+var cnDvcCode = '01'; //an : 01, ios :02
+var todayAppViewPop = ''; //null or 'no'
+
+
+jQuery(function($){
+
+	//안드로이드, 구앱, 신규앱아닐때, 오늘안보기 클릭전
+	if((cnDvcCode=='01') && !isWeb && !isCnApp && todayAppViewPop != 'no'){
+		$("#android_pop").show();
+	}
+
+	//ios, 구앱, 신규앱아닐때, 오늘안보기 클릭전 //ios 심사완료 후 오픈할때 주석 풀어 주세요
+	if((cnDvcCode=='02') && !isWeb && !isCnApp && todayAppViewPop != 'no'){
+		$("#ios_pop").show();
+	}
+
+	 $("body").on("click", ".btnLoginPopup", function() {
+        var url = "/shop/login/loginPopupForm?redirectUrl="+escape(location.href);
+        openWindow(url, 500, 540, 'loginPopupForm');
+        return false;
+    });
+
+    $("body").on("click", ".btnIsLoginPopup", function() {
+        var nonUserType = $(this).attr("value");
+        if (false) {
+            return true;
+        } else {
+            if (nonUserType == "myPage" || nonUserType == "order") {
+                var url = "https://mcn.ssgdfm.com/shop/login/form?redirectUrl="+escape(location.href)+"&nonUserType="+nonUserType;
+                location.href = url;
+            } else {
+                var url = "https://mcn.ssgdfm.com/shop/login/form?redirectUrl="+escape(location.href);
+                location.href = url;
+            }
+            return false;
+        }
+    });
+
+    $("body").on("click", ".btnIsLogin", function() {
+        var nonUserType = $(this).attr("value");
+
+        if(!false){
+    		if (Confirm("需要登录。您确定要登录吗？")) {
+		        var url = "https://mcn.ssgdfm.com/shop/login/form?redirectUrl="+escape(location.href);
+		        location.href = url;
+	        }
+    		return false;
+    	} else {
+            if (nonUserType == "myPage" || nonUserType == "order") {
+                var url = "https://mcn.ssgdfm.com/shop/login/form?redirectUrl="+escape(location.href)+"&nonUserType="+nonUserType;
+                location.href = url;
+            } else {
+                var url = "https://mcn.ssgdfm.com/shop/login/form?redirectUrl="+escape(location.href);
+                location.href = url;
+            }
+            return false;
+        }
+    });
+
+	/* 준회원  안내 및 상품구매 막기 팝업 s*/
+	if(glbMamberStatCode =="R" ){
+		$.ajax({
+	        type: "post"
+	        , url : "/shop/main/callMemberPopup"
+	        , dataType:"json"
+	        //, data: pararm
+	        , success: function(data) {
+	        	$("#mailUserId").val(data.emailUserId);
+	        	$("#userEmail").html(data.userEmail);
+	        	$("#emailValidDtm").html(data.emailValidDtm);
+	        }
+	    });
+	}
+
+	var pararm = "userId="+""+"&mailTitle=mail.0001"+"&templateMailName=0020";
+	$('#sendMail').click(function(){
+
+		$.ajax({
+	        type: "post"
+	        , url : "/shop/user/callSendtUserMemberStatAuthMail"
+	        , dataType:"json"
+	        , data: pararm
+	        , success: function(data) {
+	        	if(data.send) {
+	        		alert("邮件发送成功");//메일이 발송되었습니다
+	        		$(".btn-close").click();
+	        	}
+	        	else alert("发送失败");//발송실패
+	        	//document.location.replace("http://mcn.ssgdfm.com/shop/main");
+	        }
+	    });
+    });
+	/* 준회원  안내 및 상품구매 막기 팝업 e*/
+
+    var isOpen = false;
+    var getAjax = true;
+
+    $("#gomypage").click(function(){
+    	location.href = "{serverHost}/shop/mypage/mypageMain";
+        /* if (getAjax && !isOpen){
+            getAjax = false;
+            var url = "/shop/mypage/inMain";
+            $.get(url, function(data) {
+                $(".mypage").html(data);
+                getAjax = true;
+                isOpen = true;
+                $('.mypage .bg').show();
+            });
+        } */
+    });
+
+    $("#gomypage2").click(function(){
+    	location.href = "{serverHost}/shop/mypage/mypageMain";
+        /* if (getAjax && !isOpen){
+            getAjax = false;
+            var url = "/shop/mypage/inMain";
+            $.get(url, function(data) {
+                $(".mypage").html(data);
+                getAjax = true;
+                isOpen = true;
+                $('.mypage .bg').show();
+            });
+        } */
+    });
+
+   /*  if ('' == 'Y') {
+        $('#gomypage').trigger('click');
+    }  */
+
+    $("body").on("click", ".serviceReady" , function() {
+        alert("서비스 준비중입니다.");
+        return false;
+    });
+
+ // 상단 메뉴 공통 스크립트
+ $('.btn_menu').click(function(){
+    $('body').css('overflow','hidden');
+    $('#sideMenu .bg').show();
+    $('#sideMenu').animate({
+        left: 0
+    }, 200);
+    $('#wrap').animate({left:'310px'}, 200);
+    $('.mypage').animate({
+        right: -280
+    }, 200);
+ });
+
+ $('#sideMenu .btn_close').click(function(){
+    $('body').css('overflow','auto');
+    $('#sideMenu .bg').hide();
+    $('#sideMenu').animate({
+        left: -$('#sideMenu').width()
+    }, 200);
+    $('#wrap').animate({left:'0'}, 200);
+ });
+
+ $('#sideMenu li > a').click(function(){
+    $(this).parent().toggleClass('active').siblings().removeClass('active');
+ });
+
+/*  $('.btn_my').click(function(){
+    $('body').css('overflow','hidden')
+    $('.mypage .bg').show();
+    $('.mypage').animate({
+        right: 0
+    }, 200);
+    //$('#wrap').animate({left:'-280px'}, 200);
+    $('#sideMenu').animate({
+        left: -310
+    }, 200);
+ }); */
+
+ btn_closeMy = function(){
+        $('body').css('overflow','auto');
+        $('.mypage .bg').hide();
+        $('.mypage').animate({
+            right: -280
+        }, 200);
+        $('#wrap').animate({left:'0'}, 200);
+ }
+
+ goBack = function(){
+     history.go(-2);
+    // history.back();
+ }
+
+ 	$('.pop-infoGuide .btn-close').click(function(){
+ 		closePopupToday('todayAppViewPop', true);
+		$(this).parents('.pop-infoGuide').fadeOut();
+		return false;
+	});
+
+ 	$('.pop-infoGuide .btn-close2').click(function(){
+ 		//closePopupToday('todayAppViewPop', true);
+		$(this).parents('.pop-infoGuide').fadeOut();
+		return false;
+	});
+
+ 	$(".btnIsLoginPopupInq").click(function(){
+	    var url = "https://mcn.ssgdfm.com/shop/customer/inquiries";
+	    location.href = url;
+	});
+
+});
+
+//as-is : renewal open 후 삭제
+
+
+function closePopup(popupSeq, popup) {
+    if($('div#'+popupSeq+' :checkbox[name=cookiePopup]').prop('checked')){
+        var expireDate = new Date();
+        expireDate.setDate(expireDate.getDate() + 1 );
+        //alert("popupSeq_"+popupSeq + "=" + escape( "no" ) + "; path=/; expires=" + expireDate.toGMTString() + ";");
+        document.cookie = "popupSeq_"+popupSeq + "=" + escape( "no" ) + "; path=/; expires=" + expireDate.toGMTString() + ";"
+    }
+    self.close();
+}
+
+function closePopupToday(popupSeq, popup) {
+	var expireDate = new Date();
+	expireDate.setDate(expireDate.getDate() + 1 );
+	//alert("popupSeq_"+popupSeq + "=" + escape( "no" ) + "; path=/; expires=" + expireDate.toGMTString() + ";");
+	document.cookie = "popupSeq_"+popupSeq + "=" + escape( "no" ) + "; path=/; expires=" + expireDate.toGMTString() + ";"
+}
+
+
+</script>
+
+<!-- 준회원 안내 팝업 start -->
+	<section class="popup-layout" id="email-certification">
+		<div class="bg"></div>
+		<div class="popup-box">
+			<h1>您还没有完成邮箱验证!</h1>
+			<div class="cont-box">
+				<h2>
+					<!--
+					请您确认发送至<br />
+					<strong class="txt-red"><span id="userEmail"></span></strong>
+					<br />验证邮件
+					 -->
+					请您确认发送至 ( <span id="userEmail" class="txt-blue"></span> )验证邮件。<br>
+				</h2>
+				<h3>
+					 如果您收不到认证邮件，请您在<a href="#" class="btnIsLoginPopupInq"><span class="txt-blue" style="text-decoration:underline;">1:1咨询</span></a>申请正式会员。客服将尽快帮助您完成正式会员注册。
+				</h3>
+				<p class="delay-time-box">
+					有效期 : <span id="emailValidDtm"></span> 为止   <!--  -->
+				</p>
+
+				<div class="email-join-info">
+					<img src="//image.ssgdfm.com/images/shop/cn/mobile_new/content/img-email-join-info.gif" alt="">
+				</div>
+
+				<p class="text">
+					点击邮件的 <strong>“完成注册”</strong> 按钮后 ，<br>
+					就可以注册成为可享受多种优惠的正式会员了。<br>
+					<strong>只有正式会员才能购买商品</strong>
+				</p>
+				<p>
+					如果您没有收到验证邮件或已超过验证有效期，<br>
+					请点击下方的 <strong>“重新发送”</strong> 按钮。
+				</p>
+
+				<div class="btn-group type2">
+					<a href="#" class="btn-red" id="sendMail">
+						<span>重新发送</span>
+					</a>
+					<a href="#" class="btn-gray btn-close">
+						<span>关闭</span>
+					</a>
+				</div>
+			</div>
+			<div class="today-check" id="regularMamberMblPop">
+				<label><input name="cookiePopup" id="today-close" onclick="javascript:closePopup('regularMamberMblPop', true)" type="checkbox"> 今日不再显示此信息</label>
+			</div>
+			<a href="#" class="btn-close">close</a>
+		</div>
+	</section>
+	<input id="mailUserId" name="mailUserId" type="hidden">
+	<!-- 준회원 안내 팝업 end -->
+
+	<!-- left menu area -->
+
+
+
+
+
+
+
+
+<script type="text/javascript">
+jQuery(function() {
+
+});
+
+
+
+function fnCallNum(callNum){
+    var uagentLow = navigator.userAgent.toLocaleLowerCase();
+
+    if (uagentLow.search("android") > -1) {
+    	document.location.href = "tel:"+callNum+"#";
+    } else if (uagentLow.search("iphone") > -1) {
+    	location.href = "tel:"+callNum;
+
+    }
+
+}
+
+
+
+function goApp(){
+
+	var openAt = new Date,
+    uagentLow = navigator.userAgent.toLocaleLowerCase(),
+    chrome25,
+    kitkatWebview;
+
+	setTimeout( function() {
+	    if (new Date - openAt < 4000) {
+	        if (uagentLow.search("android") > -1) {
+	        	document.location.href = "market://details?id=com.ssgdfs.android";
+	        } else if (uagentLow.search("iphone") > -1) {
+	        	location.href = "https://itunes.apple.com/kr/app/sinsegyemyeonsejeom/id728414536?mt=8";
+	        }
+	    }
+	}, 3000);
+
+	document.location.href = "ssgdfs://dev-m.ssgdfm.com";
+}
+
+
+
+</script>
+
+		<!-- GNB Menu : S -->
+		<section id="gnb-menu">
+			<nav>
+				<h1>菜单</h1>
+
+				<ul class="gnb-depth">
+					<li><a href="/shop/display/categoryMain"><i class="ico-gnb-menu1"></i>商品分类</a></li>
+					<li><a href="/shop/brand/brandMainRenewal"><i class="ico-gnb-menu2"></i>品牌店</a></li>
+					<li><a href="/shop/display/top100"><i class="ico-gnb-menu4"></i>畅销商品</a></li>
+					<li><a href="/shop/promotion/promotionList#spls"><i class="ico-gnb-menu7"></i>优惠</a></li>
+					<li><a href="/shop/promotion/brandEventList"><i class="ico-gnb-menu6"></i>活动</a></li>
+					<li><a href="/shop/hotSale/hotSaleMain"><i class="ico-gnb-menu5"></i>疯狂折扣</a></li>
+				</ul>
+
+				<!-- 2015.12.09 삭제
+				<div class="guide-box">
+					<h2><img src="//image.ssgdfm.com/images/shop/cn/mobile_new/common/img-guide.gif" alt="" style="height:63px;" /></h2>
+					<ul>
+						<li>
+							<a href="#">
+								<i class="ico-guide-menu01"></i>
+								购物日志
+							</a>
+						</li>
+						<li>
+							<a href="#">
+								<i class="ico-guide-menu02"></i>
+								注册会员
+							</a>
+						</li>
+						<li>
+							<a href="#">
+								<i class="ico-guide-menu03"></i>
+								商品订购
+							</a>
+						</li>
+						<li>
+							<a href="#">
+								<i class="ico-guide-menu04"></i>
+								付款方式
+							</a>
+						</li>
+					</ul>
+				</div>
+				-->
+
+				<div class="btn_go_busan">
+					<a href="http://cn.ssgdfs.com/mobile/main" target="_blank" class="btn"><strong>韩际新世界釜山网上免税店</strong> 点击购物  &gt; </a>
+				</div>
+
+				<!-- 2015.12.09 추가 -->
+				<div class="exchange-rate">
+					<a href="#" class="none">
+						<span><i class="ico-cycle-money"></i> 汇率</span>
+						<span class="txt-white">￥6.78</span>
+					</a>
+				</div>
+
+				<!-- 160519 : 추가 -->
+<!-- 				<ul class="sub-depth line-top"> -->
+<!-- 					<li class="line-none w45"><a href="/shop/common/gateIndex" class="ico-arrow"><i class="ico-cycle-star"></i> 新世界攻略</a></li> -->
+<!-- 					<li class="line-none ml5"><a href="/shop/common/shopingGuide?step=01" class="ico-arrow bdNone_L"><i class="ico-jiejie"></i> 界界的购物日志</a></li> -->
+<!-- 				</ul> -->
+				<!-- //160519 : 추가 -->
+
+				<h2 class="sub-title">客户中心</h2>
+				<ul class="sub-depth">
+					<!-- <li><a href="#"><i class="ico-sub-menu1"></i>购物指南</a></li>
+					<li><a href="#"><i class="ico-sub-menu2"></i>会员指南</a></li>
+					<li><a href="#"><i class="ico-sub-menu3"></i>FAQ</a></li>
+					<li><a href="#"><i class="ico-sub-menu4"></i>公告事项</a></li>
+					<li class="line-none"><a href="#"><i class="ico-sub-menu5"></i>可订购时间</a></li>
+					<li class="line-none"><a href="#"><i class="ico-sub-menu6"></i>取货处指南</a></li> -->
+
+					<li><a href="/shop/mypage/shoppingGuide"><i class="ico-sub-menu1"></i>购物指南</a></li>
+					<li><a href="/shop/mypage/memberGuide"><i class="ico-sub-menu2"></i>会员指南</a></li>
+					<li><a href="/shop/customer/listNotice"><i class="ico-sub-menu3"></i>公告事项</a></li>
+					<li><a href="/shop/customer/orderValidTimes?#location"><i class="ico-sub-menu4"></i>可订购时间</a></li>
+					<li class="line-none"><a href="/shop/mypage/productReceive?#location"><i class="ico-sub-menu5"></i>取货处指南</a></li>
+					<li class="line-none"><a href="/shop/mypage/myInquireList"><i class="ico-sub-menu7"></i>一对一咨询</a></li>
+				</ul>
+
+
+				<!-- 160519 : 삭제
+				<div class="box">
+					<a href="/shop/common/gateIndex"><i class="ico-cycle-star"></i> 新世界攻略</a>
+				</div>
+
+				<div class="box">
+					<a href="/shop/common/shopingGuide?step=01"><i class="ico-jiejie"></i> 界界的购物日志</a>
+				</div>
+
+				// 160519 : 삭제 -->
+
+				<!-- <div class="box">
+					<a href="#"><i class="ico-qq"></i> QQ咨询</a>
+				</div> -->
+
+
+				<!-- 160519 : 추가 -->
+				<ul class="sub-depth line-top csCenterNum">
+					<li class="line-none info">中国(免费)：400<span>.</span>-<span>.</span>842<span>.</span>-<span>.</span>8868</li><!-- 160526 수정 -->
+					<li class="line-none CsNum"><a href="javascript:fnCallNum('400-842-8868');" class="bdNone_L"><i class="ico-CsPhone"></i> 连接</a></li>
+				</ul>
+				<ul class="sub-depth line-top csCenterNum">
+					<li class="line-none info">韩国(免费)：080<span>.</span>-<span>.</span>899<span>.</span>-<span>.</span>4586</li><!-- 160526 수정 -->
+					<li class="line-none CsNum"><a href="javascript:fnCallNum('080-899-4586');" class="bdNone_L"><i class="ico-CsPhone"></i> 连接</a></li>
+				</ul>
+				<ul class="sub-depth info">
+					<li>上午9:00 ~ 下午6:00<br>全年无休<br><span>国际电话部分情况下会产生通话费用</span></li>
+				</ul>
+				<!-- //160519 : 추가 -->
+
+			</nav>
+			<a href="#" class="btn-close"></a>
+		</section>
+
+
+
+
+	<div id="pop">
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<style>
+    img{ max-width:100%; }
+    #mask_20081 { position:absolute; left:0;top:0;z-index:9998;background-color:#000;display:none;}
+    #boxes_20081 .window_20081 { position:absolute; left:0; top:145px; display:none; z-index:9999; }
+    #boxes_20081 #dialog_20081 { }
+    #dialog_20081 { position:relative; }
+    #dialog_20081 .close_20081{top:}
+    #boxes_20081 #dialog_20081 .close_20081{ width:10%; position:absolute; right:0; top:0; z-index:1; }
+    #boxes_20081 .window_20081 .bottom-close {width:100%; margin:-4px 0 0 0; height:30px; background:#2a2a2a;}
+    #boxes_20081 .window_20081 .bottom-close p.today-close {float:left; margin:8px 0 8px 10px;}
+    #boxes_20081 .window_20081 .bottom-close label {margin-left:7px; color:#b3b3b3; line-height:14px;}
+    #boxes_20081 .window_20081 .bottom-close p.closes {float:right; margin:8px 0 8px 0; color:#fff; line-height:14px;}
+    #boxes_20081 .window_20081 .bottom-close p.closes a {margin:0 10px 0 6px;}
+</style>
+<script>
+    $(document).ready(function() {
+            var pathname = window.location.pathname; //파일경로
+            var varList = pathname.split("/");
+            var openYn_20081 = false;
+            if('/shop/main' == pathname){
+                openYn_20081 = true;
+            }
+
+            if(openYn_20081){
+                var id = $('#boxes_20081 .window_20081');
+                var maskHeight = $(document).height();
+                var maskWidth = $(window).width();
+                $('#mask_20081').css({'width':maskWidth,'height':maskHeight});
+                $('#mask_20081').fadeTo(0,0.6);
+                var winH = $(window).height();
+                var winW = $(window).width();
+                id.css('left', 25);
+                id.css('right', 25);
+                $(id).fadeIn(10);
+                $('.window_20081').show();
+            }
+
+        $('.window_20081 .close_20081').click(function (e) {
+            e.preventDefault();
+            $('#mask_20081').hide();
+            $('.window_20081').hide();
+        });
+
+        $('#mask_20081').click(function () {
+        });
+
+        $(window).resize(function () {
+            var box = $('#boxes_20081 .window_20081');
+            var maskHeight = $(document).height();
+            var maskWidth = $(window).width();
+            $('#mask_20081').css({'width':maskWidth,'height':maskHeight});
+            var winH = $(window).height();
+            var winW = $(window).width();
+            box.css('left', 25);
+            box.css('right', 25);
+        });
+    });
+
+    function closePopup20081(cookieName) {
+        if($('input:checkbox[name=cookiePopup_20081]').prop('checked')){
+            var expireDate = new Date();
+            expireDate.setDate(expireDate.getDate() + 1 );
+            document.cookie = cookieName + '=' + escape( 'no' ) + '; path=/; expires=' + expireDate.toGMTString() + ';';
+        }
+
+        $('.window_20081').hide();
+        $('#mask_20081').hide();
+    }
+
+    function closeLayer20081(){
+      $('.window_20081').hide();
+      $('#mask_20081').hide();
+    }
+</script>
+
+<div id="boxes_20081">
+    <div id="dialog_20081" class="window_20081" style="left: 25px; right: 25px; display: none;">
+<a href="http://mcn.ssgdfm.com/shop/promotion/event01?eventId=08378"><img alt="" src="//image3.ssgdfs.com/images/shop/upload/303/51140cn_3만원적립금_팝업.jpg"></a>
+        <a href="#" class="close_20081"><img src="//image.ssgdfm.com/images/shop/cn/main/layer/201408/close01.png" alt=""></a>
+        <div class="bottom-close">
+            <p class="today-close check">
+                <input name="cookiePopup_20081" id="popupEvent_close_20081" onclick="javascript:closePopup20081('popupLayer_Cn_20081')" type="checkbox">
+                <label for="popupEvent_close_20081"> 今日不再显示此信息 </label>
+            </p>
+         </div>
+      </div>
+
+      <!-- Mask to cover the whole screen -->
+      <div id="mask_20081" style="width: 377px; height: 8582px; opacity: 0.6; display: none;"></div>
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+<style>
+    img{ max-width:100%; }
+    #mask_20080 { position:absolute; left:0;top:0;z-index:9996;background-color:#000;display:none;}
+    #boxes_20080 .window_20080 { position:absolute; left:0; top:145px; display:none; z-index:9997; }
+    #boxes_20080 #dialog_20080 { }
+    #dialog_20080 { position:relative; }
+    #dialog_20080 .close_20080{top:}
+    #boxes_20080 #dialog_20080 .close_20080{ width:10%; position:absolute; right:0; top:0; z-index:1; }
+    #boxes_20080 .window_20080 .bottom-close {width:100%; margin:-4px 0 0 0; height:30px; background:#2a2a2a;}
+    #boxes_20080 .window_20080 .bottom-close p.today-close {float:left; margin:8px 0 8px 10px;}
+    #boxes_20080 .window_20080 .bottom-close label {margin-left:7px; color:#b3b3b3; line-height:14px;}
+    #boxes_20080 .window_20080 .bottom-close p.closes {float:right; margin:8px 0 8px 0; color:#fff; line-height:14px;}
+    #boxes_20080 .window_20080 .bottom-close p.closes a {margin:0 10px 0 6px;}
+</style>
+<script>
+    $(document).ready(function() {
+            var pathname = window.location.pathname; //파일경로
+            var varList = pathname.split("/");
+            var openYn_20080 = false;
+            if('/shop/main' == pathname){
+                openYn_20080 = true;
+            }
+
+            if(openYn_20080){
+                var id = $('#boxes_20080 .window_20080');
+                var maskHeight = $(document).height();
+                var maskWidth = $(window).width();
+                $('#mask_20080').css({'width':maskWidth,'height':maskHeight});
+                $('#mask_20080').fadeTo(0,0.6);
+                var winH = $(window).height();
+                var winW = $(window).width();
+                id.css('left', 25);
+                id.css('right', 25);
+                $(id).fadeIn(10);
+                $('.window_20080').show();
+            }
+
+        $('.window_20080 .close_20080').click(function (e) {
+            e.preventDefault();
+            $('#mask_20080').hide();
+            $('.window_20080').hide();
+        });
+
+        $('#mask_20080').click(function () {
+        });
+
+        $(window).resize(function () {
+            var box = $('#boxes_20080 .window_20080');
+            var maskHeight = $(document).height();
+            var maskWidth = $(window).width();
+            $('#mask_20080').css({'width':maskWidth,'height':maskHeight});
+            var winH = $(window).height();
+            var winW = $(window).width();
+            box.css('left', 25);
+            box.css('right', 25);
+        });
+    });
+
+    function closePopup20080(cookieName) {
+        if($('input:checkbox[name=cookiePopup_20080]').prop('checked')){
+            var expireDate = new Date();
+            expireDate.setDate(expireDate.getDate() + 1 );
+            document.cookie = cookieName + '=' + escape( 'no' ) + '; path=/; expires=' + expireDate.toGMTString() + ';';
+        }
+
+        $('.window_20080').hide();
+        $('#mask_20080').hide();
+    }
+
+    function closeLayer20080(){
+      $('.window_20080').hide();
+      $('#mask_20080').hide();
+    }
+</script>
+
+<div id="boxes_20080">
+    <div id="dialog_20080" class="window_20080" style="left: 25px; right: 25px; display: none;">
+<a href="http://mcn.ssgdfm.com/shop/promotion/event01?eventId=08378"><img alt="" src="//image3.ssgdfs.com/images/shop/upload/303/51140cn_3만원적립금_팝업.jpg"></a>
+        <a href="#" class="close_20080"><img src="//image.ssgdfm.com/images/shop/cn/main/layer/201408/close01.png" alt=""></a>
+        <div class="bottom-close">
+            <p class="today-close check">
+                <input name="cookiePopup_20080" id="popupEvent_close_20080" onclick="javascript:closePopup20080('popupLayer_Cn_20080')" type="checkbox">
+                <label for="popupEvent_close_20080"> 今日不再显示此信息 </label>
+            </p>
+         </div>
+      </div>
+
+      <!-- Mask to cover the whole screen -->
+      <div id="mask_20080" style="width: 377px; height: 8582px; opacity: 0.6; display: none;"></div>
+</div>
+
+
+
+
+
+	</div>
+
+
+	<a href="#" id="btn-top" class="web" style="display: none;">top button</a>
+
+
+
+
+	<!-- 2014.06.10 추가 -->
+	<!-- commonFooter->commonHeader 로 이동, 바이두발바닥 이미지 숨김 -->
+	<!-- <div style=" overflow:hidden; position:absolute; top:-999px; left:-9999px; width:0px; height:0px;">
+		2016.01.14 bidu script start
+		<script type="text/javascript">
+		var _bdhmProtocol = (("https:" == document.location.protocol) ? " https://" : " http://");
+		document.write(unescape("%3Cscript src='" + _bdhmProtocol + "hm.baidu.com/h.js%3F888599b42c5153594e588aa5fb3dc83b' type='text/javascript'%3E%3C/script%3E"));
+		</script>
+
+		<script>
+		var _hmt = _hmt || [];
+		(function() {
+		  var hm = document.createElement("script");
+		  hm.src = "//hm.baidu.com/hm.js?8a2cd8e22bd2622346532a27acc532bb";
+		  var s = document.getElementsByTagName("script")[0];
+		  s.parentNode.insertBefore(hm, s);
+		})();
+		</script>
+		2016.01.14 bidu script end
+	</div> -->
+
+
+	 <!--  공통 헤더 정보 -->
+
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<meta name="copyright" content="2013 SHINSEGAE DUTY FREE">
+
+
+
+
+	<div id="wrap">
+		<!-- Header : S -->
+
+
+
+
+
+
+<script type="text/javascript">
+	$(function(){
+		//header 검색영역 레이어
+		$('.btn-search-open').on('click',function(e){
+			e.preventDefault();
+			$('.header-searchBox').fadeIn(0);
+			$('.btn-search-close').click(function() {
+				$('.header-searchBox').fadeOut(0);
+				$('#dqAuto').css('display','none');
+			});
+			$(".input-txt").focus();
+		});
+	});
+</script>
+
+	<header id="header">
+		<h1 class="logo"><a href="http://mcn.ssgdfm.com/shop/main" class="link-home">SHINSEGAE DUTY FREE Myeong-dong</a></h1>
+		<div class="gnb-box">
+			<a href="#" class="btn-gnb btn-side-menu">menu</a>
+			<div class="btn-area">
+				<a href="#" class="btn-search-open">search</a>
+				<a href="/shop/order/cart" class="btn-shopping-basket">shopping basket</a>
+			</div>
+			<script type="text/javascript" src="/pages/shop/search/js/dqAutoCompleteCommon.js"></script>
+			<div class="header-searchBox">
+				<form name="searchForm" id="search" role="search" action="/shop/search/totalSearch">
+					<div class="search-box">
+		                <input id="topRecommandKwd" name="topRecommandKwd" value="[活动]10月 发财了！88美元商品俱全！" type="hidden">
+		                <input id="topRecommandLinkUrl" name="topRecommandLinkUrl" value="/cn/splSel?splId=02314" type="hidden">
+		                <input id="topRecommandLinkTaget" name="topRecommandLinkTaget" value="false" type="hidden">
+		                <input id="topRecommandKwdColor" name="topRecommandKwdColor" value="#7a7979" type="hidden">
+
+		                <input class="input-txt" name="searchTerm" title="검색어 입력" value="" autocorrect="off" autocomplete="off" autocapitalize="off" maxlength="50" onkeypress="return dq_handleEnter(event); m_skey = document.searchForm.searchTerm.value;" onmousedown="dq_setTextbox('1',event);" onkeydown="dq_setTextbox('1',event);" type="text">
+		             </div>
+					<button type="submit" class="btn-search" title="search" onclick="goTopSearch(); return false;" onmousedown="m_skey = document.searchForm.searchTerm.value;"></button>
+					<script type="text/javascript">
+						var m_skey = document.searchForm.searchTerm.value;
+					</script>
+				</form>
+				<a href="#" class="btn-search-close">close</a>
+			</div>
+			<script src="/pages/shop/search/js/dqAutoComplete.js" type="text/javascript"></script>
+			<!-- //srchArea -->
+
+
+
+			<!-- 소식  12.21일 오픈-->
+
+
+
+
+			<!-- img modiyfy -->
+		</div>
+		<div id="dqAuto" onmouseover="dq_setMouseon();" onmouseout="dq_setMouseoff();" style="display:none;z-index:1000"></div>
+	</header>
+	<!-- Header : E -->
+
+
+		<!-- left menu area-->
+
+
+
+		<!-- news list right area -->
+
+
+
+
+
+
+
+
+<script type="text/javascript">
+jQuery(function() {
+
+});
+
+
+function setReadUpdate(newsDate, userId, newsId, newsGubun){
+
+	var data = "?newsDate="+newsDate
+			+"&userId="+userId
+			+"&newsId="+newsId
+			+"&newsGubun="+newsGubun;
+
+
+	$.ajax({
+		type: "GET"
+		,url: "/shop/main/updateMyNewsRead"
+		,data: data
+		,dataType: "json"
+		,success: function(data) {
+			//$("#custName").html(data.custName);
+		}
+		, error: function(xhr, status, error) {
+			//Alert("系统错误，请咨询管理员。");
+	    }
+	});
+}
+
+</script>
+
+		<!-- NEW Menu : S -->
+
+
+		<!-- NEW Menu : E -->
+
+
+		<!-- NEW Menu : S -->
+		<!-- 2015.12.23 수정 : S -->
+		<section id="new-menu">
+			<h1>消息</h1>
+			<!-- <div class="tap">
+				<a href="#" class="on">
+					购物消息
+					만약 카운트가 없다면 지움
+					<span class="new-count">3</span>
+				</a>
+				<a href="#">
+					推送消息
+					<span class="new-count">10</span>
+				</a>
+			</div> -->
+
+
+			<!-- 첫번째 탭 내용  : S -->
+
+				<section class="default-none">
+					<i class="ico-message-none"></i>
+					没有最新消息<br>
+					通知信息可在会员信息修改中进行变更。
+				</section>
+
+
+
+
+
+			<!-- 첫번째 탭 내용  : E -->
+
+			<!-- 두번째 탭 내용  : S -->
+			<!-- <nav>
+				링크 있을때
+				<div class="aside-box">
+					<a href="#" class="link">
+						<h2>釜山港 国际客轮客运站 取货处迁址通知釜山港 国际客轮客运站 取货处迁址通知</h2>
+						<p class="date">2015.09.09</p>
+						신규 추가
+						<span class="bg-new"></span>
+					</a>
+				</div>
+
+				링크 없을때
+				<div class="aside-box">
+					<h2>釜山港 国际客轮客运站 取货处迁址通知</h2>
+					<p class="date">2015.09.09</p>
+				</div>
+
+				<div class="aside-box">
+					<a href="#" class="link">
+						<h2>仅限三天!乐享双倍的即时折扣活动!</h2>
+						<p class="date">2015.09.09</p>
+						신규 추가
+						<span class="bg-new"></span>
+					</a>
+				</div>
+
+				<div class="aside-box">
+					<h2>入驻了新品牌(Hurom)</h2>
+					<p class="date">2015.09.09</p>
+					신규 추가
+					<span class="bg-new"></span>
+				</div>
+
+			</nav> -->
+			<!-- 두번째 탭 내용  : E -->
+
+			<a href="#" class="btn-close"></a>
+		</section>
+		<!-- 2015.12.23 수정 : E -->
+		<!-- NEW Menu : E -->
+
+
+
+
+
+
+		<!-- NEW Menu : E -->
+
+		<!--  Container : S -->
+
+<!-- 안드로이드 구앱 안내가이드 : S -->
+<div class="pop-infoGuide type2" id="android_pop" style="display:none;">
+	<div class="layout">
+		<a href="#" class="btn-close2" style="position: absolute;right: 55px;top: -24px;"><img src="//image.ssgdfm.com/images/shop/cn/mobile_new/infoGuide/btn_close_1.png" alt="" style="width:30px;"></a>
+		<h1><img src="//image.ssgdfm.com/images/shop/cn/mobile_new/infoGuide/info-guide.png" alt="" style="width:133.5px;"></h1>
+
+		<span style="color:#fff;font-size:20px;font-family: 'Helvetica Neue' ;font-weight: bold;">更新指南</span><br>
+		<span style="color:#fff;font-size:16px;font-family: 'Helvetica Neue';">请下载新版本新世界免税店<br>安卓市场中下载新世界免税店<br><br></span>
+		<a href="http://m.app.so.com/detail/index?pname=cn.shinsegae.dutyfreeshop&amp;id=3202630" style="margin-bottom:10px;"><img src="//image.ssgdfm.com/images/shop/cn/mobile_new/infoGuide/btn-info-guide05.png" alt="" style="width:205.5px;"></a>
+		<a href="http://cn.ssgdfm.com/app/versions/1.0.0/ssgdfs_china_1.1.0.apk"><img src="//image.ssgdfm.com/images/shop/cn/mobile_new/infoGuide/btn-info-guide06.png" alt="" style="width:205.5px;"></a>
+
+		<a href="#" class="btn-close">今日不再显示</a>
+	</div>
+</div>
+<!-- 구앱_안내가이드(android) : E -->
+
+<!-- ios 구앱 안내가이드 : S -->
+<div class="pop-infoGuide type2" id="ios_pop" style="display:none;">
+	<div class="layout">
+		<a href="#" class="btn-close2" style="position: absolute;right: 55px;top: -24px;"><img src="//image.ssgdfm.com/images/shop/cn/mobile_new/infoGuide/btn_close_1.png" alt="" style="width:30px;"></a>
+		<h1><img src="//image.ssgdfm.com/images/shop/cn/mobile_new/infoGuide/info-guide.png" alt="" style="width:133.5px;"></h1>
+
+		<span style="color:#fff;font-size:20px;font-family: 'Helvetica Neue' ;font-weight: bold;">更新指南</span><br>
+		<span style="color:#fff;font-size:16px;font-family: 'Helvetica Neue';">请下载新版本新世界免税店<br>安卓市场中下载新世界免税店<br><br></span>
+
+		<a href="https://itunes.apple.com/cn/app/id1071007095"><img src="//image.ssgdfm.com/images/shop/cn/mobile_new/infoGuide/btn-info-guide01.png" alt="" style="width:145.5px;"></a>
+
+		<a href="#" class="btn-close">今日不再显示</a>
+	</div>
+</div>
+<!-- 구앱_안내가이드(ios) : E -->
+
+
+
+
+
+
+
+
+
+<script type="text/javascript">
+
+var cate1="";
+var cate2="";
+
+	$(window).load(function(){
+
+		if(isLoginVal=='true'){
+			getHotSaleList();
+			getCustName();
+		}
+		getUserHitProductList();
+
+		var ck = getCookie("popupSeq_regularMamberPop");
+
+		///정회원 유도 합업
+		if(glbMamberStatCode =="R" && ck == ""){
+			$("#email-certification").addClass('popup-open');
+			$('.popup-open').each(function(){
+				$(this).show();
+				var height = $(this).find('.popup-box').outerHeight();
+				$(this).find('.popup-box').css('margin-top',-height/2);
+			});
+        }
+
+        $('.swiper-wrapper').show();
+	});
+
+	function getCookie(cKey) {
+	    var allcookies = document.cookie;
+	    var cookies = allcookies.split("; ");
+	    for (var i = 0; i < cookies.length; i++) {
+	        var keyValues = cookies[i].split("=");
+	        if (keyValues[0] == cKey) {
+	            return unescape(keyValues[1]);
+	        }
+	    }
+	    return "";
+	}
+
+	function getHotSaleList(){
+		$.ajax({
+			type: "POST"
+			,url: "/shop/ajaxHotSaleList"
+			//,data: data
+			,dataType: "html"
+			,success: function(data) {
+				$(".hotSale-list-wrap").html("");
+				$(".hotSale-list-wrap").html(data);
+				if($('.hotSale-list-wrap .hotSale-item-wrap').size() > 1){
+					$('.hotSale-list').bxSlider({
+						pager:false,
+						controls:false,
+						auto:true,
+						autoDelay:1000,
+						infiniteLoop:true
+					});
+				}
+			}
+			, error: function(xhr, status, error) {
+				//Alert("系统错误，请咨询管理员。");
+		    }
+		});
+	}
+
+	function getCustName(){
+
+		$.ajax({
+			type: "POST"
+			,url: "/shop/main/callCustName"
+			//,data: data
+			,dataType: "json"
+			,success: function(data) {
+				$("#custName").html(data.custName);
+
+			}
+			, error: function(xhr, status, error) {
+				//Alert("系统错误，请咨询管理员。");
+		    }
+		});
+	}
+
+	function getUserHitProductList(){
+
+		$.ajax({
+			type: "POST"
+			,url: "/shop/ajaxHitProductList?listSize=19"
+			//,data: param
+			,dataType: "html"
+			,success: function(data) {
+				$("#hitList").html(data);
+
+				$('#hitList .item-kind').each(function(){
+					var $this = $(this);
+					var h = $this.prev().innerHeight();
+					var title = $this.find('.title').outerHeight();
+					$this.css('height',h+1).find('.kind-list').css('height',h+3 - title);
+					$this.prev().find('img').load(function(){
+						var h = $this.prev().innerHeight();
+						$this.css('height',h+1).find('.kind-list').css('height',h+3 - title);
+					});
+				});
+			}
+			, error: function(xhr, status, error) {
+				//Alert("系统错误，请咨询管理员。");
+		    }
+		});
+	}
+
+	/* 좋아요  */
+	function btnGoodCount(prdtCode){
+		var param = "prdtCode="+prdtCode;
+
+       $.ajax({
+            type: "get"
+            ,url: "/shop/product/ajaxGoodCount"
+            ,data: param
+            ,dataType: "json"
+            ,success : function(data){
+              $("#"+prdtCode+"goodCnt").empty().append(data.count);
+              alert("推荐完毕。");
+            }
+            ,error: function(data) {}
+        });
+	}
+
+
+	function directOrderProduct(prdtCode,ctgrId) {
+	//2014.02.10 박정하- 모바일 > 제품상세구매페이지 > 구매수량 제한 추가
+	   var tmpgubun="";
+	   tmpgubun="quickOrder";
+	   checkLimitPrdtCount(tmpgubun,prdtCode,ctgrId);
+	   return false;
+	}
+
+
+	function fncAddCart(prdtCode,ctgrId) {
+	//2014.02.10 박정하- 모바일 > 제품상세구매페이지 > 구매수량 제한 추가
+	    var tmpgubun="";
+	    tmpgubun="addCart";
+	    checkLimitPrdtCount(tmpgubun,prdtCode,ctgrId);
+	}
+
+
+	function fncAddWishProduct(prdtCode,ctgrId) {
+	//2014.02.10 박정하- 모바일 > 제품상세구매페이지 > 구매수량 제한 추가
+	    var tmpgubun="";
+	    tmpgubun="addWishProduct";
+	    checkLimitPrdtCount(tmpgubun,prdtCode,ctgrId);
+	}
+
+	function checkLimitPrdtCount(tmpgubun, prdtCode,ctgrId){
+		var buyCount = "1";//$("input[name='productBuyCount']").val();
+		var successYn = true;
+	    var params = "";
+	    var optnDesc = '';
+
+	    if(isEmpty(buyCount)) {
+	        Alert("请输入数量。");
+	        $("input[name='productBuyCount']").focus();
+	        successYn = false;
+	        return false;
+	     }
+
+	    //리스트에서는 제외함
+	    /* $("select[name='selectedOptnDesc']").each(function(index){
+
+	        var optnName = $("input[name='optnName']").eq(index).val();
+	        optnDesc = $(this).val();
+
+	        if(isEmpty(optnDesc)) {
+	            Alert(optnName+"请选择。");
+	            successYn = false;
+	            return false;
+	        }
+
+	    }); */
+
+	    params = "prdtCode="+prdtCode
+	            +"&buyCount="+buyCount;
+	  if(successYn) {
+	    $.ajax({
+	        type : "POST",
+	        //url : "/shop/order/checkLimitPrdtCount",
+	        url : "/shop/order/limitPrdtCount",
+	        data : params,
+	        dataType : "json",
+	        success : function(data) {
+	            if (data.success) {
+					switch(tmpgubun){
+						case 'addCart' :
+							addCart(prdtCode,buyCount,optnDesc,ctgrId, "DETAIL");break;
+						case 'addWishProduct' :
+							addWishProductMbl(prdtCode);break;
+						case 'quickOrder' :
+							quickOrder(prdtCode, buyCount, optnDesc, ctgrId, "DETAIL");break;
+					}
+
+	            } else {
+	                Alert(data.errorMessages);
+	            }
+	        },
+	        error : function(data) {
+	            Alert("系统错误，请咨询管理员。");
+//	            location.href = "http://mcn.ssgdfm.com/shop/order/cart";
+	        }
+	    });
+	  }
+	}
+
+	function movePage(type){
+		var cl2 = "";
+
+		$('#bestCate >li').each(function(){
+			var itemIdx = $(this).index() + 1;
+			var cl = $('#bestCate').find('li').eq(itemIdx-1).attr("class");
+
+			if(cl == "on"){
+				cl2 = $('#bestCate').find('li').eq(itemIdx-1).attr("id");
+
+			}
+		});
+
+		if(type == "best"){
+			document.location = "/shop/display/displayCategory?dispCtgrId="+cl2;
+		}
+	}
+</script>
+	<!--  Container : S -->
+		<section id="main-cont">
+			<!-- 0. 쪽지알림 롤링 start -->
+
+			<!-- 0. 쪽지알림 롤링 end -->
+
+			<!-- 1. main banner start -->
+
+				<div class="jR3DCarouselWrap">
+			        <div class="jR3DCarouselGallery" style="perspective: 158.17px; width: 377px; height: 176.719px; position: relative; overflow: visible;">
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+			        <div class="jR3DCarousel" style="width: 100%; height: 100%; transition: transform 600ms ease 0s; transform-style: preserve-3d; transform: translateZ(-517.899px) rotateY(-60760deg);"><div class="jR3DCarouselCustomSlide" data-index="0" style="transform: rotateY(0deg) translateZ(517.899px); position: absolute; left: 0px; top: 0px; width: 100%; height: 100%; backface-visibility: hidden;">
+				            	<a href="/shop/banner?bnrSeq=17315">
+				            		<img src="//image3.ssgdfs.com/images/shop/upload/761/59152cm_640x300_m.jpg" alt="미션 데일리 적립금 3일간 최대 30만원 (10월)" onerror="imageError(this)" style="width: 100%; height: 100%; object-fit: fill;">
+				            	</a>
+				            </div><div class="jR3DCarouselCustomSlide" data-index="1" style="transform: rotateY(40deg) translateZ(517.899px); position: absolute; left: 0px; top: 0px; width: 100%; height: 100%; backface-visibility: hidden;">
+				            	<a href="/shop/banner?bnrSeq=30391">
+				            		<img src="//image3.ssgdfs.com/images/shop/upload/726/97231cn_640x300_m.jpg" alt="10혜택모음" onerror="imageError(this)" style="width: 100%; height: 100%; object-fit: fill;">
+				            	</a>
+				            </div><div class="jR3DCarouselCustomSlide" data-index="2" style="transform: rotateY(80deg) translateZ(517.899px); position: absolute; left: 0px; top: 0px; width: 100%; height: 100%; backface-visibility: hidden;">
+				            	<a href="/shop/banner?bnrSeq=30665">
+				            		<img src="//image3.ssgdfs.com/images/shop/upload/761/11228cm_640x300_m.jpg" alt="新人专享3重礼" onerror="imageError(this)" style="width: 100%; height: 100%; object-fit: fill;">
+				            	</a>
+				            </div><div class="jR3DCarouselCustomSlide" data-index="3" style="transform: rotateY(120deg) translateZ(517.899px); position: absolute; left: 0px; top: 0px; width: 100%; height: 100%; backface-visibility: hidden;">
+				            	<a href="/shop/banner?bnrSeq=16270">
+				            		<img src="//image3.ssgdfs.com/images/shop/upload/726/31158cn_640x300_m.jpg" alt="전 상품 추가적립금" onerror="imageError(this)" style="width: 100%; height: 100%; object-fit: fill;">
+				            	</a>
+				            </div><div class="jR3DCarouselCustomSlide" data-index="4" style="transform: rotateY(160deg) translateZ(517.899px); position: absolute; left: 0px; top: 0px; width: 100%; height: 100%; backface-visibility: hidden;">
+				            	<a href="/shop/banner?bnrSeq=31079">
+				            		<img src="//image3.ssgdfs.com/images/shop/upload/761/52450cm_640x300_m.jpg" alt="万圣节狂欢 拼手气，抽装扮！" onerror="imageError(this)" style="width: 100%; height: 100%; object-fit: fill;">
+				            	</a>
+				            </div><div class="jR3DCarouselCustomSlide" data-index="5" style="transform: rotateY(200deg) translateZ(517.899px); position: absolute; left: 0px; top: 0px; width: 100%; height: 100%; backface-visibility: hidden;">
+				            	<a href="/shop/banner?bnrSeq=30796">
+				            		<img src="//image3.ssgdfs.com/images/shop/upload/761/42095cm_640x300_m.jpg" alt="코리아 그랜드 세일" onerror="imageError(this)" style="width: 100%; height: 100%; object-fit: fill;">
+				            	</a>
+				            </div><div class="jR3DCarouselCustomSlide" data-index="6" style="transform: rotateY(240deg) translateZ(517.899px); position: absolute; left: 0px; top: 0px; width: 100%; height: 100%; backface-visibility: hidden;">
+				            	<a href="/shop/banner?bnrSeq=30298">
+				            		<img src="//image3.ssgdfs.com/images/shop/upload/761/84706cm_640x300_m.jpg" alt="히든 기획전" onerror="imageError(this)" style="width: 100%; height: 100%; object-fit: fill;">
+				            	</a>
+				            </div><div class="jR3DCarouselCustomSlide" data-index="7" style="transform: rotateY(280deg) translateZ(517.899px); position: absolute; left: 0px; top: 0px; width: 100%; height: 100%; backface-visibility: hidden;">
+				            	<a href="/shop/banner?bnrSeq=31060">
+				            		<img src="//image3.ssgdfs.com/images/shop/upload/726/38447cn_640x300_m.jpg" alt="新世界 支付宝" onerror="imageError(this)" style="width: 100%; height: 100%; object-fit: fill;">
+				            	</a>
+				            </div><div class="jR3DCarouselCustomSlide" data-index="8" style="transform: rotateY(320deg) translateZ(517.899px); position: absolute; left: 0px; top: 0px; width: 100%; height: 100%; backface-visibility: hidden;">
+				            	<a href="/shop/banner?bnrSeq=30106">
+				            		<img src="//image3.ssgdfs.com/images/shop/upload/403/45252cm_640x300.jpg" alt="완좐세계면세명동" onerror="imageError(this)" style="width: 100%; height: 100%; object-fit: fill;">
+				            	</a>
+				            </div></div><div class="navigation"><div class="nav" style="border-radius: 12px;">1</div><div class="nav" style="border-radius: 12px;">2</div><div class="nav" style="border-radius: 12px;">3</div><div class="nav" style="border-radius: 12px;">4</div><div class="nav" style="border-radius: 12px;">5</div><div class="nav" style="border-radius: 12px;">6</div><div class="nav" style="border-radius: 12px;">7</div><div class="nav active" style="border-radius: 12px;">8</div><div class="nav" style="border-radius: 12px;">9</div><span> / 9</span></div><div class="previous controls" style="left: 8px; transform: rotate(-45deg); position: absolute; top: 42%; z-index: 1; display: inline-block; padding: 1.2em; box-shadow: 2px 2px 0px rgba(255, 255, 255, 0.9) inset; cursor: pointer;"></div><div class="next controls" style="right: 8px; transform: rotate(135deg); position: absolute; top: 42%; z-index: 1; display: inline-block; padding: 1.2em; box-shadow: 2px 2px 0px rgba(255, 255, 255, 0.9) inset; cursor: pointer;"></div></div>
+			        <!-- Add Pagination -->
+			        <div class="swiper-pagination"></div>
+			    </div>
+
+			<!-- 1. main banner end -->
+
+		    <!-- 2. 퀵메뉴 start -->
+			<div class="link-menu">
+				<ul>
+
+					<li><a href="/shop/brand/brandMainRenewal?tabNumber=2&amp;ctgrId=0001"><img src="//image3.ssgdfs.com/images/shop/cn/mobile_new2/main/quick_link_menu1.png" alt="品牌">全部品牌</a></li>
+					<li><a href="/shop/display/top100"><img src="//image3.ssgdfs.com/images/shop/cn/mobile_new2/main/quick_link_menu2.png" alt="畅销">畅销商品</a></li>
+					<li><a href="/shop/hotSale/hotSaleMain"><img src="//image3.ssgdfs.com/images/shop/cn/mobile_new2/main/quick_link_menu3.png" alt="促销">促销</a></li>
+					<li><a href="/shop/promotion/splSellList"><img src="//image3.ssgdfs.com/images/shop/cn/mobile_new2/main/quick_link_menu4.png" alt="赠品">赠品</a></li>
+					<li><a href="/shop/promotion/promotionList"><img src="//image3.ssgdfs.com/images/shop/cn/mobile_new2/main/quick_link_menu5.png" alt="活动">活动</a></li>
+					<li><a href="/shop/common/gateIndex"><img src="//image3.ssgdfs.com/images/shop/cn/mobile_new2/main/quick_link_menu6.png" alt="攻略">购物指南</a></li>
+					<li><a href="/shop/promotion/event01?eventId=07768"><img src="//image3.ssgdfs.com/images/shop/cn/mobile_new2/main/quick_link_menu7.png" alt="时尚"> 时尚专题</a></li>
+					<li><a href="/shop/promotion/event01?eventId=07770"><img src="//image3.ssgdfs.com/images/shop/cn/mobile_new2/main/quick_link_menu8.png" alt="美食">必吃美食</a></li>
+					<li><a href="/shop/promotion/event01?eventId=07762"><img src="//image3.ssgdfs.com/images/shop/cn/mobile_new2/main/quick_link_menu9.png" alt="合作">合作伙伴</a></li>
+					<li><a href="http://cn.ssgdfs.com/mobile/main" target="_blank"><img src="//image3.ssgdfs.com/images/shop/cn/mobile_new2/main/quick_link_menu10_160929.png" alt="新人">逛釜山店 </a></li>
+
+				</ul>
+
+			</div>
+			<!-- 2. 퀵메뉴 end -->
+
+			<section class="special-area-banner">
+				<div class="bx-wrapper" style="max-width: 100%; margin: 0px auto;"><div class="bx-viewport" style="width: 100%; overflow: hidden; position: relative; height: 265px;"><ul class="special-area-list" style="width: 1015%; position: relative; visibility: visible; transition-duration: 0s; transform: translate3d(-377px, 0px, 0px);"><li style="float: left; list-style: outside none none; position: relative; width: 377px;" class="bx-clone"><a href="http://mcn.ssgdfm.com/shop/promotion/event01?eventId=08151"><img alt="" src="//image3.ssgdfs.com/images/shop/upload/299/58245640x450_moroccan.jpg"> </a> </li>
+
+                        <li style="float: left; list-style: outside none none; position: relative; width: 377px;"><a href="http://cn.ssgdfm.com/shop/display/brandMallDetail?brandId=0643"><img alt="" src="//image3.ssgdfs.com/images/shop/upload/832/77787cn_640x450.jpg"> </a> </li>
+
+                        <li style="float: left; list-style: outside none none; position: relative; width: 377px;"><a href="http://mcn.ssgdfm.com/shop/promotion/event01?eventId=07781"><img alt="" src="//image3.ssgdfs.com/images/shop/upload/863/29879640x450_urban.jpg"> </a> </li>
+
+                        <li style="float: left; list-style: outside none none; position: relative; width: 377px;"><a href="http://mcn.ssgdfm.com/shop/promotion/event01?eventId=08192"><img alt="" src="//image3.ssgdfs.com/images/shop/upload/832/57284cn_640x450.jpg"> </a> </li>
+
+                        <li style="float: left; list-style: outside none none; position: relative; width: 377px;"><a href="http://mcn.ssgdfm.com/shop/promotion/event01?eventId=07775"><img alt="" src="//image3.ssgdfs.com/images/shop/upload/839/71019cm_640x450.jpg"> </a> </li>
+
+                        <li style="float: left; list-style: outside none none; position: relative; width: 377px;"><a href="http://mcn.ssgdfm.com/shop/promotion/event01?eventId=08294"><img alt="" src="//image3.ssgdfs.com/images/shop/upload/402/95038640x450_clarisonic.jpg"> </a> </li>
+
+                        <li style="float: left; list-style: outside none none; position: relative; width: 377px;"><a href="http://mcn.ssgdfm.com/shop/brand/brandDetail?brandId=6540"><img alt="" src="//image3.ssgdfs.com/images/shop/upload/495/47802640x450_NONAGON.jpg"> </a> </li>
+
+                        <li style="float: left; list-style: outside none none; position: relative; width: 377px;"><a href="http://mcn.ssgdfm.com/shop/promotion/event01?eventId=08263"><img alt="" src="//image3.ssgdfs.com/images/shop/upload/732/62038640X450.jpg"> </a> </li>
+
+                        <li style="float: left; list-style: outside none none; position: relative; width: 377px;"><a href="http://mcn.ssgdfm.com/shop/promotion/event01?eventId=08151"><img alt="" src="//image3.ssgdfs.com/images/shop/upload/299/58245640x450_moroccan.jpg"> </a> </li>
+
+				<li style="float: left; list-style: outside none none; position: relative; width: 377px;" class="bx-clone"><a href="http://cn.ssgdfm.com/shop/display/brandMallDetail?brandId=0643"><img alt="" src="//image3.ssgdfs.com/images/shop/upload/832/77787cn_640x450.jpg"> </a> </li></ul></div></div>
+			</section>
+
+			<style type="text/css">
+				.slideWrap{position:relative;text-align:center;border:8px solid #FF5772;background:#fff;margin-bottom:10px}
+				.slideWrap h2{font-size:18px;padding:2% 0}
+				.slideWrap h2 span{color:#ff215e}
+				.slideArea{width:100%;overflow:hidden;position:relative}
+				.slideArea .slide{width:100%;}
+				.slideArea .slide a{display:inline-block;width:45%;text-align:center}
+				.slideArea .slide a > div{color:#7c7c7c}
+				.slideArea .slide a > div p{font-size:15px;line-height:1.2;overflow:hidden;text-overflow:ellipsis;white-space:nowrap}
+				.slideArea .slide a > div strong{font-size:20px;color:#d61008}
+				.slideArea .slide a .productImg{overflow:hidden;margin-bottom:8px}
+				.slideArea .slide a .productImg img{width:100%;max-width:300px;min-width:100px}
+
+
+/* .bx-wrapper .bx-pager {
+text-align: center;
+font-weight: bold;
+color: #666;
+padding-top: 20px;
+} */
+.bx-wrapper .bx-pager.bx-default-pager a {
+	background: #666;
+	text-indent: -9999px;
+	display: inline-block;
+	width: 10px;
+	height: 10px;
+	margin: 0 5px;
+	outline: 0;
+	-moz-border-radius: 5px;
+	-webkit-border-radius: 5px;
+	border-radius: 5px;
+}
+.bx-wrapper .bx-pager.bx-default-pager a:hover,
+.bx-wrapper .bx-pager.bx-default-pager a.active {
+	background: #3591CE;
+}
+.bx-wrapper .bx-prev {
+	left: 30%;
+	background:#fff url(https://image.ssgdfm.com/images/shop/cn/mobile_new2/main/slidePrevBtn_1027.png) no-repeat;
+	background-size:100% 100%;
+
+}
+
+.bx-wrapper .bx-next {
+	right: 30%;
+	background:#fff url(https://image.ssgdfm.com/images/shop/cn/mobile_new2/main/slideNextBtn_1027.png) no-repeat;
+	background-size:100% 100%;
+}
+.bx-wrapper .bx-controls-direction a {
+	position: absolute;
+	bottom:3%;
+	outline: 0;
+	width:28px;
+	height:28px;
+	text-indent: -9999px;
+	z-index: 9999;
+}
+.bx-controls{padding:5% 0}
+
+			</style>
+			<!-- 슬라이드 추가 S 161027-->
+			<section class="slideWrap" id="slideWrap">
+				<h2>流行<span>商品</span></h2>
+				<div class="slideArea" id="slideArea">
+					<div class="slide">
+						<a href="#none">
+							<div>
+								<div class="productImg"><img src="//image3.ssgdfs.com/images/product/200/902/02950028001_1.jpg" alt=""></div>
+								<p class="productName">倩碧 保湿洁肤水3号</p>
+								<strong class="productPrice">$27.00</strong>
+							</div>
+						</a>
+						<a href="#none">
+							<div>
+								<div class="productImg"><img src="//image3.ssgdfs.com/images/product/200/902/02950028001_1.jpg" alt=""></div>
+								<p class="productName">15cmFigure-ryan</p>
+								<strong class="productPrice">$27.00</strong>
+							</div>
+						</a>
+					</div>
+
+					<div class="slide">
+						<a href="#none">
+							<div>
+								<div class="productImg"><img src="//image3.ssgdfs.com/images/product/200/902/02950028001_1.jpg" alt=""></div>
+								<p class="productName">15cmFigure-ryan</p>
+								<strong class="productPrice">$27.00</strong>
+							</div>
+						</a>
+						<a href="#none">
+							<div>
+								<div class="productImg"><img src="//image3.ssgdfs.com/images/product/200/902/02950028001_1.jpg" alt=""></div>
+								<p class="productName">15cmFigure-ryan</p>
+								<strong class="productPrice">$27.00</strong>
+							</div>
+						</a>
+					</div>
+
+					<div class="slide">
+						<a href="#none">
+							<div>
+								<div class="productImg"><img src="//image3.ssgdfs.com/images/product/200/902/02950028001_1.jpg" alt=""></div>
+								<p class="productName">15cmFigure-ryan</p>
+								<strong class="productPrice">$27.00</strong>
+							</div>
+						</a>
+						<a href="#none">
+							<div>
+								<div class="productImg"><img src="//image3.ssgdfs.com/images/product/200/902/02950028001_1.jpg" alt=""></div>
+								<p class="productName">15cmFigure-ryan</p>
+								<strong class="productPrice">$27.00</strong>
+							</div>
+						</a>
+					</div>
+				</div>
+				<!--//slideArea-->
+			</section>
+
+			<script type="text/javascript">
+
+				$('#slideArea').bxSlider({
+					auto : false,
+					autoControls: false,
+					pager : true,
+					controls :  true,
+					responsive: true
+				});
+
+			</script>
+			<!-- 슬라이드 추가 E 161027-->
+
+
+			<!-- 6. 베스트 상품 목록 : S -->
+			<section class="product-list color01">
+				<div class="header-title">
+					<h1>畅销商品</h1>
+				</div>
+				<ul>
+
+					<!-- kind-list01 : S -->
+					<!-- 상품 하나 : S -->
+
+
+							<li class="item-box-v kind-list01" style="display: list-item;">
+								<a href="/shop/product/productDetail?prdtCode=02950028001">
+									<p class="img">
+										<img src="//image3.ssgdfs.com/images/product/200/902/02950028001_1.jpg" onerror="imageError(this)">
+									</p>
+									<div class="text-box height-auto">
+										<h2>[倩碧]</h2>
+
+										<h3>倩碧 保湿洁肤水3号<br></h3>
+
+										<p class="price">
+											$32.00
+											<span>(约 ￥216.96) </span>
+										</p>
+
+										<!-- 2015.11.10 쿠폰 변경 -->
+										<div class="ico-group">
+											<span>
+
+											</span>
+										</div>
+									</div>
+								</a>
+							</li>
+
+							<li class="item-box-v kind-list01" style="display: list-item;">
+								<a href="/shop/product/productDetail?prdtCode=01099000179">
+									<p class="img">
+										<img src="//image3.ssgdfs.com/images/product/200/228/20150202F0000001.jpg" onerror="imageError(this)">
+									</p>
+									<div class="text-box height-auto">
+										<h2>[娇兰]</h2>
+
+										<h3>Abeille Royale Eye c...<br></h3>
+
+										<p class="price">
+											$221.00
+											<span>(约 ￥1,498.38) </span>
+										</p>
+
+										<!-- 2015.11.10 쿠폰 변경 -->
+										<div class="ico-group">
+											<span>
+
+											</span>
+										</div>
+									</div>
+								</a>
+							</li>
+
+							<li class="item-box-v kind-list01" style="display: list-item;">
+								<a href="/shop/product/productDetail?prdtCode=03120077601">
+									<p class="img">
+										<img src="//image3.ssgdfs.com/images/product/200/672/03120077601_1.jpg" onerror="imageError(this)">
+									</p>
+									<div class="text-box height-auto">
+										<h2>[娇韵诗]</h2>
+
+										<h3>Super restorative de...<br></h3>
+
+										<p class="price">
+											$109.00
+											<span>(约 ￥739.02) </span>
+										</p>
+
+										<!-- 2015.11.10 쿠폰 변경 -->
+										<div class="ico-group">
+											<span>
+
+											</span>
+										</div>
+									</div>
+								</a>
+							</li>
+
+							<li class="item-box-v kind-list01" style="display: list-item;">
+								<a href="/shop/product/productDetail?prdtCode=04859000275">
+									<p class="img">
+										<img src="//image3.ssgdfs.com/images/product/200/725/20160928F0000053.JPG" onerror="imageError(this)">
+									</p>
+									<div class="text-box height-auto">
+										<h2>[碧欧泉]</h2>
+
+										<h3>BIOS CLE MILK PS 400...<br></h3>
+
+										<p class="price">
+											$33.00
+											<span>(约 ￥223.74) </span>
+										</p>
+
+										<!-- 2015.11.10 쿠폰 변경 -->
+										<div class="ico-group">
+											<span>
+												<img src="//image3.ssgdfs.com/images/shop/cn/common/icon/IconS04.gif">
+
+											</span>
+										</div>
+									</div>
+								</a>
+							</li>
+
+							<li class="item-box-v kind-list01" style="display: list-item;">
+								<a href="/shop/product/productDetail?prdtCode=63249000093">
+									<p class="img">
+										<img src="//image3.ssgdfs.com/images/product/200/806/20160308F0000018.jpg" onerror="imageError(this)">
+									</p>
+									<div class="text-box height-auto">
+										<h2>[碧研菲]</h2>
+
+										<h3>极致亮白霜The white decoc...<br></h3>
+
+										<p class="price">
+											$39.00
+											<span>(约 ￥264.42) </span>
+										</p>
+
+										<!-- 2015.11.10 쿠폰 변경 -->
+										<div class="ico-group">
+											<span>
+
+											</span>
+										</div>
+									</div>
+								</a>
+							</li>
+
+
+
+							<li class="item-box-v kind-list02" style="display: none;">
+								<a href="/shop/product/productDetail?prdtCode=63277185701">
+									<p class="img">
+										<img src="//image3.ssgdfs.com/images/product/200/101/63270185701_1.jpg" onerror="imageError(this)">
+									</p>
+									<div class="text-box height-auto">
+										<h2>[后]</h2>
+
+										<h3>后 拱辰享 奢华 防晒隔离霜 [SPF4...<br></h3>
+
+										<p class="price">
+											$39.00
+											<span>(约 ￥264.42) </span>
+										</p>
+
+										<!-- 2015.11.10 쿠폰 변경 -->
+										<div class="ico-group">
+											<span>
+
+											</span>
+										</div>
+									</div>
+								</a>
+							</li>
+
+							<li class="item-box-v kind-list02" style="display: none;">
+								<a href="/shop/product/productDetail?prdtCode=04869000593">
+									<p class="img">
+										<img src="//image3.ssgdfs.com/images/product/200/190/20160901F0000172.JPG" onerror="imageError(this)">
+									</p>
+									<div class="text-box height-auto">
+										<h2>[植村秀]</h2>
+
+										<h3>Stage performer Bloc...<br></h3>
+
+										<p class="price">
+											$37.00
+											<span>(约 ￥250.86) </span>
+										</p>
+
+										<!-- 2015.11.10 쿠폰 변경 -->
+										<div class="ico-group">
+											<span>
+
+											</span>
+										</div>
+									</div>
+								</a>
+							</li>
+
+							<li class="item-box-v kind-list02" style="display: none;">
+								<a href="/shop/product/productDetail?prdtCode=64609000031">
+									<p class="img">
+										<img src="//image3.ssgdfs.com/images/product/200/227/20151110F0000250.jpg" onerror="imageError(this)">
+									</p>
+									<div class="text-box height-auto">
+										<h2>[Holika Holika]</h2>
+
+										<h3>双面佳人焕颜气垫BB霜 #21 (正装1...<br></h3>
+
+										<p class="price">
+											$17.00
+											<span>(约 ￥115.26) </span>
+										</p>
+
+										<!-- 2015.11.10 쿠폰 변경 -->
+										<div class="ico-group">
+											<span>
+
+											</span>
+										</div>
+									</div>
+								</a>
+							</li>
+
+							<li class="item-box-v kind-list02" style="display: none;">
+								<a href="/shop/product/productDetail?prdtCode=00109000528">
+									<p class="img">
+										<img src="//image3.ssgdfs.com/images/product/200/413/20150703F0000136.jpg" onerror="imageError(this)">
+									</p>
+									<div class="text-box height-auto">
+										<h2>[迪奥]</h2>
+
+										<h3>幽蓝魅惑五色眼影 818<br></h3>
+
+										<p class="price">
+											$61.00
+											<span>(约 ￥413.58) </span>
+										</p>
+
+										<!-- 2015.11.10 쿠폰 변경 -->
+										<div class="ico-group">
+											<span>
+
+											</span>
+										</div>
+									</div>
+								</a>
+							</li>
+
+							<li class="item-box-v kind-list02" style="display: none;">
+								<a href="/shop/product/productDetail?prdtCode=08009000154">
+									<p class="img">
+										<img src="//image3.ssgdfs.com/images/product/200/280/20160225F0000319.jpg" onerror="imageError(this)">
+									</p>
+									<div class="text-box height-auto">
+										<h2>[玫珂菲]</h2>
+
+										<h3>AQUA SMOKY EXTRAVAGA...<br></h3>
+
+										<p class="price">
+											$26.00
+											<span>(约 ￥176.28) </span>
+										</p>
+
+										<!-- 2015.11.10 쿠폰 변경 -->
+										<div class="ico-group">
+											<span>
+
+											</span>
+										</div>
+									</div>
+								</a>
+							</li>
+
+
+
+							<li class="item-box-v kind-list03" style="display: none;">
+								<a href="/shop/product/productDetail?prdtCode=62899000166">
+									<p class="img">
+										<img src="//image3.ssgdfs.com/images/product/200/252/20160920F0000335.jpg" onerror="imageError(this)">
+									</p>
+									<div class="text-box height-auto">
+										<h2>[润膏]</h2>
+
+										<h3>YUNGO SINGITURE 2 洗发...<br></h3>
+
+										<p class="price">
+											$30.00
+											<span>(约 ￥203.40) </span>
+										</p>
+
+										<!-- 2015.11.10 쿠폰 변경 -->
+										<div class="ico-group">
+											<span>
+												<img src="//image3.ssgdfs.com/images/shop/cn/common/icon/IconS05.gif">
+
+											</span>
+										</div>
+									</div>
+								</a>
+							</li>
+
+							<li class="item-box-v kind-list03" style="display: none;">
+								<a href="/shop/product/productDetail?prdtCode=03120058201">
+									<p class="img">
+										<img src="//image3.ssgdfs.com/images/product/200/801/03120058201_1.jpg" onerror="imageError(this)">
+									</p>
+									<div class="text-box height-auto">
+										<h2>[娇韵诗]</h2>
+
+										<h3>娇韵诗胸部啫喱<br></h3>
+
+										<p class="price">
+											$55.00
+											<span>(约 ￥372.90) </span>
+										</p>
+
+										<!-- 2015.11.10 쿠폰 변경 -->
+										<div class="ico-group">
+											<span>
+
+											</span>
+										</div>
+									</div>
+								</a>
+							</li>
+
+							<li class="item-box-v kind-list03" style="display: none;">
+								<a href="/shop/product/productDetail?prdtCode=04809000068">
+									<p class="img">
+										<img src="//image3.ssgdfs.com/images/product/200/356/20140210F0000269.jpg" onerror="imageError(this)">
+									</p>
+									<div class="text-box height-auto">
+										<h2>[欧舒丹]</h2>
+
+										<h3>欧舒丹 芳香护发素 500ML<br></h3>
+
+										<p class="price">
+											$34.00
+											<span>(约 ￥230.52) </span>
+										</p>
+
+										<!-- 2015.11.10 쿠폰 변경 -->
+										<div class="ico-group">
+											<span>
+
+											</span>
+										</div>
+									</div>
+								</a>
+							</li>
+
+							<li class="item-box-v kind-list03" style="display: none;">
+								<a href="/shop/product/productDetail?prdtCode=01000173601">
+									<p class="img">
+										<img src="//image3.ssgdfs.com/images/product/200/138/01000173601_1.jpg" onerror="imageError(this)">
+									</p>
+									<div class="text-box height-auto">
+										<h2>[凯卓]</h2>
+
+										<h3>FLOWER BY KENZO EDT ...<br></h3>
+
+										<p class="price">
+											$92.00
+											<span>(约 ￥623.76) </span>
+										</p>
+
+										<!-- 2015.11.10 쿠폰 변경 -->
+										<div class="ico-group">
+											<span>
+
+											</span>
+										</div>
+									</div>
+								</a>
+							</li>
+
+							<li class="item-box-v kind-list03" style="display: none;">
+								<a href="/shop/product/productDetail?prdtCode=04300022601">
+									<p class="img">
+										<img src="//image3.ssgdfs.com/images/product/200/549/04300022601_1.jpg" onerror="imageError(this)">
+									</p>
+									<div class="text-box height-auto">
+										<h2>[欧派]</h2>
+
+										<h3>欧派指甲油LADY IN BLACK<br></h3>
+
+										<p class="price">
+											$14.00
+											<span>(约 ￥94.92) </span>
+										</p>
+
+										<!-- 2015.11.10 쿠폰 변경 -->
+										<div class="ico-group">
+											<span>
+
+											</span>
+										</div>
+									</div>
+								</a>
+							</li>
+
+
+
+							<li class="item-box-v kind-list04" style="display: none;">
+								<a href="/shop/product/productDetail?prdtCode=06369000144">
+									<p class="img">
+										<img src="//image3.ssgdfs.com/images/product/200/926/20140212F0000009.jpg" onerror="imageError(this)">
+									</p>
+									<div class="text-box height-auto">
+										<h2>[意大利鸳鸯]</h2>
+
+										<h3>意大利鸳鸯 手提包 &amp;背包 REVIVA...<br></h3>
+
+										<p class="price">
+											$86.00
+											<span>(约 ￥583.08) </span>
+										</p>
+
+										<!-- 2015.11.10 쿠폰 변경 -->
+										<div class="ico-group">
+											<span>
+
+											</span>
+										</div>
+									</div>
+								</a>
+							</li>
+
+							<li class="item-box-v kind-list04" style="display: none;">
+								<a href="/shop/product/productDetail?prdtCode=06369001187">
+									<p class="img">
+										<img src="//image3.ssgdfs.com/images/product/200/120/20160318F0000619.jpg" onerror="imageError(this)">
+									</p>
+									<div class="text-box height-auto">
+										<h2>[意大利鸳鸯]</h2>
+
+										<h3>意大利鸳鸯 双肩背包- SHIFT SH...<br></h3>
+
+										<p class="price">
+											$538.00
+											<span>(约 ￥3,647.64) </span>
+										</p>
+
+										<!-- 2015.11.10 쿠폰 변경 -->
+										<div class="ico-group">
+											<span>
+
+											</span>
+										</div>
+									</div>
+								</a>
+							</li>
+
+							<li class="item-box-v kind-list04" style="display: none;">
+								<a href="/shop/product/productDetail?prdtCode=65069000645">
+									<p class="img">
+										<img src="//image3.ssgdfs.com/images/product/200/975/20160405F0001188.JPG" onerror="imageError(this)">
+									</p>
+									<div class="text-box height-auto">
+										<h2>[VINCIS]</h2>
+
+										<h3>VINCIS' BAG<br></h3>
+
+										<p class="price">
+											$214.00
+											<span>(约 ￥1,450.92) </span>
+										</p>
+
+										<!-- 2015.11.10 쿠폰 변경 -->
+										<div class="ico-group">
+											<span>
+
+											</span>
+										</div>
+									</div>
+								</a>
+							</li>
+
+							<li class="item-box-v kind-list04" style="display: none;">
+								<a href="/shop/product/productDetail?prdtCode=61699000053">
+									<p class="img">
+										<img src="//image3.ssgdfs.com/images/product/200/800/20140616F0000274.jpg" onerror="imageError(this)">
+									</p>
+									<div class="text-box height-auto">
+										<h2>[METROCITY]</h2>
+
+										<h3>横跨包M33MQ366Z<br></h3>
+
+										<p class="price">
+											$280.00
+											<span>(约 ￥1,898.40) </span>
+										</p>
+
+										<!-- 2015.11.10 쿠폰 변경 -->
+										<div class="ico-group">
+											<span>
+
+											</span>
+										</div>
+									</div>
+								</a>
+							</li>
+
+							<li class="item-box-v kind-list04" style="display: none;">
+								<a href="/shop/product/productDetail?prdtCode=00659000686">
+									<p class="img">
+										<img src="//image3.ssgdfs.com/images/product/200/524/00650040101_1.jpg" onerror="imageError(this)">
+									</p>
+									<div class="text-box height-auto">
+										<h2>[万宝龙]</h2>
+
+										<h3>钱包 MP7165<br></h3>
+
+										<p class="price">
+											$445.00
+											<span>(约 ￥3,017.10) </span>
+										</p>
+
+										<!-- 2015.11.10 쿠폰 변경 -->
+										<div class="ico-group">
+											<span>
+
+											</span>
+										</div>
+									</div>
+								</a>
+							</li>
+
+
+					<!-- 상품 하나 : E -->
+					<!-- kind-list01 : E -->
+
+					<!-- 상품 카테고리 종류?? -->
+					<li class="item-kind bg" style="height: 327px;">
+						<div class="title">
+							<h2>没有您需要的<br>商品吗？</h2>
+							<p>通过<span>分类</span>来查找畅销商品吧</p>
+						</div>
+						<ul class="kind-list" id="bestCate" style="height: 219px;">
+
+
+								<li id="0001" class="on"><a href="javascript://"><i class="ico-kind-list0001"></i>护肤</a></li>
+
+								<li id="0002"><a href="javascript://"><i class="ico-kind-list0002"></i>彩妆</a></li>
+
+								<li id="0003"><a href="javascript://"><i class="ico-kind-list0003"></i>香水/美发/身体</a></li>
+
+								<li id="0004"><a href="javascript://"><i class="ico-kind-list0004"></i>包类/钱包</a></li>
+
+
+						</ul>
+					</li>
+
+				</ul>
+				<a href="javascript://" onclick="movePage('best')" class="btn-more-product">查看更多</a>
+			</section>
+			<!-- 6. 베스트 상품 목록 : E -->
+
+			<!-- 4. 정품 인증 logo start -->
+			<div class="logo_org_product" style="margin-top:-1px;">
+				<img src="//image3.ssgdfs.com/images/shop/cn/mobile_new/main/logo_org_product.png" alt="">
+			</div>
+
+			<!-- 4. 정품 인증 logo end -->
+
+			<!-- 5. 20150904 계역사 안내 페이지 추가 start -->
+			<a href="/shop/common/familyCompanyGuide"><img src="//image3.ssgdfs.com/images/shop/cn/mobile/main/main_renchuan_banner.jpg" alt="family" width="100%" height=""></a>
+			<!-- 5. 20150904 새로 추가 end -->
+
+
+			<!-- 8.1 테마상품 상품 목록1 : S -->
+
+			<section class="product-list color02">
+				<div class="header-title" style="margin-top:1px;">
+					<h1>热销护肤&amp;彩妆</h1>
+				</div>
+				<ul>
+
+					<!-- 상품 하나 : S -->
+					<li class="item-box-v">
+						<a href="/shop/product/productDetail?prdtCode=01379000014">
+							<p class="img">
+							<img src="//image3.ssgdfs.com/images/product/200/865/20160726F0000105.jpg" alt="ReFa S CARAT<br/>" onerror="imageError(this)">
+							</p>
+							<div class="text-box height-auto">
+								<h2>
+
+									[REFA]
+								</h2>
+
+								<h3>ReFa S CARAT<br></h3>
+
+								<p class="price">
+									$144.00
+									<span>(约 ￥976.32) </span>
+								</p>
+
+								<div class="ico-group">
+									<span>
+
+									</span>
+								</div>
+							</div>
+						</a>
+					</li>
+
+					<!-- 상품 하나 : S -->
+					<li class="item-box-v">
+						<a href="/shop/product/productDetail?prdtCode=62929000102">
+							<p class="img">
+							<img src="//image3.ssgdfs.com/images/product/200/060/20160414F0000184.jpg" alt="SHIMMER STICK-#PINK<br/>" onerror="imageError(this)">
+							</p>
+							<div class="text-box height-auto">
+								<h2>
+
+									[3CE]
+								</h2>
+
+								<h3>SHIMMER STICK-#PINK<br></h3>
+
+								<p class="price">
+									$11.00
+									<span>(约 ￥74.58) </span>
+								</p>
+
+								<div class="ico-group">
+									<span>
+
+									</span>
+								</div>
+							</div>
+						</a>
+					</li>
+
+					<!-- 상품 하나 : S -->
+					<li class="item-box-v">
+						<a href="/shop/product/productDetail?prdtCode=63109000178">
+							<p class="img">
+							<img src="//image3.ssgdfs.com/images/product/200/401/20151013F0000351.jpg" alt="[伊蒂之屋]多色眼影<br/>" onerror="imageError(this)">
+							</p>
+							<div class="text-box height-auto">
+								<h2>
+
+									[伊蒂之屋]
+								</h2>
+
+								<h3>[伊蒂之屋]多色眼影<br></h3>
+
+								<p class="price">
+									$18.00
+									<span>(约 ￥122.04) </span>
+								</p>
+
+								<div class="ico-group">
+									<span>
+
+									</span>
+								</div>
+							</div>
+						</a>
+					</li>
+
+					<!-- 상품 하나 : S -->
+					<li class="item-box-v">
+						<a href="/shop/product/productDetail?prdtCode=63279000310">
+							<p class="img">
+							<img src="//image3.ssgdfs.com/images/product/200/997/20160802F0001084.jpg" alt="秘贴自生精华素<br/>" onerror="imageError(this)">
+							</p>
+							<div class="text-box height-auto">
+								<h2>
+
+									[后]
+								</h2>
+
+								<h3>秘贴自生精华素<br></h3>
+
+								<p class="price">
+									$148.00
+									<span>(约 ￥1,003.44) </span>
+								</p>
+
+								<div class="ico-group">
+									<span>
+
+									</span>
+								</div>
+							</div>
+						</a>
+					</li>
+
+					<!-- 상품 하나 : S -->
+					<li class="item-box-v">
+						<a href="/shop/product/productDetail?prdtCode=62929000107">
+							<p class="img">
+							<img src="//image3.ssgdfs.com/images/product/200/648/20160414F0000191.jpg" alt="MAGIC TOUCH FACE MAKER-#BEIGE<br/>" onerror="imageError(this)">
+							</p>
+							<div class="text-box height-auto">
+								<h2>
+
+									[3CE]
+								</h2>
+
+								<h3>MAGIC TOUCH FACE MAK...<br></h3>
+
+								<p class="price">
+									$11.00
+									<span>(约 ￥74.58) </span>
+								</p>
+
+								<div class="ico-group">
+									<span>
+
+									</span>
+								</div>
+							</div>
+						</a>
+					</li>
+
+					<!-- 상품 하나 : S -->
+					<li class="item-box-v">
+						<a href="/shop/product/productDetail?prdtCode=05979000211">
+							<p class="img">
+							<img src="//image3.ssgdfs.com/images/product/200/259/05970016501_1.jpg" alt="科颜氏Ultra Facial Cream高保湿霜125ml<br/>" onerror="imageError(this)">
+							</p>
+							<div class="text-box height-auto">
+								<h2>
+
+									[科颜氏]
+								</h2>
+
+								<h3>科颜氏Ultra Facial Crea...<br></h3>
+
+								<p class="price">
+									$56.00
+									<span>(约 ￥379.68) </span>
+								</p>
+
+								<div class="ico-group">
+									<span>
+
+									</span>
+								</div>
+							</div>
+						</a>
+					</li>
+
+					<!-- 상품 하나 : S -->
+					<li class="item-box-v">
+						<a href="/shop/product/productDetail?prdtCode=69429000008">
+							<p class="img">
+							<img src="//image3.ssgdfs.com/images/product/200/742/20160729F0000866.jpg" alt="精华遮瑕粉饼  23号<br/>" onerror="imageError(this)">
+							</p>
+							<div class="text-box height-auto">
+								<h2>
+
+									[AGE 20'S]
+								</h2>
+
+								<h3>精华遮瑕粉饼  23号<br></h3>
+
+								<p class="price">
+									$27.00
+									<span>(约 ￥183.06) </span>
+								</p>
+
+								<div class="ico-group">
+									<span>
+
+									</span>
+								</div>
+							</div>
+						</a>
+					</li>
+
+					<!-- 상품 하나 : S -->
+					<li class="item-box-v">
+						<a href="/shop/product/productDetail?prdtCode=61039000146">
+							<p class="img">
+							<img src="//image3.ssgdfs.com/images/product/200/863/20161001F0000001.jpg" alt="DERMASK RUBBER MASK 4 SET 面膜4件套<br/>" onerror="imageError(this)">
+							</p>
+							<div class="text-box height-auto">
+								<h2>
+
+									[蒂尔.佳丽特]
+								</h2>
+
+								<h3>DERMASK RUBBER MASK ...<br></h3>
+
+								<p class="price">
+									$39.00
+									<span>(约 ￥264.42) </span>
+								</p>
+
+								<div class="ico-group">
+									<span>
+
+									</span>
+								</div>
+							</div>
+						</a>
+					</li>
+
+					<!-- 상품 하나 : S -->
+					<li class="item-box-v">
+						<a href="/shop/product/productDetail?prdtCode=08019000027">
+							<p class="img">
+							<img src="//image3.ssgdfs.com/images/product/200/932/20160308F0000012.jpg" alt="保湿精华2件套 60ml*2<br/>" onerror="imageError(this)">
+							</p>
+							<div class="text-box height-auto">
+								<h2>
+
+									[黛珂]
+								</h2>
+
+								<h3>保湿精华2件套 60ml*2<br></h3>
+
+								<p class="price">
+									$221.00
+									<span>(约 ￥1,498.38) </span>
+								</p>
+
+								<div class="ico-group">
+									<span>
+
+									</span>
+								</div>
+							</div>
+						</a>
+					</li>
+
+					<!-- 상품 하나 : S -->
+					<li class="item-box-v">
+						<a href="/shop/product/productDetail?prdtCode=08109000001">
+							<p class="img">
+							<img src="//image3.ssgdfs.com/images/product/200/866/20160519F0000438.JPG" alt="珂利柏蒂/CLE DE PEAU BEAUTE Essential Correcting Refiner 精华液<br/>" onerror="imageError(this)">
+							</p>
+							<div class="text-box height-auto">
+								<h2>
+
+									[珂丽柏蒂]
+								</h2>
+
+								<h3>珂利柏蒂/CLE DE PEAU BEA...<br></h3>
+
+								<p class="price">
+									$94.00
+									<span>(约 ￥637.32) </span>
+								</p>
+
+								<div class="ico-group">
+									<span>
+
+									</span>
+								</div>
+							</div>
+						</a>
+					</li>
+
+				</ul>
+			</section>
+
+			<!-- 8.1 테마상품 상품 목록1 : E -->
+
+			<!-- 8.2 테마상품 상품 목록2 : S -->
+
+			<section class="product-list color03">
+				<div class="header-title">
+					<h1>手表&amp;时尚杂货</h1>
+				</div>
+				<ul>
+
+					<!-- 상품 하나 : S -->
+					<li class="item-box-v">
+						<a href="/shop/product/productDetail?prdtCode=90009000018">
+							<p class="img">
+							<img src="//image3.ssgdfs.com/images/product/200/764/20151001F0000580.jpg" alt="Oxford W R 36mm<br/>" onerror="imageError(this)">
+							</p>
+							<div class="text-box height-auto">
+								<h2>
+
+									[Daniel Wellington]
+								</h2>
+
+								<h3>Oxford W R 36mm<br></h3>
+
+								<p class="price">
+									$165.00
+									<span>(约 ￥1,118.70) </span>
+								</p>
+
+								<div class="ico-group">
+									<span>
+
+									</span>
+								</div>
+							</div>
+						</a>
+					</li>
+
+					<!-- 상품 하나 : S -->
+					<li class="item-box-v">
+						<a href="/shop/product/productDetail?prdtCode=05400067801">
+							<p class="img">
+							<img src="//image3.ssgdfs.com/images/product/200/084/05400067801_1.jpg" alt="[马克.雅克布之马克] MBM1240手表<br/>" onerror="imageError(this)">
+							</p>
+							<div class="text-box height-auto">
+								<h2>
+
+									[马克.雅克布之马克]
+								</h2>
+
+								<h3>[马克.雅克布之马克] MBM1240手...<br></h3>
+
+								<p class="price">
+									$176.00
+									<span>(约 ￥1,193.28) </span>
+								</p>
+
+								<div class="ico-group">
+									<span>
+
+									</span>
+								</div>
+							</div>
+						</a>
+					</li>
+
+					<!-- 상품 하나 : S -->
+					<li class="item-box-v">
+						<a href="/shop/product/productDetail?prdtCode=06369000711">
+							<p class="img">
+							<img src="//image3.ssgdfs.com/images/product/200/627/20140827F0000022.jpg" alt="双肩背包<br/>" onerror="imageError(this)">
+							</p>
+							<div class="text-box height-auto">
+								<h2>
+
+									[意大利鸳鸯]
+								</h2>
+
+								<h3>双肩背包<br></h3>
+
+								<p class="price">
+									$194.00
+									<span>(约 ￥1,315.32) </span>
+								</p>
+
+								<div class="ico-group">
+									<span>
+
+									</span>
+								</div>
+							</div>
+						</a>
+					</li>
+
+					<!-- 상품 하나 : S -->
+					<li class="item-box-v">
+						<a href="/shop/product/productDetail?prdtCode=85039000132">
+							<p class="img">
+							<img src="//image3.ssgdfs.com/images/product/200/450/20160317F0000463.jpg" alt="HARRISON BATES BACKPACK 背包<br/>" onerror="imageError(this)">
+							</p>
+							<div class="text-box height-auto">
+								<h2>
+
+									[途明]
+								</h2>
+
+								<h3>HARRISON BATES BACKP...<br></h3>
+
+								<p class="price">
+									$720.00
+									<span>(约 ￥4,881.60) </span>
+								</p>
+
+								<div class="ico-group">
+									<span>
+
+									</span>
+								</div>
+							</div>
+						</a>
+					</li>
+
+					<!-- 상품 하나 : S -->
+					<li class="item-box-v">
+						<a href="/shop/product/productDetail?prdtCode=05439000360">
+							<p class="img">
+							<img src="//image3.ssgdfs.com/images/product/200/051/05430020701_1.jpg" alt="太阳镜 [品牌积分4万韩元+40%SALE]<br/>" onerror="imageError(this)">
+							</p>
+							<div class="text-box height-auto">
+								<h2>
+
+									[汤姆.福特]
+								</h2>
+
+								<h3>太阳镜 [品牌积分4万韩元+40%SAL...<br></h3>
+
+								<p class="price">
+									$385.00
+									<span>(约 ￥2,610.30) </span>
+								</p>
+
+								<div class="ico-group">
+									<span>
+
+									</span>
+								</div>
+							</div>
+						</a>
+					</li>
+
+					<!-- 상품 하나 : S -->
+					<li class="item-box-v">
+						<a href="/shop/product/productDetail?prdtCode=06639000616">
+							<p class="img">
+							<img src="//image3.ssgdfs.com/images/product/200/175/20160929F0000290.JPG" alt="太阳镜[赠送2万韩元品牌积分]<br/>" onerror="imageError(this)">
+							</p>
+							<div class="text-box height-auto">
+								<h2>
+
+									[VEDI VERO EYE]
+								</h2>
+
+								<h3>太阳镜[赠送2万韩元品牌积分]<br></h3>
+
+								<p class="price">
+									$262.00
+									<span>(约 ￥1,776.36) </span>
+								</p>
+
+								<div class="ico-group">
+									<span>
+										<img src="//image3.ssgdfs.com/images/shop/cn/common/icon/IconS04.gif">
+
+									</span>
+								</div>
+							</div>
+						</a>
+					</li>
+
+					<!-- 상품 하나 : S -->
+					<li class="item-box-v">
+						<a href="/shop/product/productDetail?prdtCode=05439000370">
+							<p class="img">
+							<img src="//image3.ssgdfs.com/images/product/200/929/20150211F0000314.jpg" alt="TOMFORD SUNGLASS<br/>" onerror="imageError(this)">
+							</p>
+							<div class="text-box height-auto">
+								<h2>
+
+									[汤姆.福特]
+								</h2>
+
+								<h3>TOMFORD SUNGLASS<br></h3>
+
+								<p class="price">
+									$395.00
+									<span>(约 ￥2,678.10) </span>
+								</p>
+
+								<div class="ico-group">
+									<span>
+
+									</span>
+								</div>
+							</div>
+						</a>
+					</li>
+
+					<!-- 상품 하나 : S -->
+					<li class="item-box-v">
+						<a href="/shop/product/productDetail?prdtCode=07249000085">
+							<p class="img">
+							<img src="//image3.ssgdfs.com/images/product/200/037/20150827F0000229.jpg" alt="BYWP拜外 眼镜<br/>" onerror="imageError(this)">
+							</p>
+							<div class="text-box height-auto">
+								<h2>
+
+									[BYWP]
+								</h2>
+
+								<h3>BYWP拜外 眼镜<br></h3>
+
+								<p class="price">
+									$385.00
+									<span>(约 ￥2,610.30) </span>
+								</p>
+
+								<div class="ico-group">
+									<span>
+
+									</span>
+								</div>
+							</div>
+						</a>
+					</li>
+
+				</ul>
+			</section>
+
+			<!-- 8.2 테마상품 상품 목록2 : E -->
+
+			<!-- 8.3 테마상품 상품 목록3 : S -->
+
+			<section class="product-list color04">
+				<div class="header-title">
+					<h1>可爱卡通用品</h1>
+				</div>
+				<ul>
+
+					<!-- 상품 하나 : S -->
+					<li class="item-box-v">
+						<a href="/shop/product/productDetail?prdtCode=65439000121">
+							<p class="img">
+							<img src="//image3.ssgdfs.com/images/product/200/562/20161006F0000313.JPG" alt="15cmFigure-ryan<br/>" onerror="imageError(this)">
+							</p>
+							<div class="text-box height-auto">
+								<h2>
+
+									[KAKAOFRIENDS]
+								</h2>
+
+								<h3>15cmFigure-ryan<br></h3>
+
+								<p class="price">
+									$27.00
+									<span>(约 ￥183.06) </span>
+								</p>
+
+								<div class="ico-group">
+									<span>
+										<img src="//image3.ssgdfs.com/images/shop/cn/common/icon/IconS04.gif">
+
+									</span>
+								</div>
+							</div>
+						</a>
+					</li>
+
+					<!-- 상품 하나 : S -->
+					<li class="item-box-v">
+						<a href="/shop/product/productDetail?prdtCode=65439000059">
+							<p class="img">
+							<img src="//image3.ssgdfs.com/images/product/200/670/20160805F0001042.jpg" alt="RYAN抱枕<br/>" onerror="imageError(this)">
+							</p>
+							<div class="text-box height-auto">
+								<h2>
+
+									[KAKAOFRIENDS]
+								</h2>
+
+								<h3>RYAN抱枕<br></h3>
+
+								<p class="price">
+									$19.00
+									<span>(约 ￥128.82) </span>
+								</p>
+
+								<div class="ico-group">
+									<span>
+
+									</span>
+								</div>
+							</div>
+						</a>
+					</li>
+
+					<!-- 상품 하나 : S -->
+					<li class="item-box-v">
+						<a href="/shop/product/productDetail?prdtCode=65439000109">
+							<p class="img">
+							<img src="//image3.ssgdfs.com/images/product/200/070/20160919F0000254.JPG" alt="杯子<br/>" onerror="imageError(this)">
+							</p>
+							<div class="text-box height-auto">
+								<h2>
+
+									[KAKAOFRIENDS]
+								</h2>
+
+								<h3>杯子<br></h3>
+
+								<p class="price">
+									$10.00
+									<span>(约 ￥67.80) </span>
+								</p>
+
+								<div class="ico-group">
+									<span>
+										<img src="//image3.ssgdfs.com/images/shop/cn/common/icon/IconS04.gif">
+
+									</span>
+								</div>
+							</div>
+						</a>
+					</li>
+
+					<!-- 상품 하나 : S -->
+					<li class="item-box-v">
+						<a href="/shop/product/productDetail?prdtCode=65439000052">
+							<p class="img">
+							<img src="//image3.ssgdfs.com/images/product/200/081/20160805F0001014.jpg" alt="Mini Figure Apeach Disco<br/>" onerror="imageError(this)">
+							</p>
+							<div class="text-box height-auto">
+								<h2>
+
+									[KAKAOFRIENDS]
+								</h2>
+
+								<h3>Mini Figure Apeach D...<br></h3>
+
+								<p class="price">
+									$7.00
+									<span>(约 ￥47.46) </span>
+								</p>
+
+								<div class="ico-group">
+									<span>
+
+									</span>
+								</div>
+							</div>
+						</a>
+					</li>
+
+					<!-- 상품 하나 : S -->
+					<li class="item-box-v">
+						<a href="/shop/product/productDetail?prdtCode=65439000101">
+							<p class="img">
+							<img src="//image3.ssgdfs.com/images/product/200/330/20160919F0000236.JPG" alt="Travel Pouch(大) <br/>" onerror="imageError(this)">
+							</p>
+							<div class="text-box height-auto">
+								<h2>
+
+									[KAKAOFRIENDS]
+								</h2>
+
+								<h3>Travel Pouch(大) <br></h3>
+
+								<p class="price">
+									$20.00
+									<span>(约 ￥135.60) </span>
+								</p>
+
+								<div class="ico-group">
+									<span>
+										<img src="//image3.ssgdfs.com/images/shop/cn/common/icon/IconS04.gif">
+
+									</span>
+								</div>
+							</div>
+						</a>
+					</li>
+
+					<!-- 상품 하나 : S -->
+					<li class="item-box-v">
+						<a href="/shop/product/productDetail?prdtCode=65439000091">
+							<p class="img">
+							<img src="//image3.ssgdfs.com/images/product/200/565/20160919F0000222.JPG" alt="手环<br/>" onerror="imageError(this)">
+							</p>
+							<div class="text-box height-auto">
+								<h2>
+
+									[KAKAOFRIENDS]
+								</h2>
+
+								<h3>手环<br></h3>
+
+								<p class="price">
+									$21.00
+									<span>(约 ￥142.38) </span>
+								</p>
+
+								<div class="ico-group">
+									<span>
+										<img src="//image3.ssgdfs.com/images/shop/cn/common/icon/IconS04.gif">
+
+									</span>
+								</div>
+							</div>
+						</a>
+					</li>
+
+				</ul>
+			</section>
+
+			<!-- 8.3 테마상품 상품 목록3 : E -->
+
+			<!-- 8.4 테마상품 상품 목록4 : S -->
+
+			<section class="product-list color05">
+				<div class="header-title">
+					<h1>人气食品</h1>
+				</div>
+				<ul>
+
+					<!-- 상품 하나 : S -->
+					<li class="item-box-v">
+						<a href="/shop/product/productDetail?prdtCode=59869000084">
+							<p class="img">
+							<img src="//image3.ssgdfs.com/images/product/200/771/20160527F0000001.jpg" alt="[正官庄] 红参精 Plus 高丽参精 240G（新品）<br/>" onerror="imageError(this)">
+							</p>
+							<div class="text-box height-auto">
+								<h2>
+
+									[正官庄]
+								</h2>
+
+								<h3>[正官庄] 红参精 Plus 高丽参精 ...<br></h3>
+
+								<p class="price">
+									$195.00
+									<span>(约 ￥1,322.10) </span>
+								</p>
+
+								<div class="ico-group">
+									<span>
+
+									</span>
+								</div>
+							</div>
+						</a>
+					</li>
+
+					<!-- 상품 하나 : S -->
+					<li class="item-box-v">
+						<a href="/shop/product/productDetail?prdtCode=59869000080">
+							<p class="img">
+							<img src="//image3.ssgdfs.com/images/product/200/418/20160527F0000008.jpg" alt="[正官庄] 红参精顶级PLUS100g<br/>" onerror="imageError(this)">
+							</p>
+							<div class="text-box height-auto">
+								<h2>
+
+									[正官庄]
+								</h2>
+
+								<h3>[正官庄] 红参精顶级PLUS100g<br></h3>
+
+								<p class="price">
+									$88.00
+									<span>(约 ￥596.64) </span>
+								</p>
+
+								<div class="ico-group">
+									<span>
+
+									</span>
+								</div>
+							</div>
+						</a>
+					</li>
+
+					<!-- 상품 하나 : S -->
+					<li class="item-box-v">
+						<a href="/shop/product/productDetail?prdtCode=05269000012">
+							<p class="img">
+							<img src="//image3.ssgdfs.com/images/product/200/151/20150122F0000274.jpg" alt="10亿益生菌软糖 225g X 2<br/>" onerror="imageError(this)">
+							</p>
+							<div class="text-box height-auto">
+								<h2>
+
+									[蔓秀莱施]
+								</h2>
+
+								<h3>10亿益生菌软糖 225g X 2<br></h3>
+
+								<p class="price">
+									$65.00
+									<span>(约 ￥440.70) </span>
+								</p>
+
+								<div class="ico-group">
+									<span>
+
+									</span>
+								</div>
+							</div>
+						</a>
+					</li>
+
+					<!-- 상품 하나 : S -->
+					<li class="item-box-v">
+						<a href="/shop/product/productDetail?prdtCode=06169000022">
+							<p class="img">
+							<img src="//image3.ssgdfs.com/images/product/200/116/20131211F0000020.jpg" alt="肝健<br/>" onerror="imageError(this)">
+							</p>
+							<div class="text-box height-auto">
+								<h2>
+
+									[健安喜]
+								</h2>
+
+								<h3>肝健<br></h3>
+
+								<p class="price">
+									$64.00
+									<span>(约 ￥433.92) </span>
+								</p>
+
+								<div class="ico-group">
+									<span>
+										<img src="//image3.ssgdfs.com/images/shop/cn/common/icon/IconS06.gif">
+
+									</span>
+								</div>
+							</div>
+						</a>
+					</li>
+
+				</ul>
+			</section>
+
+			<!-- 8.4테마상품 상품 목록4 : E -->
+
+			<!-- 7. 기획전 전시 배너 : S SplSellBanner -->
+
+				<div class="splBanner swiper-banner">
+			        <div class="swiper-wrapper" style="width: 4901px; transform: translate3d(-377px, 0px, 0px); transition-duration: 0s; height: 82px;"><div xmlns="http://www.w3.org/1999/xhtml" class="swiper-slide swiper-slide-duplicate" style="width: 377px; height: 82px;">
+				            	<!--기획전  -->
+
+				            	<!-- 이벤트 -->
+
+				            	<a href="/shop/promotion/event01?eventId=08256">
+				            		<img src="//image3.ssgdfs.com/images/shop/upload/234/52175cn_640X140.jpg" alt="达特法姆  超值赠品活动" onerror="imageError(this)">
+				            	</a>
+
+				            	<!-- 브랜드 -->
+
+				            	<!-- 일반링크 -->
+
+				            </div>
+
+				            <div class="swiper-slide swiper-slide-visible swiper-slide-active" style="width: 377px; height: 82px;">
+				            	<!--기획전  -->
+
+				            	<!-- 이벤트 -->
+
+				            	<a href="/shop/promotion/event01?eventId=08389">
+				            		<img src="//image3.ssgdfs.com/images/shop/upload/362/81385cn_640x140.jpg" alt="클리오" onerror="imageError(this)">
+				            	</a>
+
+				            	<!-- 브랜드 -->
+
+				            	<!-- 일반링크 -->
+
+				            </div>
+
+				            <div class="swiper-slide" style="width: 377px; height: 82px;">
+				            	<!--기획전  -->
+
+				            	<!-- 이벤트 -->
+
+				            	<a href="/shop/promotion/event01?eventId=08333">
+				            		<img src="//image3.ssgdfs.com/images/shop/upload/362/39116cn_640x140.jpg" alt="비오템 사은" onerror="imageError(this)">
+				            	</a>
+
+				            	<!-- 브랜드 -->
+
+				            	<!-- 일반링크 -->
+
+				            </div>
+
+				            <div class="swiper-slide" style="width: 377px; height: 82px;">
+				            	<!--기획전  -->
+
+				            	<!-- 이벤트 -->
+
+				            	<a href="/shop/promotion/event01?eventId=08325">
+				            		<img src="//image3.ssgdfs.com/images/shop/upload/355/18580cm_640x140.jpg" alt="CAUDALIE" onerror="imageError(this)">
+				            	</a>
+
+				            	<!-- 브랜드 -->
+
+				            	<!-- 일반링크 -->
+
+				            </div>
+
+				            <div class="swiper-slide" style="width: 377px; height: 82px;">
+				            	<!--기획전  -->
+
+				            	<!-- 이벤트 -->
+
+				            	<a href="/shop/promotion/event01?eventId=08261">
+				            		<img src="//image3.ssgdfs.com/images/shop/upload/362/23371cn_640x140.jpg" alt="다나한" onerror="imageError(this)">
+				            	</a>
+
+				            	<!-- 브랜드 -->
+
+				            	<!-- 일반링크 -->
+
+				            </div>
+
+				            <div class="swiper-slide" style="width: 377px; height: 82px;">
+				            	<!--기획전  -->
+
+				            	<!-- 이벤트 -->
+
+				            	<a href="/shop/promotion/event01?eventId=08195">
+				            		<img src="//image3.ssgdfs.com/images/shop/upload/234/8960cn_640X140.jpg" alt="PAUL&amp;JOE" onerror="imageError(this)">
+				            	</a>
+
+				            	<!-- 브랜드 -->
+
+				            	<!-- 일반링크 -->
+
+				            </div>
+
+				            <div class="swiper-slide" style="width: 377px; height: 82px;">
+				            	<!--기획전  -->
+
+				            	<!-- 이벤트 -->
+
+				            	<!-- 브랜드 -->
+
+				            	<a href="/shop/brand/brandDetail?brandId=0809">
+				            		<img src="//image3.ssgdfs.com/images/shop/upload/948/86660cn_640x140_m.jpg" alt="DANAHAN" onerror="imageError(this)">
+				            	</a>
+
+				            	<!-- 일반링크 -->
+
+				            </div>
+
+				            <div class="swiper-slide" style="width: 377px; height: 82px;">
+				            	<!--기획전  -->
+
+				            	<!-- 이벤트 -->
+
+				            	<a href="/shop/promotion/event01?eventId=07793">
+				            		<img src="//image3.ssgdfs.com/images/shop/upload/362/50915cn_640x140.jpg" alt="haircare brands" onerror="imageError(this)">
+				            	</a>
+
+				            	<!-- 브랜드 -->
+
+				            	<!-- 일반링크 -->
+
+				            </div>
+
+				            <div class="swiper-slide" style="width: 377px; height: 82px;">
+				            	<!--기획전  -->
+
+				            	<a href="/shop/promotion/splSell?splId=02207">
+				            		<img src="//image3.ssgdfs.com/images/shop/upload/362/33115cn_640x140.jpg" alt="프레드릭말" onerror="imageError(this)">
+				            	</a>
+
+				            	<!-- 이벤트 -->
+
+				            	<!-- 브랜드 -->
+
+				            	<!-- 일반링크 -->
+
+				            </div>
+
+				            <div class="swiper-slide" style="width: 377px; height: 82px;">
+				            	<!--기획전  -->
+
+				            	<!-- 이벤트 -->
+
+				            	<!-- 브랜드 -->
+
+				            	<a href="/shop/brand/brandDetail?brandId=0137">
+				            		<img src="//image3.ssgdfs.com/images/shop/upload/242/9300640x140.jpg" alt="REFA 新店入驻" onerror="imageError(this)">
+				            	</a>
+
+				            	<!-- 일반링크 -->
+
+				            </div>
+
+				            <div class="swiper-slide" style="width: 377px; height: 82px;">
+				            	<!--기획전  -->
+
+				            	<!-- 이벤트 -->
+
+				            	<a href="/shop/promotion/event01?eventId=08151">
+				            		<img src="//image3.ssgdfs.com/images/shop/upload/242/40165640x140.jpg" alt="모로칸오일" onerror="imageError(this)">
+				            	</a>
+
+				            	<!-- 브랜드 -->
+
+				            	<!-- 일반링크 -->
+
+				            </div>
+
+				            <div class="swiper-slide" style="width: 377px; height: 82px;">
+				            	<!--기획전  -->
+
+				            	<!-- 이벤트 -->
+
+				            	<a href="/shop/promotion/event01?eventId=08256">
+				            		<img src="//image3.ssgdfs.com/images/shop/upload/234/52175cn_640X140.jpg" alt="达特法姆  超值赠品活动" onerror="imageError(this)">
+				            	</a>
+
+				            	<!-- 브랜드 -->
+
+				            	<!-- 일반링크 -->
+
+				            </div>
+
+
+			        <div xmlns="http://www.w3.org/1999/xhtml" class="swiper-slide swiper-slide-duplicate" style="width: 377px; height: 82px;">
+				            	<!--기획전  -->
+
+				            	<!-- 이벤트 -->
+
+				            	<a href="/shop/promotion/event01?eventId=08389">
+				            		<img src="//image3.ssgdfs.com/images/shop/upload/362/81385cn_640x140.jpg" alt="클리오" onerror="imageError(this)">
+				            	</a>
+
+				            	<!-- 브랜드 -->
+
+				            	<!-- 일반링크 -->
+
+				            </div></div>
+			        <!-- Add Pagination -->
+			        <div class="swiper-pagination3"><a class="swiper-pagination-switch swiper-visible-switch swiper-active-switch"></a><a class="swiper-pagination-switch"></a><a class="swiper-pagination-switch"></a><a class="swiper-pagination-switch"></a><a class="swiper-pagination-switch"></a><a class="swiper-pagination-switch"></a><a class="swiper-pagination-switch"></a><a class="swiper-pagination-switch"></a><a class="swiper-pagination-switch"></a><a class="swiper-pagination-switch"></a><a class="swiper-pagination-switch"></a></div>
+			    </div>
+
+			<!-- 7. 기획전 전시 배너 : E-->
+
+			<!-- 9.MD 추천 상품 목록 : S -->
+
+			<section class="product-list color06">
+				<div class="header-title">
+					<h1>MD推荐商品<span>(新世界专业MD推荐的热销商品)</span></h1>
+				</div>
+				<ul>
+
+					<!-- 상품 하나 : S -->
+					<li class="item-box">
+						<p class="img">
+							<a href="/shop/product/productDetail?prdtCode=61829000004">
+								<img src="//image3.ssgdfs.com/images/product/200/049/20160726F0000361.jpg" alt="BABY PURE SHINING MASK 面膜 25ml*10片 <br/>" onerror="imageError(this)" width="90%">
+							</a>
+						</p>
+						<div class="text-box type2">
+							<h2>
+
+								[JAYJUN COSMETIC]
+							</h2>
+
+							<h3>BABY PURE SHINING MASK 面膜 25ml*10片 </h3>
+
+							<p class="price">
+								$31.00
+								<span>(约 ￥ 210.18) </span>
+							</p>
+							<!-- 선택 된 상태는 good에 클래스 on을 추가 -->
+							<!-- <p class="good"><a href="#"><i class="ico-heart"></i>37</a></p> -->
+							<p class="good on"><a href="javascript:btnGoodCount('61829000004');"><i class="ico-heart"></i><span id="61829000004goodCnt">183</span></a></p>
+							<!-- //선택 된 상태는 good에 클래스 on을 추가 -->
+
+							<div class="ico-group">
+								<span>
+
+								</span>
+							</div>
+
+						</div>
+					</li>
+
+					<!-- 상품 하나 : S -->
+					<li class="item-box">
+						<p class="img">
+							<a href="/shop/product/productDetail?prdtCode=64609000013">
+								<img src="//image3.ssgdfs.com/images/product/200/092/20151110F0000273.jpg" alt="猪鼻子去黑头三部曲鼻贴 10片 <br/>" onerror="imageError(this)" width="90%">
+							</a>
+						</p>
+						<div class="text-box type2">
+							<h2>
+
+								[Holika Holika]
+							</h2>
+
+							<h3>猪鼻子去黑头三部曲鼻贴 10片 </h3>
+
+							<p class="price">
+								$16.00
+								<span>(约 ￥ 108.48) </span>
+							</p>
+							<!-- 선택 된 상태는 good에 클래스 on을 추가 -->
+							<!-- <p class="good"><a href="#"><i class="ico-heart"></i>37</a></p> -->
+							<p class="good on"><a href="javascript:btnGoodCount('64609000013');"><i class="ico-heart"></i><span id="64609000013goodCnt">156</span></a></p>
+							<!-- //선택 된 상태는 good에 클래스 on을 추가 -->
+
+							<div class="ico-group">
+								<span>
+
+								</span>
+							</div>
+
+						</div>
+					</li>
+
+					<!-- 상품 하나 : S -->
+					<li class="item-box">
+						<p class="img">
+							<a href="/shop/product/productDetail?prdtCode=85499000008">
+								<img src="//image3.ssgdfs.com/images/product/200/211/20160811F0001194.jpg" alt="EX-TR70 VP<br/>" onerror="imageError(this)" width="90%">
+							</a>
+						</p>
+						<div class="text-box type2">
+							<h2>
+
+								[CASIO CAMERA]
+							</h2>
+
+							<h3>EX-TR70 VP</h3>
+
+							<p class="price">
+								$864.00
+								<span>(约 ￥ 5,857.92) </span>
+							</p>
+							<!-- 선택 된 상태는 good에 클래스 on을 추가 -->
+							<!-- <p class="good"><a href="#"><i class="ico-heart"></i>37</a></p> -->
+							<p class="good on"><a href="javascript:btnGoodCount('85499000008');"><i class="ico-heart"></i><span id="85499000008goodCnt">539</span></a></p>
+							<!-- //선택 된 상태는 good에 클래스 on을 추가 -->
+
+							<div class="ico-group">
+								<span>
+
+								</span>
+							</div>
+
+						</div>
+					</li>
+
+					<!-- 상품 하나 : S -->
+					<li class="item-box">
+						<p class="img">
+							<a href="/shop/product/productDetail?prdtCode=01379000014">
+								<img src="//image3.ssgdfs.com/images/product/200/865/20160726F0000105.jpg" alt="ReFa S CARAT<br/>" onerror="imageError(this)" width="90%">
+							</a>
+						</p>
+						<div class="text-box type2">
+							<h2>
+
+								[REFA]
+							</h2>
+
+							<h3>ReFa S CARAT</h3>
+
+							<p class="price">
+								$144.00
+								<span>(约 ￥ 976.32) </span>
+							</p>
+							<!-- 선택 된 상태는 good에 클래스 on을 추가 -->
+							<!-- <p class="good"><a href="#"><i class="ico-heart"></i>37</a></p> -->
+							<p class="good on"><a href="javascript:btnGoodCount('01379000014');"><i class="ico-heart"></i><span id="01379000014goodCnt">529</span></a></p>
+							<!-- //선택 된 상태는 good에 클래스 on을 추가 -->
+
+							<div class="ico-group">
+								<span>
+
+								</span>
+							</div>
+
+						</div>
+					</li>
+
+					<!-- 상품 하나 : S -->
+					<li class="item-box">
+						<p class="img">
+							<a href="/shop/product/productDetail?prdtCode=07549000030">
+								<img src="//image3.ssgdfs.com/images/product/200/634/20160718F0000392.jpg" alt="NUTRITIVE BAIN OLEO RELAX 奥丽顺柔系列 奥丽柔顺洗发水 250ml<br/>" onerror="imageError(this)" width="90%">
+							</a>
+						</p>
+						<div class="text-box type2">
+							<h2>
+
+								[KERASTASE]
+							</h2>
+
+							<h3>NUTRITIVE BAIN OLEO RELAX 奥丽顺柔系列 奥丽柔顺洗发水 250ml</h3>
+
+							<p class="price">
+								$27.00
+								<span>(约 ￥ 183.06) </span>
+							</p>
+							<!-- 선택 된 상태는 good에 클래스 on을 추가 -->
+							<!-- <p class="good"><a href="#"><i class="ico-heart"></i>37</a></p> -->
+							<p class="good on"><a href="javascript:btnGoodCount('07549000030');"><i class="ico-heart"></i><span id="07549000030goodCnt">212</span></a></p>
+							<!-- //선택 된 상태는 good에 클래스 on을 추가 -->
+
+							<div class="ico-group">
+								<span>
+
+								</span>
+							</div>
+
+						</div>
+					</li>
+
+					<!-- 상품 하나 : S -->
+					<li class="item-box">
+						<p class="img">
+							<a href="/shop/product/productDetail?prdtCode=07479000040">
+								<img src="//image3.ssgdfs.com/images/product/200/985/20160715F0000370.jpg" alt="美甲贴 English Rose<br/>" onerror="imageError(this)" width="90%">
+							</a>
+						</p>
+						<div class="text-box type2">
+							<h2>
+
+								[INCOCO]
+							</h2>
+
+							<h3>美甲贴 English Rose</h3>
+
+							<p class="price">
+								$7.00
+								<span>(约 ￥ 47.46) </span>
+							</p>
+							<!-- 선택 된 상태는 good에 클래스 on을 추가 -->
+							<!-- <p class="good"><a href="#"><i class="ico-heart"></i>37</a></p> -->
+							<p class="good on"><a href="javascript:btnGoodCount('07479000040');"><i class="ico-heart"></i><span id="07479000040goodCnt">11</span></a></p>
+							<!-- //선택 된 상태는 good에 클래스 on을 추가 -->
+
+							<div class="ico-group">
+								<span>
+
+								</span>
+							</div>
+
+						</div>
+					</li>
+
+					<!-- 상품 하나 : S -->
+					<li class="item-box">
+						<p class="img">
+							<a href="/shop/product/productDetail?prdtCode=06819000002">
+								<img src="//image3.ssgdfs.com/images/product/200/752/20140421F0000744.jpg" alt="希思黎 全能乳液 (125ML)<br/>" onerror="imageError(this)" width="90%">
+							</a>
+						</p>
+						<div class="text-box type2">
+							<h2>
+
+								[希思黎 C&amp;P]
+							</h2>
+
+							<h3>希思黎 全能乳液 (125ML)</h3>
+
+							<p class="price">
+								$167.00
+								<span>(约 ￥ 1,132.26) </span>
+							</p>
+							<!-- 선택 된 상태는 good에 클래스 on을 추가 -->
+							<!-- <p class="good"><a href="#"><i class="ico-heart"></i>37</a></p> -->
+							<p class="good on"><a href="javascript:btnGoodCount('06819000002');"><i class="ico-heart"></i><span id="06819000002goodCnt">9</span></a></p>
+							<!-- //선택 된 상태는 good에 클래스 on을 추가 -->
+
+							<div class="ico-group">
+								<span>
+
+								</span>
+							</div>
+
+						</div>
+					</li>
+
+
+				</ul>
+			</section>
+
+			<!-- 9.MD 추천 상품  목록 : E -->
+
+			<!-- 10. 브랜드 목록 : S -->
+
+			<section class="brand-list color07">
+				<div class="header-title">
+					<h1>流行品牌</h1>
+				</div>
+				<div class="list">
+					<ul>
+
+						<li class="full">
+							<a href="/shop/brand/brandDetail?brandId=6327">
+								<img src="//image3.ssgdfs.com/images/shop/upload/028/100512main_brand_logo.jpg" alt="后" onerror="imageError(this)">
+							</a>
+						</li>
+
+						<li>
+							<a href="/shop/brand/brandDetail?brandId=6320">
+								<img src="//image3.ssgdfs.com/images/shop/upload/179/96026설화수.jpg" alt="雪花秀" onerror="imageError(this)">
+							</a>
+						</li>
+
+						<li>
+							<a href="/shop/brand/brandDetail?brandId=0107">
+								<img src="//image3.ssgdfs.com/images/shop/upload/180/010107.jpg" alt="雅诗兰黛" onerror="imageError(this)">
+							</a>
+						</li>
+
+						<li>
+							<a href="/shop/brand/brandDetail?brandId=0010">
+								<img src="//image3.ssgdfs.com/images/shop/upload/997/010010.jpg" alt="迪奥" onerror="imageError(this)">
+							</a>
+						</li>
+
+						<li>
+							<a href="/shop/brand/brandDetail?brandId=0597">
+								<img src="//image3.ssgdfs.com/images/shop/upload/967/010597.jpg" alt="科颜氏" onerror="imageError(this)">
+							</a>
+						</li>
+
+						<li>
+							<a href="/shop/brand/brandDetail?brandId=0104">
+								<img src="//image3.ssgdfs.com/images/shop/upload/487/66152logo(2).jpg" alt="伊夫圣罗兰" onerror="imageError(this)">
+							</a>
+						</li>
+
+						<li>
+							<a href="/shop/brand/brandDetail?brandId=0801">
+								<img src="//image3.ssgdfs.com/images/shop/upload/122/83520코스메데코르데_로고.jpg" alt="黛珂" onerror="imageError(this)">
+							</a>
+						</li>
+
+						<li>
+							<a href="/shop/brand/brandDetail?brandId=0106">
+								<img src="//image3.ssgdfs.com/images/shop/upload/659/010106.jpg" alt="兰蔻" onerror="imageError(this)">
+							</a>
+						</li>
+
+						<li>
+							<a href="/shop/brand/brandDetail?brandId=0486">
+								<img src="//image3.ssgdfs.com/images/shop/upload/386/010486.jpg" alt="植村秀" onerror="imageError(this)">
+							</a>
+						</li>
+
+					</ul>
+				</div>
+				<a href="/shop/brand/brandMainRenewal" class="btn-more-product">查看更多</a>
+			</section>
+
+			<!-- 10.브랜드 목록 : E -->
+
+
+			<!-- 11.개인화 추천영역 상품 목록 : S -->
+			<section class="product-list color08" id="hitList">
+
+
+
+
+
+
+	<div class="header-title center">
+		<h1>专属推荐</h1>
+	</div>
+	<ul>
+
+		<!-- 상품 하나 : S -->
+		<li class="item-box-v">
+			<p class="img">
+				<a href="/shop/product/productDetail?prdtCode=60919000177">
+					<img src="//image.ssgdfm.com/images/product/200/938/20160331F0000298.jpg" alt="">
+				</a>
+			</p>
+			<div class="text-box">
+				<h2>
+
+				[菲诗小铺] </h2>
+				<h3>#09 / 蜡笔润唇膏口红 (Kakao限量系列)</h3>
+
+				<p class="price-cost"> <!-- 원가 -->
+
+		           	<del>$ 6</del>
+
+				</p>
+				<p class="price"> <!-- 할인가 -->
+
+			            $ 5.10 <br>
+
+					<span>
+
+			            	(约 ￥34.58)
+
+					</span>
+				</p>
+
+				<!-- 선택 된 상태는 good에 클래스 on을 추가 -->
+				<!-- <p class="good"><a href="#"><i class="ico-heart"></i>37</a></p> -->
+				<p class="good on"><a href="javascript:btnGoodCount('60919000177');"><i class="ico-heart"></i><span id="60919000177goodCnt">1</span></a></p>
+				<!-- //선택 된 상태는 good에 클래스 on을 추가 -->
+
+				<div class="ico-group">
+					<span> </span>
+				</div>
+
+				<a href="#" class="btn-more">more</a>
+			</div>
+			<div class="detail-item">
+				<div class="bg"></div>
+				<div class="detail-text">
+					<p class="classify"><span>积分</span>可立即使用</p>
+					<h2>约 ￥ 0.68</h2>
+					<ul class="appraisal">
+						<li>本周销量<strong>5</strong>个</li>
+						<li>
+
+							<span><strong>0</strong>人评价</span>
+
+
+						</li>
+					</ul>
+					<div class="detail-btn">
+						<!-- 즐겨찾기 등록 되었으면 클래스 on 추가 -->
+						<a href="javascript:fncAddWishProduct('60919000177');" class="btn-liked on">liked</a>
+						<!-- //즐겨찾기 등록 되었으면 클래스 on 추가 -->
+
+
+
+
+					      	<!-- 상품이 있을때 -->
+							<a href="javascript:fncAddCart('60919000177');" class="btn-shopping">shopping</a>
+							<a href="javascript:directOrderProduct('60919000177');" class="btn-pay">立即购买</a>
+
+
+					</div>
+					<a href="#" class="btn-close">close</a>
+				</div>
+			</div>
+		</li>
+		<!-- 상품 하나 : E -->
+
+		<!-- 상품 하나 : S -->
+		<li class="item-box-v">
+			<p class="img">
+				<a href="/shop/product/productDetail?prdtCode=63319000070">
+					<img src="//image.ssgdfm.com/images/product/200/940/20160627F0000056.jpg" alt="">
+				</a>
+			</p>
+			<div class="text-box">
+				<h2>
+
+				[PERIPERA] </h2>
+				<h3>菲丽菲拉 缤纷少女丝绒唇彩套装Hotpink</h3>
+
+				<p class="price-cost"> <!-- 원가 -->
+
+		           	<del>$ 17</del>
+
+				</p>
+				<p class="price"> <!-- 할인가 -->
+
+			            $ 15.30 <br>
+
+					<span>
+
+			            	(约 ￥103.73)
+
+					</span>
+				</p>
+
+				<!-- 선택 된 상태는 good에 클래스 on을 추가 -->
+				<!-- <p class="good"><a href="#"><i class="ico-heart"></i>37</a></p> -->
+				<p class="good on"><a href="javascript:btnGoodCount('63319000070');"><i class="ico-heart"></i><span id="63319000070goodCnt">0</span></a></p>
+				<!-- //선택 된 상태는 good에 클래스 on을 추가 -->
+
+				<div class="ico-group">
+					<span> </span>
+				</div>
+
+				<a href="#" class="btn-more">more</a>
+			</div>
+			<div class="detail-item">
+				<div class="bg"></div>
+				<div class="detail-text">
+					<p class="classify"><span>积分</span>可立即使用</p>
+					<h2>约 ￥ 2.10</h2>
+					<ul class="appraisal">
+						<li>本周销量<strong>4</strong>个</li>
+						<li>
+
+							<span><strong>0</strong>人评价</span>
+
+
+						</li>
+					</ul>
+					<div class="detail-btn">
+						<!-- 즐겨찾기 등록 되었으면 클래스 on 추가 -->
+						<a href="javascript:fncAddWishProduct('63319000070');" class="btn-liked on">liked</a>
+						<!-- //즐겨찾기 등록 되었으면 클래스 on 추가 -->
+
+
+
+
+					      	<!-- 상품이 있을때 -->
+							<a href="javascript:fncAddCart('63319000070');" class="btn-shopping">shopping</a>
+							<a href="javascript:directOrderProduct('63319000070');" class="btn-pay">立即购买</a>
+
+
+					</div>
+					<a href="#" class="btn-close">close</a>
+				</div>
+			</div>
+		</li>
+		<!-- 상품 하나 : E -->
+
+		<!-- 상품 하나 : S -->
+		<li class="item-box-v">
+			<p class="img">
+				<a href="/shop/product/productDetail?prdtCode=61049000104">
+					<img src="//image.ssgdfm.com/images/product/200/781/20160315F0000554.jpg" alt="">
+				</a>
+			</p>
+			<div class="text-box">
+				<h2>
+
+				[得鲜] </h2>
+				<h3> ECO SOUL KISS BUTTON LIPS 09 BITTER COFFEE 口红笔</h3>
+
+				<p class="price-cost"> <!-- 원가 -->
+
+		           	<del>$ 7</del>
+
+				</p>
+				<p class="price"> <!-- 할인가 -->
+
+			            $ 6.30 <br>
+
+					<span>
+
+			            	(约 ￥42.71)
+
+					</span>
+				</p>
+
+				<!-- 선택 된 상태는 good에 클래스 on을 추가 -->
+				<!-- <p class="good"><a href="#"><i class="ico-heart"></i>37</a></p> -->
+				<p class="good on"><a href="javascript:btnGoodCount('61049000104');"><i class="ico-heart"></i><span id="61049000104goodCnt">11</span></a></p>
+				<!-- //선택 된 상태는 good에 클래스 on을 추가 -->
+
+				<div class="ico-group">
+					<span> </span>
+				</div>
+
+				<a href="#" class="btn-more">more</a>
+			</div>
+			<div class="detail-item">
+				<div class="bg"></div>
+				<div class="detail-text">
+					<p class="classify"><span>积分</span>可立即使用</p>
+					<h2>约 ￥ 0.88</h2>
+					<ul class="appraisal">
+						<li>本周销量<strong>60</strong>个</li>
+						<li>
+
+							<span><strong>0</strong>人评价</span>
+
+
+						</li>
+					</ul>
+					<div class="detail-btn">
+						<!-- 즐겨찾기 등록 되었으면 클래스 on 추가 -->
+						<a href="javascript:fncAddWishProduct('61049000104');" class="btn-liked on">liked</a>
+						<!-- //즐겨찾기 등록 되었으면 클래스 on 추가 -->
+
+
+
+
+					      	<!-- 상품이 있을때 -->
+							<a href="javascript:fncAddCart('61049000104');" class="btn-shopping">shopping</a>
+							<a href="javascript:directOrderProduct('61049000104');" class="btn-pay">立即购买</a>
+
+
+					</div>
+					<a href="#" class="btn-close">close</a>
+				</div>
+			</div>
+		</li>
+		<!-- 상품 하나 : E -->
+
+		<!-- 상품 하나 : S -->
+		<li class="item-box-v">
+			<p class="img">
+				<a href="/shop/product/productDetail?prdtCode=08109000019">
+					<img src="//image.ssgdfm.com/images/product/200/128/20160519F0000490.JPG" alt="">
+				</a>
+			</p>
+			<div class="text-box">
+				<h2>
+
+				[珂丽柏蒂] </h2>
+				<h3>珂利柏蒂/CLE DE PEAU BEAUTE #311 / ROUGE A LEVRES 口红替换装 4G</h3>
+
+				<p class="price-cost"> <!-- 원가 -->
+
+		           	<del>$ 40</del>
+
+				</p>
+				<p class="price"> <!-- 할인가 -->
+
+			            $ 38.00 <br>
+
+					<span>
+
+			            	(约 ￥257.64)
+
+					</span>
+				</p>
+
+				<!-- 선택 된 상태는 good에 클래스 on을 추가 -->
+				<!-- <p class="good"><a href="#"><i class="ico-heart"></i>37</a></p> -->
+				<p class="good on"><a href="javascript:btnGoodCount('08109000019');"><i class="ico-heart"></i><span id="08109000019goodCnt">5</span></a></p>
+				<!-- //선택 된 상태는 good에 클래스 on을 추가 -->
+
+				<div class="ico-group">
+					<span> </span>
+				</div>
+
+				<a href="#" class="btn-more">more</a>
+			</div>
+			<div class="detail-item">
+				<div class="bg"></div>
+				<div class="detail-text">
+					<p class="classify"><span>积分</span>可立即使用</p>
+					<h2>约 ￥ 5.15</h2>
+					<ul class="appraisal">
+						<li>本周销量<strong>424</strong>个</li>
+						<li>
+
+							<span><strong>0</strong>人评价</span>
+
+
+						</li>
+					</ul>
+					<div class="detail-btn">
+						<!-- 즐겨찾기 등록 되었으면 클래스 on 추가 -->
+						<a href="javascript:fncAddWishProduct('08109000019');" class="btn-liked on">liked</a>
+						<!-- //즐겨찾기 등록 되었으면 클래스 on 추가 -->
+
+
+
+
+					      	<!-- 상품이 있을때 -->
+							<a href="javascript:fncAddCart('08109000019');" class="btn-shopping">shopping</a>
+							<a href="javascript:directOrderProduct('08109000019');" class="btn-pay">立即购买</a>
+
+
+					</div>
+					<a href="#" class="btn-close">close</a>
+				</div>
+			</div>
+		</li>
+		<!-- 상품 하나 : E -->
+
+		<!-- 상품 하나 : S -->
+		<li class="item-box-v">
+			<p class="img">
+				<a href="/shop/product/productDetail?prdtCode=08109000020">
+					<img src="//image.ssgdfm.com/images/product/200/565/20160519F0000493.JPG" alt="">
+				</a>
+			</p>
+			<div class="text-box">
+				<h2>
+
+				[珂丽柏蒂] </h2>
+				<h3>珂利柏蒂/CLE DE PEAU BEAUTE 双生玫瑰唇膏外壳</h3>
+
+				<p class="price-cost"> <!-- 원가 -->
+
+		           	<del>$ 18</del>
+
+				</p>
+				<p class="price"> <!-- 할인가 -->
+
+			            $ 17.10 <br>
+
+					<span>
+
+			            	(约 ￥115.94)
+
+					</span>
+				</p>
+
+				<!-- 선택 된 상태는 good에 클래스 on을 추가 -->
+				<!-- <p class="good"><a href="#"><i class="ico-heart"></i>37</a></p> -->
+				<p class="good on"><a href="javascript:btnGoodCount('08109000020');"><i class="ico-heart"></i><span id="08109000020goodCnt">3</span></a></p>
+				<!-- //선택 된 상태는 good에 클래스 on을 추가 -->
+
+				<div class="ico-group">
+					<span> </span>
+				</div>
+
+				<a href="#" class="btn-more">more</a>
+			</div>
+			<div class="detail-item">
+				<div class="bg"></div>
+				<div class="detail-text">
+					<p class="classify"><span>积分</span>可立即使用</p>
+					<h2>约 ￥ 2.31</h2>
+					<ul class="appraisal">
+						<li>本周销量<strong>458</strong>个</li>
+						<li>
+
+							<span><strong>0</strong>人评价</span>
+
+
+						</li>
+					</ul>
+					<div class="detail-btn">
+						<!-- 즐겨찾기 등록 되었으면 클래스 on 추가 -->
+						<a href="javascript:fncAddWishProduct('08109000020');" class="btn-liked on">liked</a>
+						<!-- //즐겨찾기 등록 되었으면 클래스 on 추가 -->
+
+
+
+
+					      	<!-- 상품이 있을때 -->
+							<a href="javascript:fncAddCart('08109000020');" class="btn-shopping">shopping</a>
+							<a href="javascript:directOrderProduct('08109000020');" class="btn-pay">立即购买</a>
+
+
+					</div>
+					<a href="#" class="btn-close">close</a>
+				</div>
+			</div>
+		</li>
+		<!-- 상품 하나 : E -->
+
+		<!-- 상품 하나 : S -->
+		<li class="item-box-v">
+			<p class="img">
+				<a href="/shop/product/productDetail?prdtCode=01279000481">
+					<img src="//image.ssgdfm.com/images/product/200/040/20160818F0000856.JPG" alt="">
+				</a>
+			</p>
+			<div class="text-box">
+				<h2>
+
+				[NARS] </h2>
+				<h3>Lipstick- (DOLCE VITA )</h3>
+
+				<p class="price-cost"> <!-- 원가 -->
+
+		           	<del>$ 26</del>
+
+				</p>
+				<p class="price"> <!-- 할인가 -->
+
+			            $ 24.70 <br>
+
+					<span>
+
+			            	(约 ￥167.47)
+
+					</span>
+				</p>
+
+				<!-- 선택 된 상태는 good에 클래스 on을 추가 -->
+				<!-- <p class="good"><a href="#"><i class="ico-heart"></i>37</a></p> -->
+				<p class="good on"><a href="javascript:btnGoodCount('01279000481');"><i class="ico-heart"></i><span id="01279000481goodCnt">6</span></a></p>
+				<!-- //선택 된 상태는 good에 클래스 on을 추가 -->
+
+				<div class="ico-group">
+					<span> </span>
+				</div>
+
+				<a href="#" class="btn-more">more</a>
+			</div>
+			<div class="detail-item">
+				<div class="bg"></div>
+				<div class="detail-text">
+					<p class="classify"><span>积分</span>可立即使用</p>
+					<h2>约 ￥ 3.32</h2>
+					<ul class="appraisal">
+						<li>本周销量<strong>58</strong>个</li>
+						<li>
+
+							<span><strong>0</strong>人评价</span>
+
+
+						</li>
+					</ul>
+					<div class="detail-btn">
+						<!-- 즐겨찾기 등록 되었으면 클래스 on 추가 -->
+						<a href="javascript:fncAddWishProduct('01279000481');" class="btn-liked on">liked</a>
+						<!-- //즐겨찾기 등록 되었으면 클래스 on 추가 -->
+
+
+
+
+					      	<!-- 상품이 있을때 -->
+							<a href="javascript:fncAddCart('01279000481');" class="btn-shopping">shopping</a>
+							<a href="javascript:directOrderProduct('01279000481');" class="btn-pay">立即购买</a>
+
+
+					</div>
+					<a href="#" class="btn-close">close</a>
+				</div>
+			</div>
+		</li>
+		<!-- 상품 하나 : E -->
+
+		<!-- 상품 하나 : S -->
+		<li class="item-box-v">
+			<p class="img">
+				<a href="/shop/product/productDetail?prdtCode=67629000003">
+					<img src="//image.ssgdfm.com/images/product/200/940/20160805F0001462.jpg" alt="">
+				</a>
+			</p>
+			<div class="text-box">
+				<h2>
+
+				[MAMONDE] </h2>
+				<h3>梦妆花心炫色唇膏 12号 哑光橘橙</h3>
+
+				<p class="price-cost"> <!-- 원가 -->
+
+				</p>
+				<p class="price"> <!-- 할인가 -->
+
+			            $ 6.00 <br>
+
+					<span>
+
+			            	(约 ￥40.68)
+
+					</span>
+				</p>
+
+				<!-- 선택 된 상태는 good에 클래스 on을 추가 -->
+				<!-- <p class="good"><a href="#"><i class="ico-heart"></i>37</a></p> -->
+				<p class="good on"><a href="javascript:btnGoodCount('67629000003');"><i class="ico-heart"></i><span id="67629000003goodCnt">8</span></a></p>
+				<!-- //선택 된 상태는 good에 클래스 on을 추가 -->
+
+				<div class="ico-group">
+					<span> </span>
+				</div>
+
+				<a href="#" class="btn-more">more</a>
+			</div>
+			<div class="detail-item">
+				<div class="bg"></div>
+				<div class="detail-text">
+					<p class="classify"><span>积分</span>可立即使用</p>
+					<h2>约 ￥ 0.75</h2>
+					<ul class="appraisal">
+						<li>本周销量<strong>32</strong>个</li>
+						<li>
+
+							<span><strong>0</strong>人评价</span>
+
+
+						</li>
+					</ul>
+					<div class="detail-btn">
+						<!-- 즐겨찾기 등록 되었으면 클래스 on 추가 -->
+						<a href="javascript:fncAddWishProduct('67629000003');" class="btn-liked on">liked</a>
+						<!-- //즐겨찾기 등록 되었으면 클래스 on 추가 -->
+
+
+
+
+					      	<!-- 상품이 있을때 -->
+							<a href="javascript:fncAddCart('67629000003');" class="btn-shopping">shopping</a>
+							<a href="javascript:directOrderProduct('67629000003');" class="btn-pay">立即购买</a>
+
+
+					</div>
+					<a href="#" class="btn-close">close</a>
+				</div>
+			</div>
+		</li>
+		<!-- 상품 하나 : E -->
+
+		<!-- 상품 하나 : S -->
+		<li class="item-box-v">
+			<p class="img">
+				<a href="/shop/product/productDetail?prdtCode=63369000057">
+					<img src="//image.ssgdfm.com/images/product/200/047/20141107F0000486.jpg" alt="">
+				</a>
+			</p>
+			<div class="text-box">
+				<h2>
+
+				[艾诺碧] </h2>
+				<h3>水灵妃唇膏 #44 2件套装</h3>
+
+				<p class="price-cost"> <!-- 원가 -->
+
+		           	<del>$ 36</del>
+
+				</p>
+				<p class="price"> <!-- 할인가 -->
+
+			            $ 34.20 <br>
+
+					<span>
+
+			            	(约 ￥231.88)
+
+					</span>
+				</p>
+
+				<!-- 선택 된 상태는 good에 클래스 on을 추가 -->
+				<!-- <p class="good"><a href="#"><i class="ico-heart"></i>37</a></p> -->
+				<p class="good on"><a href="javascript:btnGoodCount('63369000057');"><i class="ico-heart"></i><span id="63369000057goodCnt">0</span></a></p>
+				<!-- //선택 된 상태는 good에 클래스 on을 추가 -->
+
+				<div class="ico-group">
+					<span><img src="//image.ssgdfm.com/images/shop/cn/common/icon/IconS06.gif">
+ </span>
+				</div>
+
+				<a href="#" class="btn-more">more</a>
+			</div>
+			<div class="detail-item">
+				<div class="bg"></div>
+				<div class="detail-text">
+					<p class="classify"><span>积分</span>可立即使用</p>
+					<h2>约 ￥ 4.61</h2>
+					<ul class="appraisal">
+						<li>本周销量<strong>184</strong>个</li>
+						<li>
+
+							<span><strong>0</strong>人评价</span>
+
+
+						</li>
+					</ul>
+					<div class="detail-btn">
+						<!-- 즐겨찾기 등록 되었으면 클래스 on 추가 -->
+						<a href="javascript:fncAddWishProduct('63369000057');" class="btn-liked on">liked</a>
+						<!-- //즐겨찾기 등록 되었으면 클래스 on 추가 -->
+
+
+
+
+					      	<!-- 상품이 있을때 -->
+							<a href="javascript:fncAddCart('63369000057');" class="btn-shopping">shopping</a>
+							<a href="javascript:directOrderProduct('63369000057');" class="btn-pay">立即购买</a>
+
+
+					</div>
+					<a href="#" class="btn-close">close</a>
+				</div>
+			</div>
+		</li>
+		<!-- 상품 하나 : E -->
+
+		<!-- 상품 하나 : S -->
+		<li class="item-box-v">
+			<p class="img">
+				<a href="/shop/product/productDetail?prdtCode=01279000379">
+					<img src="//image.ssgdfm.com/images/product/200/406/20160818F0000450.JPG" alt="">
+				</a>
+			</p>
+			<div class="text-box">
+				<h2>
+
+				[NARS] </h2>
+				<h3>AUDACIOUS LIPSTICK-(ANITA)</h3>
+
+				<p class="price-cost"> <!-- 원가 -->
+
+		           	<del>$ 28</del>
+
+				</p>
+				<p class="price"> <!-- 할인가 -->
+
+			            $ 26.60 <br>
+
+					<span>
+
+			            	(约 ￥180.35)
+
+					</span>
+				</p>
+
+				<!-- 선택 된 상태는 good에 클래스 on을 추가 -->
+				<!-- <p class="good"><a href="#"><i class="ico-heart"></i>37</a></p> -->
+				<p class="good on"><a href="javascript:btnGoodCount('01279000379');"><i class="ico-heart"></i><span id="01279000379goodCnt">2</span></a></p>
+				<!-- //선택 된 상태는 good에 클래스 on을 추가 -->
+
+				<div class="ico-group">
+					<span> </span>
+				</div>
+
+				<a href="#" class="btn-more">more</a>
+			</div>
+			<div class="detail-item">
+				<div class="bg"></div>
+				<div class="detail-text">
+					<p class="classify"><span>积分</span>可立即使用</p>
+					<h2>约 ￥ 3.59</h2>
+					<ul class="appraisal">
+						<li>本周销量<strong>9</strong>个</li>
+						<li>
+
+							<span><strong>0</strong>人评价</span>
+
+
+						</li>
+					</ul>
+					<div class="detail-btn">
+						<!-- 즐겨찾기 등록 되었으면 클래스 on 추가 -->
+						<a href="javascript:fncAddWishProduct('01279000379');" class="btn-liked on">liked</a>
+						<!-- //즐겨찾기 등록 되었으면 클래스 on 추가 -->
+
+
+
+
+					      	<!-- 상품이 있을때 -->
+							<a href="javascript:fncAddCart('01279000379');" class="btn-shopping">shopping</a>
+							<a href="javascript:directOrderProduct('01279000379');" class="btn-pay">立即购买</a>
+
+
+					</div>
+					<a href="#" class="btn-close">close</a>
+				</div>
+			</div>
+		</li>
+		<!-- 상품 하나 : E -->
+
+		<!-- 상품 하나 : S -->
+		<li class="item-box-v">
+			<p class="img">
+				<a href="/shop/product/productDetail?prdtCode=63229000205">
+					<img src="//image.ssgdfm.com/images/product/200/585/20160406F0000379.JPG" alt="">
+				</a>
+			</p>
+			<div class="text-box">
+				<h2>
+
+				[兰芝] </h2>
+				<h3>兰芝双色立体唇膏 No.11 </h3>
+
+				<p class="price-cost"> <!-- 원가 -->
+
+				</p>
+				<p class="price"> <!-- 할인가 -->
+
+			            $ 19.00 <br>
+
+					<span>
+
+			            	(约 ￥128.82)
+
+					</span>
+				</p>
+
+				<!-- 선택 된 상태는 good에 클래스 on을 추가 -->
+				<!-- <p class="good"><a href="#"><i class="ico-heart"></i>37</a></p> -->
+				<p class="good on"><a href="javascript:btnGoodCount('63229000205');"><i class="ico-heart"></i><span id="63229000205goodCnt">1</span></a></p>
+				<!-- //선택 된 상태는 good에 클래스 on을 추가 -->
+
+				<div class="ico-group">
+					<span> </span>
+				</div>
+
+				<a href="#" class="btn-more">more</a>
+			</div>
+			<div class="detail-item">
+				<div class="bg"></div>
+				<div class="detail-text">
+					<p class="classify"><span>积分</span>可立即使用</p>
+					<h2>约 ￥ 2.44</h2>
+					<ul class="appraisal">
+						<li>本周销量<strong>25</strong>个</li>
+						<li>
+
+							<span><strong>0</strong>人评价</span>
+
+
+						</li>
+					</ul>
+					<div class="detail-btn">
+						<!-- 즐겨찾기 등록 되었으면 클래스 on 추가 -->
+						<a href="javascript:fncAddWishProduct('63229000205');" class="btn-liked on">liked</a>
+						<!-- //즐겨찾기 등록 되었으면 클래스 on 추가 -->
+
+
+
+
+					      	<!-- 상품이 있을때 -->
+							<a href="javascript:fncAddCart('63229000205');" class="btn-shopping">shopping</a>
+							<a href="javascript:directOrderProduct('63229000205');" class="btn-pay">立即购买</a>
+
+
+					</div>
+					<a href="#" class="btn-close">close</a>
+				</div>
+			</div>
+		</li>
+		<!-- 상품 하나 : E -->
+
+		<!-- 상품 하나 : S -->
+		<li class="item-box-v">
+			<p class="img">
+				<a href="/shop/product/productDetail?prdtCode=08119000114">
+					<img src="//image.ssgdfm.com/images/product/200/668/20160509F0000372.jpg" alt="">
+				</a>
+			</p>
+			<div class="text-box">
+				<h2>
+
+				[馥蕾诗] </h2>
+				<h3>澄糖滋润护唇膏 （宝石红）</h3>
+
+				<p class="price-cost"> <!-- 원가 -->
+
+				</p>
+				<p class="price"> <!-- 할인가 -->
+
+			            $ 25.00 <br>
+
+					<span>
+
+			            	(约 ￥169.50)
+
+					</span>
+				</p>
+
+				<!-- 선택 된 상태는 good에 클래스 on을 추가 -->
+				<!-- <p class="good"><a href="#"><i class="ico-heart"></i>37</a></p> -->
+				<p class="good on"><a href="javascript:btnGoodCount('08119000114');"><i class="ico-heart"></i><span id="08119000114goodCnt">2</span></a></p>
+				<!-- //선택 된 상태는 good에 클래스 on을 추가 -->
+
+				<div class="ico-group">
+					<span> </span>
+				</div>
+
+				<a href="#" class="btn-more">more</a>
+			</div>
+			<div class="detail-item">
+				<div class="bg"></div>
+				<div class="detail-text">
+					<p class="classify"><span>积分</span>可立即使用</p>
+					<h2>约 ￥ 3.25</h2>
+					<ul class="appraisal">
+						<li>本周销量<strong>61</strong>个</li>
+						<li>
+
+							<span><strong>0</strong>人评价</span>
+
+
+						</li>
+					</ul>
+					<div class="detail-btn">
+						<!-- 즐겨찾기 등록 되었으면 클래스 on 추가 -->
+						<a href="javascript:fncAddWishProduct('08119000114');" class="btn-liked on">liked</a>
+						<!-- //즐겨찾기 등록 되었으면 클래스 on 추가 -->
+
+
+
+
+					      	<!-- 상품이 있을때 -->
+							<a href="javascript:fncAddCart('08119000114');" class="btn-shopping">shopping</a>
+							<a href="javascript:directOrderProduct('08119000114');" class="btn-pay">立即购买</a>
+
+
+					</div>
+					<a href="#" class="btn-close">close</a>
+				</div>
+			</div>
+		</li>
+		<!-- 상품 하나 : E -->
+
+		<!-- 상품 하나 : S -->
+		<li class="item-box-v">
+			<p class="img">
+				<a href="/shop/product/productDetail?prdtCode=00109000171">
+					<img src="//image.ssgdfm.com/images/product/200/607/20140425F0000082.jpg" alt="">
+				</a>
+			</p>
+			<div class="text-box">
+				<h2>
+
+				[迪奥] </h2>
+				<h3>迪奥魅惑液态唇膏#754</h3>
+
+				<p class="price-cost"> <!-- 원가 -->
+
+				</p>
+				<p class="price"> <!-- 할인가 -->
+
+			            $ 30.00 <br>
+
+					<span>
+
+			            	(约 ￥203.40)
+
+					</span>
+				</p>
+
+				<!-- 선택 된 상태는 good에 클래스 on을 추가 -->
+				<!-- <p class="good"><a href="#"><i class="ico-heart"></i>37</a></p> -->
+				<p class="good on"><a href="javascript:btnGoodCount('00109000171');"><i class="ico-heart"></i><span id="00109000171goodCnt">0</span></a></p>
+				<!-- //선택 된 상태는 good에 클래스 on을 추가 -->
+
+				<div class="ico-group">
+					<span> </span>
+				</div>
+
+				<a href="#" class="btn-more">more</a>
+			</div>
+			<div class="detail-item">
+				<div class="bg"></div>
+				<div class="detail-text">
+					<p class="classify"><span>积分</span>可立即使用</p>
+					<h2>约 ￥ 3.86</h2>
+					<ul class="appraisal">
+						<li>本周销量<strong>23</strong>个</li>
+						<li>
+
+							<span><strong>0</strong>人评价</span>
+
+
+						</li>
+					</ul>
+					<div class="detail-btn">
+						<!-- 즐겨찾기 등록 되었으면 클래스 on 추가 -->
+						<a href="javascript:fncAddWishProduct('00109000171');" class="btn-liked on">liked</a>
+						<!-- //즐겨찾기 등록 되었으면 클래스 on 추가 -->
+
+
+
+
+					      	<!-- 상품이 있을때 -->
+							<a href="javascript:fncAddCart('00109000171');" class="btn-shopping">shopping</a>
+							<a href="javascript:directOrderProduct('00109000171');" class="btn-pay">立即购买</a>
+
+
+					</div>
+					<a href="#" class="btn-close">close</a>
+				</div>
+			</div>
+		</li>
+		<!-- 상품 하나 : E -->
+
+		<!-- 상품 하나 : S -->
+		<li class="item-box-v">
+			<p class="img">
+				<a href="/shop/product/productDetail?prdtCode=01079000256">
+					<img src="//image.ssgdfm.com/images/product/200/364/20160503F0000202.jpg" alt="">
+				</a>
+			</p>
+			<div class="text-box">
+				<h2>
+
+				[雅诗兰黛] </h2>
+				<h3>Pure Color Envy 花漾倾慕唇膏</h3>
+
+				<p class="price-cost"> <!-- 원가 -->
+
+				</p>
+				<p class="price"> <!-- 할인가 -->
+
+			            $ 27.00 <br>
+
+					<span>
+
+			            	(约 ￥183.06)
+
+					</span>
+				</p>
+
+				<!-- 선택 된 상태는 good에 클래스 on을 추가 -->
+				<!-- <p class="good"><a href="#"><i class="ico-heart"></i>37</a></p> -->
+				<p class="good on"><a href="javascript:btnGoodCount('01079000256');"><i class="ico-heart"></i><span id="01079000256goodCnt">1</span></a></p>
+				<!-- //선택 된 상태는 good에 클래스 on을 추가 -->
+
+				<div class="ico-group">
+					<span> </span>
+				</div>
+
+				<a href="#" class="btn-more">more</a>
+			</div>
+			<div class="detail-item">
+				<div class="bg"></div>
+				<div class="detail-text">
+					<p class="classify"><span>积分</span>可立即使用</p>
+					<h2>约 ￥ 3.46</h2>
+					<ul class="appraisal">
+						<li>本周销量<strong>1</strong>个</li>
+						<li>
+
+							<span><strong>0</strong>人评价</span>
+
+
+						</li>
+					</ul>
+					<div class="detail-btn">
+						<!-- 즐겨찾기 등록 되었으면 클래스 on 추가 -->
+						<a href="javascript:fncAddWishProduct('01079000256');" class="btn-liked on">liked</a>
+						<!-- //즐겨찾기 등록 되었으면 클래스 on 추가 -->
+
+
+
+
+					      	<!-- 상품이 있을때 -->
+							<a href="javascript:fncAddCart('01079000256');" class="btn-shopping">shopping</a>
+							<a href="javascript:directOrderProduct('01079000256');" class="btn-pay">立即购买</a>
+
+
+					</div>
+					<a href="#" class="btn-close">close</a>
+				</div>
+			</div>
+		</li>
+		<!-- 상품 하나 : E -->
+
+		<!-- 상품 하나 : S -->
+		<li class="item-box-v">
+			<p class="img">
+				<a href="/shop/product/productDetail?prdtCode=08109000065">
+					<img src="//image.ssgdfm.com/images/product/200/690/20160520F0000157.JPG" alt="">
+				</a>
+			</p>
+			<div class="text-box">
+				<h2>
+
+				[珂丽柏蒂] </h2>
+				<h3>REFILL ROUGE ECLAT COMFORT ENRICHED LIP LUMINIZER #230 盈透唇膏</h3>
+
+				<p class="price-cost"> <!-- 원가 -->
+
+		           	<del>$ 40</del>
+
+				</p>
+				<p class="price"> <!-- 할인가 -->
+
+			            $ 38.00 <br>
+
+					<span>
+
+			            	(约 ￥257.64)
+
+					</span>
+				</p>
+
+				<!-- 선택 된 상태는 good에 클래스 on을 추가 -->
+				<!-- <p class="good"><a href="#"><i class="ico-heart"></i>37</a></p> -->
+				<p class="good on"><a href="javascript:btnGoodCount('08109000065');"><i class="ico-heart"></i><span id="08109000065goodCnt">3</span></a></p>
+				<!-- //선택 된 상태는 good에 클래스 on을 추가 -->
+
+				<div class="ico-group">
+					<span> </span>
+				</div>
+
+				<a href="#" class="btn-more">more</a>
+			</div>
+			<div class="detail-item">
+				<div class="bg"></div>
+				<div class="detail-text">
+					<p class="classify"><span>积分</span>可立即使用</p>
+					<h2>约 ￥ 5.15</h2>
+					<ul class="appraisal">
+						<li>本周销量<strong>16</strong>个</li>
+						<li>
+
+							<span><strong>0</strong>人评价</span>
+
+
+						</li>
+					</ul>
+					<div class="detail-btn">
+						<!-- 즐겨찾기 등록 되었으면 클래스 on 추가 -->
+						<a href="javascript:fncAddWishProduct('08109000065');" class="btn-liked on">liked</a>
+						<!-- //즐겨찾기 등록 되었으면 클래스 on 추가 -->
+
+
+
+
+					      	<!-- 상품이 있을때 -->
+							<a href="javascript:fncAddCart('08109000065');" class="btn-shopping">shopping</a>
+							<a href="javascript:directOrderProduct('08109000065');" class="btn-pay">立即购买</a>
+
+
+					</div>
+					<a href="#" class="btn-close">close</a>
+				</div>
+			</div>
+		</li>
+		<!-- 상품 하나 : E -->
+
+		<!-- 상품 하나 : S -->
+		<li class="item-box-v">
+			<p class="img">
+				<a href="/shop/product/productDetail?prdtCode=08109000067">
+					<img src="//image.ssgdfm.com/images/product/200/060/20160520F0000166.JPG" alt="">
+				</a>
+			</p>
+			<div class="text-box">
+				<h2>
+
+				[珂丽柏蒂] </h2>
+				<h3>REFILL ROUGE ECLAT COMFORT ENRICHED LIP LUMINIZER #236 盈透唇膏 </h3>
+
+				<p class="price-cost"> <!-- 원가 -->
+
+		           	<del>$ 40</del>
+
+				</p>
+				<p class="price"> <!-- 할인가 -->
+
+			            $ 38.00 <br>
+
+					<span>
+
+			            	(约 ￥257.64)
+
+					</span>
+				</p>
+
+				<!-- 선택 된 상태는 good에 클래스 on을 추가 -->
+				<!-- <p class="good"><a href="#"><i class="ico-heart"></i>37</a></p> -->
+				<p class="good on"><a href="javascript:btnGoodCount('08109000067');"><i class="ico-heart"></i><span id="08109000067goodCnt">1</span></a></p>
+				<!-- //선택 된 상태는 good에 클래스 on을 추가 -->
+
+				<div class="ico-group">
+					<span> </span>
+				</div>
+
+				<a href="#" class="btn-more">more</a>
+			</div>
+			<div class="detail-item">
+				<div class="bg"></div>
+				<div class="detail-text">
+					<p class="classify"><span>积分</span>可立即使用</p>
+					<h2>约 ￥ 5.15</h2>
+					<ul class="appraisal">
+						<li>本周销量<strong>6</strong>个</li>
+						<li>
+
+							<span><strong>0</strong>人评价</span>
+
+
+						</li>
+					</ul>
+					<div class="detail-btn">
+						<!-- 즐겨찾기 등록 되었으면 클래스 on 추가 -->
+						<a href="javascript:fncAddWishProduct('08109000067');" class="btn-liked on">liked</a>
+						<!-- //즐겨찾기 등록 되었으면 클래스 on 추가 -->
+
+
+
+
+					      	<!-- 상품이 있을때 -->
+							<a href="javascript:fncAddCart('08109000067');" class="btn-shopping">shopping</a>
+							<a href="javascript:directOrderProduct('08109000067');" class="btn-pay">立即购买</a>
+
+
+					</div>
+					<a href="#" class="btn-close">close</a>
+				</div>
+			</div>
+		</li>
+		<!-- 상품 하나 : E -->
+
+		<!-- 상품 하나 : S -->
+		<li class="item-box-v">
+			<p class="img">
+				<a href="/shop/product/productDetail?prdtCode=01279000374">
+					<img src="//image.ssgdfm.com/images/product/200/339/20160818F0000444.JPG" alt="">
+				</a>
+			</p>
+			<div class="text-box">
+				<h2>
+
+				[NARS] </h2>
+				<h3>AUDACIOUS LIPSTICK-(CHARLOTTE )</h3>
+
+				<p class="price-cost"> <!-- 원가 -->
+
+		           	<del>$ 28</del>
+
+				</p>
+				<p class="price"> <!-- 할인가 -->
+
+			            $ 26.60 <br>
+
+					<span>
+
+			            	(约 ￥180.35)
+
+					</span>
+				</p>
+
+				<!-- 선택 된 상태는 good에 클래스 on을 추가 -->
+				<!-- <p class="good"><a href="#"><i class="ico-heart"></i>37</a></p> -->
+				<p class="good on"><a href="javascript:btnGoodCount('01279000374');"><i class="ico-heart"></i><span id="01279000374goodCnt">1</span></a></p>
+				<!-- //선택 된 상태는 good에 클래스 on을 추가 -->
+
+				<div class="ico-group">
+					<span> </span>
+				</div>
+
+				<a href="#" class="btn-more">more</a>
+			</div>
+			<div class="detail-item">
+				<div class="bg"></div>
+				<div class="detail-text">
+					<p class="classify"><span>积分</span>可立即使用</p>
+					<h2>约 ￥ 3.59</h2>
+					<ul class="appraisal">
+						<li>本周销量<strong>9</strong>个</li>
+						<li>
+
+							<span><strong>0</strong>人评价</span>
+
+
+						</li>
+					</ul>
+					<div class="detail-btn">
+						<!-- 즐겨찾기 등록 되었으면 클래스 on 추가 -->
+						<a href="javascript:fncAddWishProduct('01279000374');" class="btn-liked on">liked</a>
+						<!-- //즐겨찾기 등록 되었으면 클래스 on 추가 -->
+
+
+
+
+					      	<!-- 상품이 있을때 -->
+							<a href="javascript:fncAddCart('01279000374');" class="btn-shopping">shopping</a>
+							<a href="javascript:directOrderProduct('01279000374');" class="btn-pay">立即购买</a>
+
+
+					</div>
+					<a href="#" class="btn-close">close</a>
+				</div>
+			</div>
+		</li>
+		<!-- 상품 하나 : E -->
+
+		<!-- 상품 하나 : S -->
+		<li class="item-box-v">
+			<p class="img">
+				<a href="/shop/product/productDetail?prdtCode=04860122401">
+					<img src="//image.ssgdfm.com/images/product/200/201/04860122401_1.jpg" alt="">
+				</a>
+			</p>
+			<div class="text-box">
+				<h2>
+
+				[植村秀] </h2>
+				<h3>植村秀 无色限柔雾滑唇膏 - M RD 165</h3>
+
+				<p class="price-cost"> <!-- 원가 -->
+
+				</p>
+				<p class="price"> <!-- 할인가 -->
+
+			            $ 26.00 <br>
+
+					<span>
+
+			            	(约 ￥176.28)
+
+					</span>
+				</p>
+
+				<!-- 선택 된 상태는 good에 클래스 on을 추가 -->
+				<!-- <p class="good"><a href="#"><i class="ico-heart"></i>37</a></p> -->
+				<p class="good on"><a href="javascript:btnGoodCount('04860122401');"><i class="ico-heart"></i><span id="04860122401goodCnt">3</span></a></p>
+				<!-- //선택 된 상태는 good에 클래스 on을 추가 -->
+
+				<div class="ico-group">
+					<span> </span>
+				</div>
+
+				<a href="#" class="btn-more">more</a>
+			</div>
+			<div class="detail-item">
+				<div class="bg"></div>
+				<div class="detail-text">
+					<p class="classify"><span>积分</span>可立即使用</p>
+					<h2>约 ￥ 3.32</h2>
+					<ul class="appraisal">
+						<li>本周销量<strong>30</strong>个</li>
+						<li>
+
+							<span><strong>0</strong>人评价</span>
+
+
+						</li>
+					</ul>
+					<div class="detail-btn">
+						<!-- 즐겨찾기 등록 되었으면 클래스 on 추가 -->
+						<a href="javascript:fncAddWishProduct('04860122401');" class="btn-liked on">liked</a>
+						<!-- //즐겨찾기 등록 되었으면 클래스 on 추가 -->
+
+
+
+
+					      	<!-- 상품이 있을때 -->
+							<a href="javascript:fncAddCart('04860122401');" class="btn-shopping">shopping</a>
+							<a href="javascript:directOrderProduct('04860122401');" class="btn-pay">立即购买</a>
+
+
+					</div>
+					<a href="#" class="btn-close">close</a>
+				</div>
+			</div>
+		</li>
+		<!-- 상품 하나 : E -->
+
+		<!-- 상품 하나 : S -->
+		<li class="item-box-v">
+			<p class="img">
+				<a href="/shop/product/productDetail?prdtCode=03929000316">
+					<img src="//image.ssgdfm.com/images/product/200/928/20160407F0000973.JPG" alt="">
+				</a>
+			</p>
+			<div class="text-box">
+				<h2>
+
+				[巴黎欧莱雅] </h2>
+				<h3>巴黎欧莱雅/LOREAL PARIS CARESSE CC GENIUS BALM 704 STATEMENT PINK 唇膏</h3>
+
+				<p class="price-cost"> <!-- 원가 -->
+
+				</p>
+				<p class="price"> <!-- 할인가 -->
+
+			            $ 12.00 <br>
+
+					<span>
+
+			            	(约 ￥81.36)
+
+					</span>
+				</p>
+
+				<!-- 선택 된 상태는 good에 클래스 on을 추가 -->
+				<!-- <p class="good"><a href="#"><i class="ico-heart"></i>37</a></p> -->
+				<p class="good on"><a href="javascript:btnGoodCount('03929000316');"><i class="ico-heart"></i><span id="03929000316goodCnt">10</span></a></p>
+				<!-- //선택 된 상태는 good에 클래스 on을 추가 -->
+
+				<div class="ico-group">
+					<span> </span>
+				</div>
+
+				<a href="#" class="btn-more">more</a>
+			</div>
+			<div class="detail-item">
+				<div class="bg"></div>
+				<div class="detail-text">
+					<p class="classify"><span>积分</span>可立即使用</p>
+					<h2>约 ￥ 1.36</h2>
+					<ul class="appraisal">
+						<li>本周销量<strong>0</strong>个</li>
+						<li>
+
+							<span><strong>0</strong>人评价</span>
+
+
+						</li>
+					</ul>
+					<div class="detail-btn">
+						<!-- 즐겨찾기 등록 되었으면 클래스 on 추가 -->
+						<a href="javascript:fncAddWishProduct('03929000316');" class="btn-liked on">liked</a>
+						<!-- //즐겨찾기 등록 되었으면 클래스 on 추가 -->
+
+
+
+
+					      	<!-- 상품이 있을때 -->
+							<a href="javascript:fncAddCart('03929000316');" class="btn-shopping">shopping</a>
+							<a href="javascript:directOrderProduct('03929000316');" class="btn-pay">立即购买</a>
+
+
+					</div>
+					<a href="#" class="btn-close">close</a>
+				</div>
+			</div>
+		</li>
+		<!-- 상품 하나 : E -->
+
+		<!-- 상품 하나 : S -->
+		<li class="item-box-v">
+			<p class="img">
+				<a href="/shop/product/productDetail?prdtCode=63229000211">
+					<img src="//image.ssgdfm.com/images/product/200/541/20160405F0001016.JPG" alt="">
+				</a>
+			</p>
+			<div class="text-box">
+				<h2>
+
+				[兰芝] </h2>
+				<h3>兰芝双色立体唇膏套装 #1</h3>
+
+				<p class="price-cost"> <!-- 원가 -->
+
+				</p>
+				<p class="price"> <!-- 할인가 -->
+
+			            $ 51.00 <br>
+
+					<span>
+
+			            	(约 ￥345.78)
+
+					</span>
+				</p>
+
+				<!-- 선택 된 상태는 good에 클래스 on을 추가 -->
+				<!-- <p class="good"><a href="#"><i class="ico-heart"></i>37</a></p> -->
+				<p class="good on"><a href="javascript:btnGoodCount('63229000211');"><i class="ico-heart"></i><span id="63229000211goodCnt">1</span></a></p>
+				<!-- //선택 된 상태는 good에 클래스 on을 추가 -->
+
+				<div class="ico-group">
+					<span> </span>
+				</div>
+
+				<a href="#" class="btn-more">more</a>
+			</div>
+			<div class="detail-item">
+				<div class="bg"></div>
+				<div class="detail-text">
+					<p class="classify"><span>积分</span>可立即使用</p>
+					<h2>约 ￥ 6.58</h2>
+					<ul class="appraisal">
+						<li>本周销量<strong>8</strong>个</li>
+						<li>
+
+							<span><strong>0</strong>人评价</span>
+
+
+						</li>
+					</ul>
+					<div class="detail-btn">
+						<!-- 즐겨찾기 등록 되었으면 클래스 on 추가 -->
+						<a href="javascript:fncAddWishProduct('63229000211');" class="btn-liked on">liked</a>
+						<!-- //즐겨찾기 등록 되었으면 클래스 on 추가 -->
+
+
+
+
+					      	<!-- 상품이 있을때 -->
+							<a href="javascript:fncAddCart('63229000211');" class="btn-shopping">shopping</a>
+							<a href="javascript:directOrderProduct('63229000211');" class="btn-pay">立即购买</a>
+
+
+					</div>
+					<a href="#" class="btn-close">close</a>
+				</div>
+			</div>
+		</li>
+		<!-- 상품 하나 : E -->
+
+
+		<!-- 상품 카테고리 종류?? -->
+		<li class="item-kind type2" style="height: 353px;">
+			<div class="title">
+				<h2>
+
+
+					新世界顾客
+
+				</h2>
+				<p>常看的分类(如下) 请按分类查询商品</p>
+			</div>
+			<ul class="kind-list" style="height: 275px;">
+
+					<li class="link-on on ">
+						<a href="/shop/display/displayCategory?dispCtgrId=000202">
+						<i class="ico-kind-list0002"></i>唇膏</a>
+					</li>
+
+					<li class="link-on  ">
+						<a href="/shop/display/displayCategory?dispCtgrId=000101">
+						<i class="ico-kind-list0001"></i>基础护理</a>
+					</li>
+
+					<li class="link-on  ">
+						<a href="/shop/display/displayCategory?dispCtgrId=000201">
+						<i class="ico-kind-list0002"></i>面部</a>
+					</li>
+
+					<li class="link-on  ">
+						<a href="/shop/display/displayCategory?dispCtgrId=000105">
+						<i class="ico-kind-list0001"></i>洁面</a>
+					</li>
+
+					<li class="link-on  ">
+						<a href="/shop/display/displayCategory?dispCtgrId=000206">
+						<i class="ico-kind-list0002"></i>眼部</a>
+					</li>
+
+			</ul>
+		</li>
+	</ul>
+
+
+
+</section>
+			<!-- 11.개인화 추천영역 상품 목록 : E -->
+		</section>
+		<!--  Container : E -->
+
+
+
+<script>
+
+	$('.main_visual .swiper-wrapper').css('width',$('.main_visual .swiper-wrapper li').size() * $(window).outerWidth());
+	$('.main_visual .swiper-wrapper li').css('width', $(window).outerWidth());
+</script>
+
+
+
+		<!--  Container : E -->
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<script type="text/javascript">
+<!--
+
+	jQuery(function($){
+		var curl = location.href;
+
+		$(document).ready(function(){
+			$('.type5').find('li').removeClass();
+
+			if(curl.indexOf('/shop/display/')>-1){  //카테고리
+				$('.type5').find('li').eq(1).addClass('on');
+			}else if(curl.indexOf('/shop/brand/')>-1){ //브랜드
+				$('.type5').find('li').eq(2).addClass('on');
+			}else if(curl.indexOf('/shop/order/')>-1){ //장바구니
+				$('.type5').find('li').eq(3).addClass('on');
+			}else if(curl.indexOf('/shop/mypage/')>-1){
+				$('.type5').find('li').eq(4).addClass('on'); //마이페이지
+			}else { //메인
+				$('.type5').find('li').eq(0).addClass('on');
+			}
+
+		});
+
+
+	});
+
+//-->
+</script>
+
+	<!-- 신규 앱 배포전까지 웹에서만 공통 dock 오픈 2015.12.08  -->
+
+
+		<!--  하단메뉴 : S -->
+		<aside id="aside-menu">
+			<ul class="type5">
+				<li class="on"><a href="/shop/main"><i class="footer01"></i>首页</a></li>
+				<li><a href="/shop/display/categoryMain"><i class="footer02"></i>分类</a></li>
+				<li><a href="/shop/brand/brandMainRenewal"><i class="footer03"></i>品牌</a></li>
+				<li><a href="/shop/order/cart"><i class="footer04"></i>购物车</a></li>
+				<li><a href="/shop/mypage/mypageMain"><i class="footer05"></i>我的新世界</a></li>
+			</ul>
+		</aside>
+
+
+
+		<!-- <a href="#" id="btn-top">top button</a> -->
+
+
+
+
+
+
+
+<!-- This script is for NSM Site Analyst Mobile START -->
+<script type="text/javascript">
+var birthYY = 0;
+var age = 0;
+
+var m_ag   = age;
+var m_id   = '';
+var m_mr   = '';
+var m_gd   = '';
+var m_jid  = '';
+var m_jn   = '';
+var isLoginVal = "false";
+</script>
+<script type="text/javascript">
+	$(function(){
+		//footer info toggle
+		$(".btn_ft_open").on("click",function(e){
+			e.preventDefault();
+			$(this).toggleClass('active');
+			$(".ft_detail_wrap").slideToggle(300);
+		});
+	});
+</script>
+		<aside class="share-wrap">
+			<div class="bg"></div>
+			<div class="share-box">
+				<ul>
+					<li class="share01"><a href="http://service.t.sina.com.cn/share/share.php?url=http://m.cn.ssgdfm.com&amp;title=欢迎您来到新世界网上免税店">微博</a></li>
+					<li class="share02"><a href="http://www.connect.renren.com/share/sharer?url=http://m.cn.ssgdfm.com&amp;title=欢迎您来到新世界网上免税店">人人网</a></li>
+					<li class="share03"><a href="http://v.t.qq.com/share/share.php?url=http://m.cn.ssgdfm.com&amp;title=欢迎您来到新世界网上免税店">腾讯微博</a></li>
+					<li class="share04"><a href="http://www.kaixin001.com/repaste/bshare.php?rurl=http://m.cn.ssgdfm.com&amp;title=欢迎您来到新世界网上免税店">开心网</a></li>
+					<li class="share05"><a href="http://tieba.baidu.com/i/app/open_share_api?link=http://m.cn.ssgdfm.com&amp;title=欢迎您来到新世界网上免税店">百度</a></li>
+					<li class="share06"><a href="http://sns.qzone.qq.com/cgi-bin/qzshare/cgi_qzshare_onekey?to=pengyou&amp;url=http://m.cn.ssgdfm.com&amp;title=欢迎您来到新世界网上免税店">QQ空间</a></li>
+					<li class="share07"><a href="http://sns.qzone.qq.com/cgi-bin/qzshare/cgi_qzshare_onekey?url=http://m.cn.ssgdfm.com&amp;title=欢迎您来到新世界网上免税店">朋友网</a></li>
+				</ul>
+				<div class="btn-group">
+					<a href="#" class="btn-black">
+						<span>取消</span>
+					</a>
+				</div>
+			</div>
+		</aside>
+
+		<!--  Footer : S -->
+		<footer id="footer">
+			<div class="footer-link-menu">
+            	<ul>
+            		<li><a href="/shop/mypage/shoppingGuide"><i class="ico-ft-menu01"></i>购物指南</a></li>
+            		<li><a href="/shop/mypage/memberGuide"><i class="ico-ft-menu02"></i>会员指南</a></li>
+            		<li><a href="/shop/customer/listNotice"><i class="ico-ft-menu07"></i>公告事项</a></li>
+            		<li>
+
+			            	<a href="http://m.ssgdfs.com/shop/store/cn/main" target="_blank">
+
+	            		<i class="ico-ft-menu04"></i>分店地址</a></li>
+            	</ul>
+			</div>
+			<div class="footer-menu">
+				<ul>
+					<li>
+
+		                    <a href="javascript://" class="btnIsLoginPopup">登录</a>
+
+
+	                </li>
+					<li><a href="http://cn.ssgdfm.com/?pcKey=pc">PC版</a></li>
+				</ul>
+			</div>
+
+			<div class="ft_bot">
+				<div class="menu">
+					<h2><a href="#" class="btn_ft_open">(株)新世界免税店</a></h2>
+
+
+
+					<div class="footPrivacy" style="text-align: center;vertical-align: middle;
+				    line-height: 150%;
+				    background: transparent;">
+						<ul style="text-align: center; float:none;">
+							<li style="float:none;"><a href="/shop/mypage/memberAgree">使用条款</a>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;<a href="/shop/mypage/privacyPolicy">个人信息利用（处理）政策</a></li>
+						</ul>
+					</div>
+				</div>
+
+				<div class="ft_detail_wrap">
+					<div class="ft_bot_inner">
+						<div class="addr">
+							<address>首尔特别市中区退溪路77, 8-14层(忠武路一街，新世界百货店)</address>
+							<p>董事长 : 成映穆</p>
+						</div>
+						<ul class="list">
+							<li>营业执照号码 : 793-85-00297</li>
+							<li>网上销售申报 : 2016-首尔中区-0878</li>
+							<li>托管企业 : (株)新世界I&amp;C</li>
+						</ul>
+						<ul class="list">
+							<li>代表电话 : 400-842-8868</li>
+							<li>传真 : +82-2-6276-2268</li>
+							<li>京ICP备13002727号-3</li>
+						</ul>
+					</div>
+				</div>
+				<p class="copy">Copyright @ SHINSEGAE DUTY FREE. All rights reserved</p>
+			</div>
+		</footer>
+		<!--  Footer : E -->
+
+		<!-- 20160114 bidu script commonHeader.jsp로 옮김 -->
+
+		<!-- NSM Mobile WebSite Gathering Script V.3.1.AMZ2014031401
+			<script language='javascript'>
+			var _AKC = "Ncisy";
+			if(typeof(_AMLog) == 'undefined'){function AM_URL_CUR (_URL){if(typeof(_AKC)!='undefined'){var _R_a = _AKC.split(','); var _ak2 = ''; var _ak_list = _URL.split('&'); for(var i=0;i<_ak_list.length;i++){ var cnt=0; for(var a=0;a<_R_a.length;a++){if( _ak_list[i].indexOf(_R_a[a]) == 0 )  cnt++;}; if(cnt > 0 )	continue; if( _ak2 != '' ) _ak2 += '&'; 	_ak2 += _ak_list[i]; }; if( _ak2 != '' ){ _URL= _ak2;}; return _URL; }else{return _URL; }; }; var _AMLog=[];var AM_Mobile=(function(){var _u={gd:'mgc.nsm-corp.com',cd:'ssgdfm.com',ud:'cn.ssgdfm.com',uid:'CM4B39449615819',sv:'AMZ2014031401',st:(30*60),py:1};var _t={u:'unknown',d:'undefined',n:'null',m:'number',um:'undefined_member',re:'!|~| |&|"|<|>|[&=":,./?~!<>@%#$^&*()";]',Lp:'a.tagName=="SPAN"||a.tagName=="IMG"||a.tagName=="B" || a.tagName=="I" || a.tagName== "U" || a.tagName== "FONT" || a.tagName=="STRONG" || a.tagName=="I" || a.tagName=="A" || a.tagName=="AREA"',l:'load',c:'click',j:'javascript:',f:'function'};
+			var _f={u:decodeURIComponent,e:encodeURIComponent ,url:String(AM_URL_CUR(document.URL)),ref:document.referrer!=''?document.referrer:'bookmark',ei:function(s,t){return s.indexOf(t);},d:function(s){var r=String(s);return r.toUpperCase();},f:function(o){var a;a=o;if(_f.d(a.tagName)=='A' || _f.d(a.tagName)=='AREA'){return a;}else if(_f.d(a.tagName)=='BODY'){return 0;}else{return _f.f(a.parentNode);}},
+			hr:function(u,t){var r=String(u).replace(/http:\/\/|https:\/\//gi, "");var v=1024;var s=r.length;if(s>v){if(t=='u'){r='URLblockade:'+s;}else{r=r.substring(0,v);} }; if(t=='h'){return r.split('/')[0];}; return r;},ea:function(c,f){var wd;if(c=='mousedown'){wd=window.document;}else{wd=window;}if(wd.addEventListener){wd.addEventListener(c,f,false)}else if(wd.attachEvent){wd.attachEvent("on"+c,f)}},rc:function(s){var sr=_f.tg(s+'',_t.re);return sr.substring(0,512);},ua:navigator.userAgent,lg:(typeof(navigator.language)!=_t.d)?navigator.language.toLowerCase():(typeof(navigator.userLanguage)!=_t.d)?navigator.userLanguage.toLowerCase():'',tz:function(){var t=20;t = Math.floor((new Date()).getTimezoneOffset()/60) + 29 ;if( t > 24 ) t = t - 24 ;return t;},tg:function(s,u,o){var us=u;var c='';c=String(s.replace(/<[^<|>]*>/gi, ""));if(typeof(u)!=_t.d){if(typeof(o)!=_t.d){us=u.replace(o,'');} c=eval("c.replace(/" + us + "/g,'')");};return c;},tgc:function(s){return String(s).replace(/[#&^@]/g,'');},
+			iN:function(s) {s += '';s = s.replace(/^\s*|\s*$/g, ''); if(s ==''|| isNaN(s)!=false ){ return false;}; return true;},ct:function(o){var a=p=0;var b=c=d='';if((_f.iN(o.qy)!=true)||(o.pn.length==0) ||(o.am.length==0) ||(o.qy.length==0) ||(o.qy=='0')){return 0;};a=o.qy;b=_f.tgc(o.ct);c=_f.tgc(o.pn);d=String(o.am);p=parseInt(d.replace(/[^0-9.]/g, ""));return {pn:c,at:p,ct:b,qy:a};},t:function(){var c=String(Math.random()*1000000000).replace(".",""); var t=Math.floor(new Date().getTime() / 1000); var sr=t+''+c.substr(0,9);return {s:sr,p:sr};},ti:function(a){return parseInt(a.substr(0,10));},uq:function(){var cc=Math.floor(new Date().getTime());var a="";var sr = "";var c="0A1B2C3D4EFGH5IJ6K7L8M9N0OPQURSTUVWXYZ";for(var i = 0;i<6;i++){sr+=c.substr(Math.floor(Math.random()*39),1);}a=cc+sr; return a+'';},
+			nm:function(st){ var v = String(st); var r='';for (var i=0; i<v.length; i++) {if(!isNaN(v.charAt(i))){r+=v.charAt(i);};} return (r!=''?r:v);},n:function(s){var str=s+"";var ret="";for(var i = 0; i < str.length; i++){	var at = str.charCodeAt(i);var ch=String. fromCharCode(at);	if(at==10 || at==32||at==35){ret+=''+ch.replace(ch,'');}else if (at==34||at==39){ret+=''+ch.replace(ch,' ');	}else{ret+=''+ch;}  } return ret;},g:function(sr){var r='';var ar='';r=sr.substr(_f.ei(sr,'{'),sr.length);r=r.replace('{','');r=r.replace('}','');return r;},sse:function(p1,p2){var s=_s.cg('AS');var sts='';var q=_f.uq();var c=_s.cg('AU');var r=_s.cg('AR');var sv=s.split("|");var rt=0;var a='';var t=_f.t();var v=0;var cn=2;var cn2=1;var c1=(_f.u(p1).indexOf('&md=b')> -1)?1:0;var g="";var c2=(p2.length>0)?t.s:0;var ct=c.split("|");
+			var ts=t.s+'|'+t.p+'|'+t.s+'|'+c2+'|'+_f.rc(_f.ref);if((r==_f.rc(_f.url+_f.ref)) && r!=_t.d){rt=1;};if(s==_t.d){a=ts;_s.cs('AS',ts,0,'/','');re=0;v=1;}else{if(c2!=0&&rt!=1){sv[3]=c2;};if(((_f.ti(t.p)-_f.ti(sv[1]) )-_u.st)>0 ){a=ts;_s.cs('AS',a,0,'/','');_s.cs('AR',"0",0,'/','');rt=0;v=1;}else{if(_s.ri()!=1&&rt!=1&&_f.rc(_f.ref)!=sv[4]&&!(v==0 && _f.ref=="bookmark")){a=sv[0]+'|'+t.p+'|'+t.s+'|'+sv[3]+'|'+_f.rc(_f.ref);}else{ a=sv[0]+'|'+t.p+'|'+sv[2]+'|'+sv[3]+'|'+sv[4];} _s.cs('AS',a,0,'/','');v=0;}}if(v==1){if(c!=_t.d){cn=parseInt(ct[1])+1;if(cn >=10){cn=10;};if(String(ct[4])!=_t.d){q=ct[4];};g=t.s+'|'+cn+'|'+ct[2]+'|'+ct[3]+'|'+q;}else{g=t.s+'|'+cn+'|'+t.s+'|'+cn2+'|'+q;c=t.s+'|0|'+t.s+'|0'+'|'+q;};
+			_s.cs('AU',g,(1000*86400*365)*10,'/','');}if(c1==1 && ct[0]!=_t.d && rt!=1){if(String(ct[4])!=_t.d){q=ct[4];};cn2=parseInt(ct[3])+1;g=ct[0]+'|'+ct[1]+'|'+t.s+'|'+cn2+'|'+q;_s.cs('AU',g,(1000*86400*365)*10,'/','');};sts=a.split("|");a=sts[0]+'|'+sts[1]+'|'+sts[2]+'|'+sts[3];return {st:a,vk:v,vt:c,re:rt};},um:function(rs){var rrs=rs+'';var a=0; var u=_u.ud;if(u.indexOf(",")!= -1){u=u.split(',');for(var i = 0;i<u.length;i++){if(rrs==u[i])return 1;}}else{if(rrs==u)a=1;}return a;}};var _s={buy:function(){var s='';var ce='';var g="";if(typeof(AM_Cart)!=_t.d){try{ce=m_buy;}catch(_cc){ce='null'};try{om=m_order_code;}catch(_oo){om=''}; if(ce!='' && ce=='finish'){	var on=AM_Cart;var ot=[];if(om!=''){ if(m_order_code==_s.cg('AO')){return '';}else{_s.cs('AO',m_order_code,86400 * 30 * 12,'/','');};}for(var vv in on){if(_f.ct(on[vv])==0){break;}ot=_f.ct(on[vv]);g+=ot.ct+'@'+ot.pn+'@'+ot.at+'@'+ot.qy+'^';}s='&md=b&ll='+_f.e(g);};}return s;},
+			e:function(a){var ce=g=s='';var r="";var an=0;try{s=eval(a);if(a=='m_amt'){s=s.replace(/[^0-9.]/g, "");};if(a=='m_pd'){s=_f.tgc(s);};if(a=='m_ct'){s=_f.tgc(s);};}catch(_e){s=''};r=_f.e(s);return r;},ri:function(){var r=String(_f.ref);var a=0;r=_f.hr(r,'r');r=r.split('/');if(_f.um(r[0])==1){a=1;}return a;},ui:_f.um(_f.hr(_f.url,'h')),mi:function(a){var mi=_s.e('m_id');var mj=_s.e('m_jid');var cr='';var ct="";if(mj!="" &&_u.py==1){ cr='&jid='+mj+'&jn='+_s.e('m_jn');}else if(mj!="" &&_u.py==0){cr='&jid='+_t.um+'&jn='+_s.e('m_jn');}if(mi!="" && _u.py==1){ct='&id='+mi;}else if(mi!="" && _u.py==0){ct='&id='+_t.um;} return cr+''+ct;},s:(typeof(screen)!=_t.d)&&(typeof(screen.width)==_t.m)?screen.width+'*'+screen.height:'0*0',c:function(){if(_s.cg('AS')!=_t.d){return 1;}else{return 0;}},
+			cd:(typeof(screen)!=_t.d)?((typeof(screen.pixelDepth)!=_u.m)?screen.colorDepth:screen.pixelDepth):_t.d,cs:function(n,v,e,p,d){var ex = new Date();var es='0';if(e!=0){ex.setTime(ex.getTime() + eval(e));es=ex.toGMTString();} var s=n+_u.uid+"="+escape(v)+((e!=0)?";expires="+es:"")+((p)?";path="+p:"")+";domain="+((d)?d+";":_u.cd+";"); document.cookie=s;},cg:function(v){var aq='';var s=v+_u.uid;var ss=0;var se=0;var dc=document.cookie;if (dc.length>0){ss=dc.lastIndexOf(s+ "=");if(ss!=-1){ss=ss + s.length+1;se=dc.indexOf(";",ss);if(se==-1){se=dc.length;};aq=unescape(dc.substring(ss,se));return aq;};}return _t.d;},re:function(){var r=_s.cg('AR');if(_t.d==String(r)){return 0;}else{if(String(r)==_f.rc(_f.url+_f.ref)){return 1;}return 0;}}};var _p={p:location.protocol+'//'+_u.gd,s:'/',lt:function(a,v){var r=''+a;if(r.length>v){ r=r.substring(0,v); }; return r;},
+			send:function(w,s){if(_s.ui==1){var x=cng='';var nc=new Image(0,0);var a=_s.buy();var k=_s.e('m_skey');var n=_f.sse(a,k);var vl='&ui='+_s.ui+_s.mi()+'&ag='+_s.e('m_ag')+'&gd='+_s.e('m_gd')+'&skey='+k+'&pd='+_s.e('m_pd')+'&onum='+_s.e('m_order_code')+'&ct='+_s.e('m_ct')+'&amt='+_s.e('m_amt')+''+a+'&mr='+_s.e('m_mr')+'&cd='+_s.cd+'&tz='+_f.tz()+'&lg='+_f.lg;var tms='&sv='+_u.sv+'&st='+n.st+'&vt='+n.vt+'&vk='+n.vk+'&ce='+_s.c();_s.cs('AR',_f.rc(_f.url+_f.ref),0,'/','');if(typeof(w)!=_t.d){if(w=='site'){x='mwg/?mid='+_u.uid+'&tp=site'+tms+'&ri='+_s.ri()+'&re='+n.re+'&dm='+_s.s+'&url='+_f.e(_f.hr(_f.url,'u'))+'&ref='+_f.e(_f.hr(_f.ref,'r'))+''+vl;}else if(w=='link' || w=='tel'){x='mwg/?mid='+_u.uid+'&tp='+w+tms+'&ri='+_s.ri()+'&re='+n.re+'&dm='+_s.s+'&url='+_f.e(_f.hr(_f.url,'u'))+'&ref='+_f.e(_f.hr(s,'r'))+''+vl;}else if(w=='cart'){x='mwg/?mid='+_u.uid+'&tp=cart'+tms+''+s;}};nc.src=_p.lt(_p.p+_p.s+x,2048);_AMLog.push(nc);}}};
+			var _c={Run:function(){if(_f.ei(navigator.userAgent,'Chrome/1.') > -1){return 0;};_f.ea('mousedown',this.ec);},ec:function(e){var ok='';var m = document.all ? event.srcElement : e.target;if(typeof(m)==_t.d){return true;} var a=m;if(eval(_t.Lp)){ok=_c.lc(m);if(ok.length != 0){_p.send('link',ok);};}},lc:function(o){try{var ar='',tf=0,obj=o;var a=o;if(eval(_t.Lp)){obj=_f.f(o);if(_f.d(String(obj.href).substr(0,4))=='TEL:'){ar=obj.href;if(ar!=''){_p.send('tel',ar); return '';};};if(typeof obj.onclick==_t.f){tf=1;ar = String(obj.onclick);}else if(typeof obj!=_t.m){tf=0;ar = String(obj.href);};if((_f.d(o.tagName)=='IMG') && (typeof o.onclick == _t.f)){tf=1;ar = String(o.onclick);}}if(ar.length==0){return'';};ar=_f.n(ar);if(_f.ei(ar,'void(') == -1 && _f.ei(ar,'void0') == -1){if(tf==1){ar=_f.g(ar);if(ar==''){return '';};	if(_f.ei(ar,_t.j) == -1){return _t.j + ar;}else{return ar;};}else{return ar;};}else{return _t.j + 'void('+_f.nm(ar)+')';};return '';}catch(_e){ return '';};}};if(_s.ui==1){_c.Run();_p.send('site','');}
+			return{vp:function(q){var cu='';if((q!="") && (q.substr(0,1)=="/")){cu=(_f.hr(_f.url,'h') +''+q);_f.url=cu.replace(/\/\//gi, "/");if(_s.ui==1){_p.send('site','');}}},vt:function(ok){if(_f.d(ok.substr(0,4))=='TEL:'){_p.send('tel',ok);}},ap:function(q){var ct1=_s.e('m_ct');var pt1=_s.e('m_pd');var pp=String(_s.e('m_amt'));var qt1=q;var pe=0;if((_f.iN(qt1)==true)&&(typeof(pt1)!=_t.d)&&(pt1.length!=0)){pe=parseInt(pp.replace(/[^0-9.]/g, ""));var at1= ( parseInt(pe) ) * q;var _At ='';_At += ct1+'@'+pt1+'@'+at1+'@'+qt1+'^';_p.send('cart','&md=i&ll='+_f.e(_At));}},
+			ac:function(o,p,c,d){var cm='i';var dt =0;var oc=[];var ot=[];var at=0;var _At ='';var m=(d)?d:'';oc=o;for (var i in oc){if(_f.ct(oc[i])==0){continue;}ot=_f.ct(oc[i]);if (arguments.length==1){_At+=ot.ct+'@'+ot.pn+'@'+ot.at+'@'+ot.qy+'^';cm='o';if(_f.e(_At).length > 800 ){_At =_At+'&cmd=on' ;_p.send('cart','&md=o'+_f.e(_At));_At = '' ;};}else{if(p==i){if( ot.qy != c || m!='' ){dt = c - parseInt(ot.qy);at =Math.round((parseInt(ot.at)  / parseInt(ot.qy)));if( dt > 0 ){ cm = 'i' ; }else{ cm = 'o' ;};if(m==''){oc[i].am = at*Math.abs(dt);oc[i].qy = Math.abs(dt);}_At +=ot.ct+'@'+ot.pn+'@'+oc[i].am+'@'+oc[i].qy+'^';if(m=='del'){ cm='o';oc[i].qy='0';}break;}}}}if( _At.length > 0 ){_p.send('cart','&md='+cm+'&ll='+ _f.e(_At));};}};})();function AM_CUD(){return (typeof(AM_Cart)!='undefined')?1:0;};function AM_PRODUCT(qty){if(typeof(qty)!='undefined'){if(AM_CUD()==0){AM_Mobile.ap(qty);}}};
+			function AM_INOUT(pl,cnt){if(AM_CUD()==1){AM_Mobile.ac(AM_Cart,pl,cnt);}};function AM_DEL(pl,cnt){if(AM_CUD()==1){AM_Mobile.ac(AM_Cart,pl,cnt,'del');}};function AM_CARTDEL(){if(AM_CUD()==1){AM_Mobile.ac(AM_Cart);}};function AM_TEL(n){if(typeof(n)!='undefined'){AM_Mobile.vt(n);}};function AM_PL(n){if(typeof(n)!='undefined'){AM_Mobile.vp(n);}};}
+			</script><noscript><img src='http://mgc.nsm-corp.com/mwg/?mid=CM4B39449615819&tp=noscript&ce=0&' border=0 width=0 height=0></noscript>
+			 AceCounter Mobile Gathering Script End -->
+
+			<!-- WIDERPLANET  SCRIPT START 2015.1.21
+			<div id="wp_tg_cts" style="display:none;"></div>
+			<script type="text/javascript">
+			var wptg_tagscript_vars = wptg_tagscript_vars || [];
+			wptg_tagscript_vars.push(
+			(function() {
+				return {
+					ti:"21337",
+					ty:"Home",
+					device:"mobile"
+				};
+			}));
+			</script>
+			<script type="text/javascript" async defer  src="//astg.widerplanet.com/js/wp_astg_3.0.js"></script>
+			 // WIDERPLANET  SCRIPT END 2015.1.21 -->
+
+	<!-- BS CTS TRACKING SCRIPT V.20 / 13631 : CTS / DO NOT ALTER THIS SCRIPT. 2016.02.03 -->
+	<!-- COPYRIGHT (C) 2002-2015 BIZSPRING INC. L4AD ALL RIGHTS RESERVED. -->
+	<script type="text/javascript">
+	_L_LALT = "30"; /* 간접전환 일수 */
+	_L_LACD = "mcn.ssgdfm.com";
+	(function(b,s,t,c,k){b[k]=s;b[s]=b[s]||function(){(b[s].q=b[s].q||[]).push(arguments)};  var f=t.getElementsByTagName(c)[0],j=t.createElement(c);j.async=true;j.src='//fs.bizspring.net/fs4/l4cts.v4.2.js';f.parentNode.insertBefore(j,f);})(window,'_tcts_m',document,'script','BSAnalyticsObj');
+	_tcts_m('13827','PENGTAI');
+	</script><!-- END OF BS CTS TRACKING SCRIPT -->
+
+
+<!--  2016-09-21 부산몰로 연결된다는 소식과 이선하 차장 점검 미비로 막아 놓음
+
+	<a href="javascript:runApp();" id="btn-app" class="web">App 下载</a>
+
+
+<script src="/js_mbl/ssg_os_inf.js"></script>
+<script src="/js_mbl/appLink.js"></script>
+-->
+
+
+	</div>
+
+</body></html>
