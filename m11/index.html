@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, user-scalable=no, target-densitydpi=medium-dpi" />
+<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+<meta property="og:image" content="http://image.ssgdfm.com/images/shop/main/ssgdfs_01.jpg">
+<title></title>
+<link rel="shortcut icon" type="image/x-icon" href="http://m.ssgdfm.com/favicon.ico?6" />
+<!-- <link rel="apple-touch-icon-precomposed" href="http://static.naver.net/www/mobile/edit/2014/0331/mobile_180026457661.png" /> -->
+<!-- <link rel="apple-touch-icon-precomposed" sizes="114x114" href="http://static.naver.net/www/mobile/edit/2014/0331/mobile_180112833383.png" /> -->
+<link href="http://m.ssgdfm.com/css/ssgdfs.css?up" rel="stylesheet" >
+<link href="http://m.ssgdfm.com/css/mobile_rn_base.css?ver=1.1" rel="stylesheet" />
+<link href="http://m.ssgdfm.com/css/mobile_rn_common.css?ver=1.1" rel="stylesheet" />
+<link href="http://m.ssgdfm.com/css/mobile_rn_main.css?ver=1.1" rel="stylesheet" />
+<link rel="stylesheet" href="http://m.ssgdfm.com/css/style_n.css" >
+<script type="text/javascript" src="./js/jquery-2.1.1.min.js"></script>
+<script type="text/javascript" src="http://m.ssgdfm.com/js/jquery-migrate-1.2.1.min.js"></script>
+<script type="text/javascript" src="http://m.ssgdfm.com/js/iscroll5.js"></script>
+<script type="text/javascript" src="http://m.ssgdfm.com/js/swiper.js"></script>
+<script type="text/javascript" src="http://m.ssgdfm.com/js/slick.js"></script>
+<script type="text/javascript" src="http://m.ssgdfm.com/js/jquery-rnssg-mobile.js"></script>
+<script type="text/javascript" src="http://m.ssgdfm.com/js/ui.js"></script>
+<script type="text/javascript" src="http://m.ssgdfm.com/script/shop.js?random=1058"></script>
+<script type="text/javascript" src="http://m.ssgdfm.com/script/common.js"></script>
+<link rel="stylesheet" type="text/css" href="http://m.ssgdfm.com/css/item.css">
+<link rel="stylesheet" type="text/css" href="http://m.ssgdfm.com/css/mobile_rn_incheon.css" />
+<script type="text/javascript" src="http://m.ssgdfm.com/js/jquery.form.js"></script>
+<script type="text/javascript" src="http://m.ssgdfm.com/js/jQueryRotate.js"></script>
+<!-- <script src="https://developers.kakao.com/sdk/js/kakao.min.js"></script> -->
+<script type="text/javascript" src="http://m.ssgdfm.com/js/sns.js"></script>
+</head>
+<body>
+
+<!-- 개발전달사항
+	   링크된 css, script 는 따로 가져가실 필요 없으시고 상단 style, script 만 가져가시면 됩니다.
+-->
+
+<style>
+body{margin:0; padding:0;}
+.eventWrap{position:relative;width:100%; text-align: left;}
+.eventWrap img{width:100%;vertical-align:top;}
+.eventWrap a{display:block;width:100%;}
+.eventWrap .sector {position:relative;}
+.eventWrap .sector ul {position:absolute; top:12.5%; left:0; right:0; margin:0 auto; text-align:center; width:90%;}
+.eventWrap .sector2 ul {top:12%;}
+.eventWrap .sector3 ul {top:12%; left:0; bottom:0; height:70%;}
+.eventWrap .sector ul li {position:relative;display:inline-block; vertical-align:middle; width:43%; margin:0 1.3%;}
+.eventWrap .sector ul li:before {content:"";position:absolute;top:0;left:0;width:52px;height:44px;background:url(images/first.png) no-repeat 0 0;display:none;z-index:2}
+.eventWrap .sector ul li.rank1:before {display:block;}
+
+.eventWrap .sector ul li:first-child, .eventWrap .sector ul li:nth-child(2), .eventWrap .sector ul li:nth-child(3), .eventWrap .sector ul li:nth-child(4) {margin-bottom:2%}
+.eventWrap .sector ul label {position:relative;display:inline-block;width:100%; padding:0 0 13.5%;}
+.eventWrap .sector ul label input[type="radio"] {position:absolute; left:0 ;bottom:-6px ;margin:0 auto;width:11%;height:13%;background:url(images/radio_off.png) no-repeat;background-size:100% auto; 100%;border:0;-webkit-appearance:none;-moz-appearance:none;box-sizing:border-box;}
+.eventWrap .sector ul label input[type="radio"]:checked {background:url(images/radio_on.png) no-repeat;background-size:100% auto; 100%;}
+
+.eventWrap .sector ul label .countN {position:absolute; bottom:3px; right:0; color:#404040; font-size:3vw; letter-spacing:-1px;}
+.eventWrap .sector ul p {color:#6e6e6e; font-size:3vw; text-align:center; letter-spacing:-1px;}
+
+.eventWrap .sector3 ul li {position:relative; display:block; width:70%; height:35%; margin:0 auto;}
+.eventWrap .sector3 ul li:first-child, .eventWrap .sector3 ul li:nth-child(2) {margin-bottom:0}
+.eventWrap .sector3 ul li div {position:absolute; top:13%; bottom:17%; width:100%;}
+.eventWrap .sector3 ul label {position:static; padding:0 0 18px;}
+.eventWrap .sector3 ul label input[type="radio"] {position:absolute; left:0 ;bottom:0; margin:0 auto;width:9%;height:13%;background:url(images/radio_off.png)no-repeat;background-size:100% auto; 100%;border:0;-webkit-appearance:none;-moz-appearance:none;box-sizing:border-box;}
+
+</style>
+
+<div class="eventWrap">
+	<img src="images/visual.jpg" alt="">
+	<div class="sector sector1">
+		<ul>
+			<li class="rank1">
+				<label><img src="images/awards01.jpg" alt="" /><input type="radio" name="vote" /> <span class="countN"> <span>13,560</span>표</span></label>
+			</li>
+			<li>
+				<label><img src="images/awards02.jpg" alt="" /><input type="radio" name="vote" /> <span class="countN"> <span>13,560</span>표</span></label>
+			</li>
+			<li>
+				<label><img src="images/awards03.jpg" alt="" /><input type="radio" name="vote" /> <span class="countN"> <span>13,560</span>표</span></label>
+			</li>
+			<li>
+				<label><img src="images/awards04.jpg" alt="" /><input type="radio" name="vote" /> <span class="countN"> <span>13,560</span>표</span></label>
+			</li>
+			<li>
+				<label><img src="images/awards05.jpg" alt="" /><input type="radio" name="vote" /> <span class="countN"> <span>13,560</span>표</span></label>
+			</li>
+			<li>
+				<label><img src="images/awards06.jpg" alt="" /><input type="radio" name="vote" /> <span class="countN"> <span>13,560</span>표</span></label>
+			</li>
+		</ul>
+		<img src="images/img01.jpg" alt="" usemap="#map1">
+		<map name="map1" id="map1">
+			<area shape="rect" alt="투표하기" title="" coords="161,1053,476,1124" href="#" target="" />
+		</map>
+	</div>
+
+	<div class="sector sector2">
+		<ul>
+			<li>
+				<label><img src="images/awards07.jpg" alt="" /><input type="radio" name="vote" /> <span class="countN"> <span>13,560</span>표</span></label>
+			</li>
+			<li>
+				<label><img src="images/awards08.jpg" alt="" /><input type="radio" name="vote" /> <span class="countN"> <span>13,560</span>표</span></label>
+			</li>
+			<li>
+				<label><img src="images/awards09.jpg" alt="" /><input type="radio" name="vote" /> <span class="countN"> <span>13,560</span>표</span></label>
+			</li>
+			<li>
+				<label><img src="images/awards10.jpg" alt="" /><input type="radio" name="vote" /> <span class="countN"> <span>13,560</span>표</span></label>
+			</li>
+			<li>
+				<label><img src="images/awards11.jpg" alt="" /><input type="radio" name="vote" /> <span class="countN"> <span>13,560</span>표</span></label>
+			</li>
+			<li>
+				<label><img src="images/awards12.jpg" alt="" /><input type="radio" name="vote" /> <span class="countN"> <span>13,560</span>표</span></label>
+			</li>
+		</ul>
+		<img src="images/img02.jpg" alt="" usemap="#map2">
+		<map name="map2" id="map2">
+			<area shape="rect" alt="투표하기" title="" coords="166,1041,469,1114" href="#" target="" />
+		</map>
+	</div>
+
+	<div class="sector sector3">
+		<ul>
+			<li>
+				<p>모바일면세쇼핑 AtoZ 편</p>
+				<div><iframe width="100%" height="100%" src="https://www.youtube.com/embed/0fjhAQrFoTk" frameborder="0" allowfullscreen></iframe></div>
+				<label><input type="radio" name="vote" /> <span class="countN"> <span>13,560</span>표</span></label>
+			</li>
+			<li>
+				<p>ALL면세 휴가 메이크업편</p>
+				<div><iframe width="100%" height="100%" src="https://www.youtube.com/embed/c8kUkEUtkks" frameborder="0" allowfullscreen></iframe></div>
+				<label><input type="radio" name="vote" /> <span class="countN"> <span>13,560</span>표</span></label>
+			</li>
+			<li>
+				<p>엄마의 70번째 생신선물편</p>
+				<div><iframe width="100%" height="100%" src="https://www.youtube.com/embed/xf1VD8H6q_s" frameborder="0" allowfullscreen></iframe></div>
+				<label><input type="radio" name="vote" /> <span class="countN"> <span>13,560</span>표</span></label>
+			</li>
+		</ul>
+		<img src="images/img03.jpg" alt="" usemap="#map3">
+		<map name="map3" id="map3">
+			<area shape="rect" alt="투표하기" title="" coords="170,646,465,716" href="#" target="" />
+		</map>
+	</div>
+	<img src="images/img04.jpg" alt="">
+	<img src="images/img05.jpg" alt="">
+	<img src="images/img06.jpg" alt="">
+</div>
+<!--//eventWrap-->
+
+<script type="text/javascript" src="./js/jquery.rwdImageMaps.js"></script>
+<script type="text/javascript">
+	$(function(){
+		$('img[usemap]').rwdImageMaps();
+	});
+</script>
+
+</body>
+</html>
