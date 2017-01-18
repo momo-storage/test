@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, user-scalable=no, target-densitydpi=medium-dpi" />
+<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+<title></title>
+<link rel="shortcut icon" type="image/x-icon" href="http://m.ssgdfs.com/favicon.ico?6" />
+<link href="http://m.ssgdfs.com/css/ssgdfs.css?up" rel="stylesheet" >
+<link href="http://m.ssgdfs.com/css/mobile_rn_base.css?ver=1.1" rel="stylesheet" />
+<link href="http://m.ssgdfs.com/css/mobile_rn_common.css?ver=1.1" rel="stylesheet" />
+<link href="http://m.ssgdfs.com/css/mobile_rn_main.css?ver=1.1" rel="stylesheet" />
+<script type="text/javascript" src="http://m.ssgdfs.com/js/jquery-2.1.1.min.js"></script>
+<script type="text/javascript" src="http://m.ssgdfs.com/js/jquery-migrate-1.2.1.min.js"></script>
+<script type="text/javascript" src="http://m.ssgdfs.com/js/iscroll5.js"></script>
+<script type="text/javascript" src="http://m.ssgdfs.com/js/swiper.js"></script>
+<script type="text/javascript" src="http://m.ssgdfs.com/js/jquery-rnssg-mobile.js"></script>
+<script type="text/javascript" src="http://m.ssgdfs.com/js/ui.js"></script>
+<script type="text/javascript" src="http://m.ssgdfs.com/script/shop.js?random=3561"></script>
+<script type="text/javascript" src="http://m.ssgdfs.com/script/common.js"></script>
+<link rel="stylesheet" type="text/css" href="http://m.ssgdfs.com/css/item.css">
+<link rel="stylesheet" type="text/css" href="http://m.ssgdfs.com/css/mobile_rn_incheon.css" />
+<style type="text/css">
+img {max-width:100%;}
+.sub{position:relative; height:44px; background:#333;}
+.sub a{display:block; position:absolute; top:0; left:0; width:32px; height:33px; padding:11px 0 0 15px; background:url(http://image.ssgdfs.com/images/shop/cn/mobile/common/bg_sub.jpg) repeat-y right top;}
+.sub h2{width:100%; height:44px; overflow:hidden; padding:15px 47px 0 47px; font-size:1.42em; color:#fff; text-align:center; text-overflow:ellipsis; white-space:nowrap; box-sizing:border-box; -webkit-box-sizing:border-box; -moz-box-sizing:border-box;}
+.sub h2 span{font-size:0.7em;}
+.comment_bg{display:none; position:absolute; z-index:10; width:100%; height:100%;opacity:0.5; background:#000; filter:alpha(opacity=50);}
+.layer_txtpop{position:fixed !important;margin:-92px 0 0 -135px !important}
+</style>
+<script type="text/javascript" src="http://m.ssgdfs.com/js/jquery.form.js"></script>
+<script type="text/javascript" src="http://m.ssgdfs.com/js/jQueryRotate.js"></script>
+<script type="text/javascript" src="http://m.ssgdfs.com/js/sns.js"></script>
+</head>
+
+<body>
+
+<!-- 이벤트 작업 시작 -->
+
+	<style type="text/css">
+	.evtWrap img {width:100%;}
+	.evtWrap {position:relative; overflow:hidden; }
+	.evtWrap div {position:absolute;	 bottom:-125px; width:100px; min-height:100px; border-radius:50%; cursor:pointer}
+	.evtWrap div:first-child {left:0;background:#ff7474;-webkit-animation:balloon 3s  linear; animation:balloon 3s  linear;}
+	.evtWrap div:nth-child(2) {left:120px; background:#ff74c9; -webkit-animation:balloon 4s  linear; animation:balloon 4s  linear;}
+	.evtWrap div:nth-child(3) {left:240px; background:#d76bff; -webkit-animation:balloon 6s  linear; animation:balloon 6s  linear;}
+	.evtWrap div:nth-child(4) {left:360px;background:#b1a2ff; -webkit-animation:balloon 7s  linear; animation:balloon 7s  linear;}
+	.evtWrap div:nth-child(5) {left:0; background:#0c11ed; -webkit-animation:balloon 3s  linear; animation:balloon 3s  linear;}
+	.evtWrap div:nth-child(6) {left:120px; background:#65adff; -webkit-animation:balloon 5s  linear; animation:balloon 5s  linear;}
+	.evtWrap div:nth-child(7) {left:240px; background:#2297a8; -webkit-animation:balloon 4s  linear; animation:balloon 4s  linear;}
+	.evtWrap div:nth-child(8) {left:360px; background:#0cd6a4; -webkit-animation:balloon 5s  linear; animation:balloon 5s  linear;}
+	.evtWrap div:nth-child(9) {left:0; background:#29c000; -webkit-animation:balloon 7s  linear; animation:balloon 7s  linear;}
+	.evtWrap div:last-child {left:120px; background:#ff9600; -webkit-animation:balloon 6s  linear; animation:balloon 6s  linear;}
+
+	.evtWrap #score {font-size:20px; font-weight:bold;}
+	@-webkit-keyframes balloon {
+		from,{ bottom:-20%;}
+		to{ bottom:110% }
+	}
+
+	@keyframes balloon {
+		from {bottom:-20%;}
+		to{ bottom:110% }
+	}
+	</style>
+
+	<div class="evtWrap">
+		<div></div>
+		<div></div>
+		<div></div>
+		<div></div>
+		<div></div>
+		<div></div>
+		<div></div>
+		<div></div>
+		<div></div>
+		<div></div>
+		<img src="images/img_01.jpg" alt="">
+		<p id="score"></p>
+	</div>
+ <!--//evtWrap-->
+
+	<script type="text/javascript" src="http://m.ssgdfm.com/js/jquery.rwdImageMaps.js"></script>
+	<script type="text/javascript">
+		var scoreT = 0;
+		function score(){
+			scoreT += 10;
+			$('#score').text(scoreT);
+		}
+		$(function(){
+			$('.evtWrap div').click(function(){
+				$(this).hide();
+				score();
+			});
+			$('img[usemap]').rwdImageMaps();
+		});
+	</script>
+
+<!-- 이벤트 작업 끝 -->
+</body>
+</html>
