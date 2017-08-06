@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+	<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.6.2/jquery.min.js"></script>
+	<style>
+		* {padding:0; margin:0;}
+	#wrap{position:relative;width:840px;height:1400px; background:url(images/bg.jpg) no-repeat 0 0;}
+	#hanbi{position:absolute; left:0; right:0; margin:0 auto; width:362px; height:760px; background:url(images/spr_hanbi.png);}
+.frame0 {background-position:-377px 0 !important ;}
+.frame1 {background-position:-740px 0 !important ;}
+.frame2 {background-position:-1115px 0 !important ; }
+.frame3 {background-position:-1492px 0 !important ;}
+.frame4 {background-position:-1866px 0 !important ;}
+.frame5 {background-position:-2235px 0 !important ;}
+.frame6 {background-position:-2609px 0 !important ;}
+.frame7 {background-position:-2985px 0 !important ;}
+.frame8 {background-position:-3355px 0 !important ;}
+.frame9 {background-position:-3721px 0 !important ;}
+.frame10 {background-position:-4090px 0 !important ;}
+.frame11 {background-position:-4455px 0 !important ;}
+.frame12 {background-position:-4826px 0 !important ;}
+	</style>
+</head>
+<body>
+<div id="wrap">
+	<div id="hanbi"></div>
+</div>
+ 	<script>
+$(document).ready(function() {
+		var frames = $("#hanbi");
+		var frameTotal = 13;
+		var cnt = 0;
+
+  setInterval(function() {
+  	cnt++;
+  	if(cnt == frameTotal)
+  		cnt=0;
+  	frames.attr('class','frame' + cnt);
+  }, 120);
+});
+
+	</script>
+</body>
+</html>
