@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>상단 플로팅 네비</title>
+	<script src="https://ajax.aspnetcdn.com/ajax/jQuery/jquery-3.2.1.min.js"></script>
+</head>
+<body>
+	<script>
+		 //첫번째
+    //  var fixedMenu = $(".event__floating");
+    //  var menuOffset = $(".event__floating").offset();
+
+    // $(window).scroll(function(){
+    //     if ($(this).scrollTop() >= menuOffset.top) {
+    //         fixedMenu.addClass("event__floating--fixed").css("left", -$(this).scrollLeft());
+    //     } else{
+    //         fixedMenu.removeClass("event__floating--fixed").css("left", '');
+    //     }
+    // });
+
+    //두번째
+    $(window).scroll(function(){
+        //console.log($(this).scrollTop());
+         var fixedMenu = $(".event__floating");
+        if ($(this).scrollTop() >= 960 ){
+             fixedMenu.addClass("event__floating--fixed").css("left", -$(this).scrollLeft());
+         } else {
+            fixedMenu.removeClass("event__floating--fixed").css("left", '');
+        }
+        
+    });
+	</script>
+</body>
+</html>
